@@ -325,5 +325,25 @@ class registration{
         return false;
           
     }
+    public function forgot_password(){
+        $query="SELECT  id, name,email, password from " . $this->table_name .  " where email=:email";
+        $stmt = $this->conn->prepare($query); 
+        $stmt->bindParam(":email", $this->email);
+        $stmt->execute();
+        return $stmt;
+    }
+
+    function read_registration_by_status(){
+        $query="Select 
+        id, full_name, father_name, mother_name, spouse_name, marital_status,status,result,admit_card,password,  gender,dob , mobile  , alternate_mobile , email, address1
+    , address2, address3 , cor_address  , district , state , pincode , religion, category ,nationality, h_qualification , subject, passing_date
+     , h_percentage, grade,language , read,write,zone,post,postcode,disability_cat,disability_type,ex_serviceman,disabled_ex_serviceman
+    , serving_defence_per,service_period , state_exam1,state_exam2,center_exam1,center_exam2 created_by,created_on,registration_no
+        from " .$this->table_name .  " where status=:status";
+        $stmt = $this->conn->prepare($query); 
+        $stmt->bindParam(":status", $this->status);
+        $stmt->execute();
+        return $stmt;
+    }
 }
 ?>

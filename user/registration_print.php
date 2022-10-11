@@ -129,11 +129,7 @@ function giplCurl($api,$postdata){
                 </div>
                Stamp & Signture
             </p>
-         <!-- end invoice-content -->
-         <!-- begin invoice-note -->
-
-         <!-- end invoice-note -->
-         <!-- begin invoice-footer -->
+         
          <div class="invoice-footer">
             <p class="text-center m-b-5 f-w-600">
                Contact Us
@@ -149,6 +145,7 @@ function giplCurl($api,$postdata){
    </div>
 </div>
 <div id="non-printable">
+   
 <?php
 include "include/footer.php";
 ?>
