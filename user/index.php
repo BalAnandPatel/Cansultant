@@ -63,7 +63,7 @@
       </p>
       <p class="mb-0">
       <i class="fa fa-user"></i>
-        <a href="register.php" class="text-center">Register a new membership</a>
+        <a href="registration.php" class="text-center">Register a new membership</a>
       </p>
     </div>
     <!-- /.login-card-body -->

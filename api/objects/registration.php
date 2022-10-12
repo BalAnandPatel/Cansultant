@@ -5,9 +5,9 @@ class registration{
     private $table_name = "registration";
     public $id, $full_name, $father_name, $mother_name, $spouse_name,$marital_status, $status,$result,$admit_card, $password, $gender,$dob , $mobile  , $alternate_mobile , $email, $address1
     , $address2, $address3 , $cor_address  , $district , $state , $pincode , $religion, $category ,$nationality, $h_qualification , $subject, $passing_date
-     , $h_percentage, $grade,$language , $read,$write,$speak, $zone,$post,$postcode,$disability_cat,$disability_type,$ex_serviceman,$disabled_ex_serviceman
+     , $h_percentage, $grade,$languages , $is_read,$is_write,$is_speak, $zone,$post,$postcode,$disability_cat,$disability_type,$ex_serviceman,$exam_name
     , $serving_defence_per,$service_period , $created_by,$created_on,$registration_no,$updated_by,$updated_on,
-    $state_exam1,$state_exam2,$center_exam1,$center_exam2;
+    $state_exam1,$state_exam2,$center_exam1,$center_exam2 ;
     public function __construct($db){
         $this->conn = $db;
     }
@@ -15,7 +15,7 @@ class registration{
     function insert_registration(){
   
         // query to insert record
-        $query = "INSERT INTO
+    $query = "INSERT INTO
                     " . $this->table_name . "
                 SET
                          full_name=:full_name,
@@ -34,7 +34,7 @@ class registration{
                           email=:email, 
                           address1=:address1,
                           address2=:address2,
-                           address13=:address3,
+                           address3=:address3,
                          cor_address=:cor_address ,
                          district=:district,
                          state=:state,
@@ -47,14 +47,15 @@ class registration{
                            passing_date=:passing_date,
                             h_percentage=:h_percentage,
                          grade=:grade, 
-                          language=:language, 
-                          read=:read,
-                           write=:write, 
-                           speak=:speak,
+                          languages=:languages, 
+                          is_read=:is_read,
+                           is_write=:is_write, 
+                           is_speak=:is_speak,
                            disability_cat=:disability_cat,  
                          disability_type=:disability_type,
                           ex_serviceman=:ex_serviceman,
                           serving_defence_per=:serving_defence_per, 
+                          exam_name=:exam_name,
                            service_period=:service_period, 
                            created_by=:created_by, 
                            created_on=:created_on,
@@ -91,14 +92,15 @@ class registration{
         $this->passing_date=htmlspecialchars(strip_tags($this->passing_date));
         $this->h_percentage=htmlspecialchars(strip_tags($this->h_percentage));
         $this->grade=htmlspecialchars(strip_tags($this->grade));
-        $this->language=htmlspecialchars(strip_tags($this->language));
-        $this->read=htmlspecialchars(strip_tags($this->read));
-        $this->write=htmlspecialchars(strip_tags($this->write));
-        $this->speak=htmlspecialchars(strip_tags($this->speak));
+        $this->languages=htmlspecialchars(strip_tags($this->languages));
+        $this->is_read=htmlspecialchars(strip_tags($this->is_read));
+        $this->is_write=htmlspecialchars(strip_tags($this->is_write));
+        $this->is_speak=htmlspecialchars(strip_tags($this->is_speak));
         $this->disability_cat=htmlspecialchars(strip_tags($this->disability_cat));
         $this->disability_type=htmlspecialchars(strip_tags($this->disability_type));
         $this->ex_serviceman=htmlspecialchars(strip_tags($this->ex_serviceman));
         $this->serving_defence_per=htmlspecialchars(strip_tags($this->serving_defence_per));
+        $this->exam_name=htmlspecialchars(strip_tags($this->exam_name));
         $this->service_period=htmlspecialchars(strip_tags($this->service_period));
         $this->created_by=htmlspecialchars(strip_tags($this->created_by));
         $this->created_on=htmlspecialchars(strip_tags($this->created_on));
@@ -134,14 +136,15 @@ class registration{
         $stmt->bindParam(":passing_date", $this->passing_date);
         $stmt->bindParam(":grade", $this->grade);
         $stmt->bindParam(":h_percentage", $this->h_percentage);
-        $stmt->bindParam(":language", $this->language);
-        $stmt->bindParam(":read", $this->read);
-        $stmt->bindParam(":write", $this->write);
-        $stmt->bindParam(":speak", $this->speak);
+        $stmt->bindParam(":languages", $this->languages);
+        $stmt->bindParam(":is_read", $this->is_read);
+        $stmt->bindParam(":is_write", $this->is_write);
+        $stmt->bindParam(":is_speak", $this->is_speak);
         $stmt->bindParam(":disability_cat", $this->disability_cat);
         $stmt->bindParam(":disability_type", $this->disability_type);
         $stmt->bindParam(":ex_serviceman", $this->ex_serviceman);
         $stmt->bindParam(":serving_defence_per", $this->serving_defence_per);
+        $stmt->bindParam(":exam_name", $this->exam_name);
         $stmt->bindParam(":service_period", $this->service_period);
         $stmt->bindParam(":created_by", $this->created_by);
         $stmt->bindParam(":created_on", $this->created_on);
@@ -166,7 +169,7 @@ class registration{
         $query="Select 
         id, full_name, father_name, mother_name, spouse_name, marital_status,status,result,admit_card,password,  gender,dob , mobile  , alternate_mobile , email, address1
     , address2, address3 , cor_address  , district , state , pincode , religion, category ,nationality, h_qualification , subject, passing_date
-     , h_percentage, grade,language , read,write,zone,post,postcode,disability_cat,disability_type,ex_serviceman,disabled_ex_serviceman
+     , h_percentage, grade,languages , is_read,is_write, is_speak,zone,post,postcode,disability_cat,disability_type,ex_serviceman,exam_name
     , serving_defence_per,service_period , state_exam1,state_exam2,center_exam1,center_exam2 created_by,created_on,registration_no
         from " .$this->table_name .  " where id=:id";
         $stmt = $this->conn->prepare($query); 
@@ -221,10 +224,10 @@ class registration{
                            passing_date=:passing_date,
                          h_percentage=:h_percentage,
                          grade=:grade, 
-                          language=:language, 
-                          read=:read,
-                           write=:write, 
-                           speak=:speak,
+                          languages=:languages, 
+                          is_read=:is_read,
+                           is_write=:is_write, 
+                           is_speak=:is_speak,
                            disability_cat=:disability_cat,  
                          disability_type=:disability_type,
                           ex_serviceman=:ex_serviceman,
@@ -265,10 +268,10 @@ class registration{
         $this->passing_date=htmlspecialchars(strip_tags($this->passing_date));
         $this->h_percentage=htmlspecialchars(strip_tags($this->h_percentage));
         $this->grade=htmlspecialchars(strip_tags($this->grade));
-        $this->language=htmlspecialchars(strip_tags($this->language));
-        $this->read=htmlspecialchars(strip_tags($this->read));
-        $this->write=htmlspecialchars(strip_tags($this->write));
-        $this->speak=htmlspecialchars(strip_tags($this->speak));
+        $this->languages=htmlspecialchars(strip_tags($this->languages));
+        $this->is_read=htmlspecialchars(strip_tags($this->is_read));
+        $this->is_write=htmlspecialchars(strip_tags($this->is_write));
+        $this->is_speak=htmlspecialchars(strip_tags($this->is_speak));
         $this->disability_cat=htmlspecialchars(strip_tags($this->disability_cat));
         $this->disability_type=htmlspecialchars(strip_tags($this->disability_type));
         $this->ex_serviceman=htmlspecialchars(strip_tags($this->ex_serviceman));
@@ -306,10 +309,10 @@ class registration{
         $stmt->bindParam(":passing_date", $this->passing_date);
         $stmt->bindParam(":grade", $this->grade);
         $stmt->bindParam(":h_percentage", $this->h_percentage);
-        $stmt->bindParam(":language", $this->language);
-        $stmt->bindParam(":read", $this->read);
-        $stmt->bindParam(":write", $this->write);
-        $stmt->bindParam(":speak", $this->speak);
+        $stmt->bindParam(":languages", $this->languages);
+        $stmt->bindParam(":is_read", $this->is_read);
+        $stmt->bindParam(":is_write", $this->is_write);
+        $stmt->bindParam(":is_speak", $this->is_speak);
         $stmt->bindParam(":disability_cat", $this->disability_cat);
         $stmt->bindParam(":disability_type", $this->disability_type);
         $stmt->bindParam(":ex_serviceman", $this->ex_serviceman);
@@ -337,7 +340,8 @@ class registration{
         $query="Select 
         id, full_name, father_name, mother_name, spouse_name, marital_status,status,result,admit_card,password,  gender,dob , mobile  , alternate_mobile , email, address1
     , address2, address3 , cor_address  , district , state , pincode , religion, category ,nationality, h_qualification , subject, passing_date
-     , h_percentage, grade,language , read,write,zone,post,postcode,disability_cat,disability_type,ex_serviceman,disabled_ex_serviceman
+     , h_percentage, grade,languages , is_read,is_write,zone,post,postcode,disability_cat,disability_type,ex_serviceman,
+     exam_name
     , serving_defence_per,service_period , state_exam1,state_exam2,center_exam1,center_exam2 created_by,created_on,registration_no
         from " .$this->table_name .  " where status=:status";
         $stmt = $this->conn->prepare($query); 

@@ -28,7 +28,7 @@ $subject=strtoupper($_POST["subject"]);
 $passing_date=$_POST["passing_date"];
 $h_percentage=$_POST["h_percentage"];
 $grade=$_POST["grade"];
-$language=strtoupper($_POST["language"]);
+$languages=strtoupper($_POST["language"]);
 $read=$_POST["read"];
 $write=$_POST["write"];
 $speak=$_POST["speak"];
@@ -55,7 +55,7 @@ $data = array( "id"=>$id,
     "religion" => $religion,  "category" => $category,"nationality"=>$nationality, 
       "h_qualification" => $h_qualification, "subject" => $subject, 
       "passing_date" => $passing_date, 
-      "h_percentage" => $h_percentage, "grade" => $grade, "language" => $language, 
+      "h_percentage" => $h_percentage, "grade" => $grade, "languages" => $languages, 
       "read" => $read, "write" => $write,
       "speak"=>$speak,
       //  "zone" => $zone, "post" => $post, "postcode" => $postcode,  

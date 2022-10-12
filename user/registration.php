@@ -1,3 +1,25 @@
+<?php
+include '../constant.php';
+
+$url = $URL ."exam/read_exam.php";
+
+$data=array();
+$postdata1 = json_encode($data);
+$results=giplCurl($url,$postdata1);
+
+//print_r($results);
+
+function giplCurl($api,$postdata){
+    $url = $api; 
+      $client = curl_init($url);
+      curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
+      curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
+      $response = curl_exec($client);
+     //print_r($response);
+      return $result = json_decode($response);
+  }
+?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +56,30 @@
       <h2 class="login-box-msg"><b><u>Personal Details</u></b></h2>
       <hr>
       <form action="action/registration_post.php" method="post">
-	 
+      <label for="exampleInput">Exam*</label>
+      <div class="input-group mb-3">
+            <div class="input-group-append">
+             
+            </div>
+            <select class="form-control" name="exam_name">
+              <option value="select" selected>Please Select Exam</option>
+              
+                <?php
+
+                foreach ($results as $key => $value) {
+                  foreach ($value as $key1 => $value1) {
+
+                ?>
+                    <option value="<?php echo $value1->exam_name ?>">
+                    <?php echo $value1->exam_name ?></option>
+                <?php
+                  }
+                ?>
+              <?php } ?>
+
+            </select>
+          </div>
+
         <label for="exampleInput">Full Name*</label>
         <div class="input-group mb-3">
         

@@ -8,7 +8,7 @@ $data=array("id"=>$id);
 $postdata1 = json_encode($data);
 $results=giplCurl($url,$postdata1);
 
-//print_r($result);
+print_r($results);
 
 function giplCurl($api,$postdata){
     $url = $api; 
@@ -16,7 +16,7 @@ function giplCurl($api,$postdata){
       curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
       curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
       $response = curl_exec($client);
-  //   print_r($response);
+     print_r($response);
       return $result = json_decode($response);
   }
 ?>
@@ -71,7 +71,6 @@ function giplCurl($api,$postdata){
      <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-  
         <div class="row">
           
           <div class="col-md-10">
@@ -93,8 +92,8 @@ function giplCurl($api,$postdata){
                      foreach($value as $key1 => $value1)
                       {
                     ?>
-      
-        <div class="input-group mb-3">
+          <form action="action/registration_post.php" method="post">
+          <div class="input-group mb-3">
         <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user-secret"></span>
@@ -102,104 +101,113 @@ function giplCurl($api,$postdata){
           </div>
           <input type="text" class="form-control" placeholder="User ID- <?php echo  $value1->id ?>"  required autocomplete="off" readonly> 
           </div>
-
-          <form action="action/registration_post.php" method="post">
-	 
      <label for="exampleInput">Full Name*</label>
      <div class="input-group mb-3">
      
-       <input type="text" class="form-control" placeholder="Full name - <?php echo  $value1->full_name ?>" name="full_name" autocomplete="off" required>
        <div class="input-group-append">
          <div class="input-group-text">
            <span class="fas fa-user"></span>
          </div>
        </div>
+       <input type="text" class="form-control" placeholder="Full Name- <?php echo  $value1->full_name ?>"  required autocomplete="off" readonly> 
+
+
      </div>
      <label for="exampleInputEmail1">Date of Birth*</label>
      <div class="input-group mb-3">
-       <input type="date" class="form-control" placeholder="Date of Birth - <?php echo  $value1->dob ?>" name="dob" autocomplete="off" required>
        <div class="input-group-append">
          <div class="input-group-text">
            <span class="fas fa-calendar"></span>
          </div>
        </div>
+       <input type="date" class="form-control" placeholder=DOB- <?php echo  $value1->dob ?>"  required autocomplete="off" readonly> 
+
+
      </div>
      <label for="exampleInputEmail1">Gender*</label>
      <div class="input-group mb-3">
-       <input type="date" class="form-control" placeholder="Gender - <?php echo  $value1->gender ?>" name="dob" autocomplete="off" required>
        <div class="input-group-append">
          <div class="input-group-text">
            <span class="fas fa-calendar"></span>
          </div>
        </div>
+       <input type="text" class="form-control" placeholder="Gender - <?php echo  $value1->gender ?>" name="gender" readonly>
+
      </div>
      <label for="exampleInputEmail1">Father's Name*</label>
      <div class="input-group mb-3">
-       <input type="text" class="form-control" placeholder="Father's name- <?php echo  $value1->father_name ?>" name="father_name" autocomplete="off" required>
        <div class="input-group-append">
          <div class="input-group-text">
            <span class="fas fa-user"></span>
          </div>
        </div>
+       <input type="text" class="form-control" placeholder="Father's name- <?php echo  $value1->father_name  ?>" name="father_name" readonly>
+
      </div>
      <label for="exampleInputEmail1">Mother's Name*</label>
      <div class="input-group mb-3">
-       <input type="text" class="form-control" placeholder="Mother's name- <?php echo  $value1->mother_name ?>" name="mother_name" autocomplete="off" required>
        <div class="input-group-append">
          <div class="input-group-text">
            <span class="fas fa-user"></span>
          </div>
        </div>
+       <input type="text" class="form-control" placeholder="Mother's name- <?php echo  $value1->mother_name ?>" name="mother_name" readonly>
+
      </div>
      <label for="exampleInputEmail1">Spouse Name</label>
      <div class="input-group mb-3">
-       <input type="text" class="form-control" placeholder="Spouse's name - <?php echo  $value1->spouse_name ?>" name="spouse_name" autocomplete="off" >
        <div class="input-group-append">
          <div class="input-group-text">
            <span class="fas fa-user"></span>
          </div>
        </div>
+       <input type="text" class="form-control" placeholder="Spouse's name - <?php echo  $value1->spouse_name ?>" name="spouse_name" areadonly>>
+
      </div>
      <label for="exampleInputEmail1">Email*</label>
      <div class="input-group mb-3">
-       <input type="email" class="form-control" placeholder="Email - <?php echo  $value1->email ?>" name="email" autocomplete="off" required>
        <div class="input-group-append">
          <div class="input-group-text">
            <span class="fas fa-envelope"></span>
          </div>
        </div>
+       <input type="email" class="form-control" placeholder="Email - <?php echo  $value1->email ?>" name="email" readonly>
+
      </div>
      <label for="exampleInputEmail1">Mobile No*</label>
      <div class="input-group mb-3">
-       <input type="number" class="form-control" placeholder="Mobile No.- <?php echo  $value1->mobile ?>" name="mobile" autocomplete="off" required>
        <div class="input-group-append">
          <div class="input-group-text">
            <span class="fas fa-phone"></span>
          </div>
        </div>
+       <input type="number" class="form-control" placeholder="Mobile No.- <?php echo  $value1->mobile ?>" name="mobile" readonly>
+
      </div>
      <label for="exampleInputEmail1">Aletrnate Mobile No</label>
      <div class="input-group mb-3">
-       <input type="number" class="form-control" placeholder="Alternate Mobile No.- <?php echo  $value1->alternate_mobile ?>" name="alternate_mobile" autocomplete="off" >
        <div class="input-group-append">
          <div class="input-group-text">
            <span class="fas fa-phone"></span>
          </div>
        </div>
+       <input type="number" class="form-control" placeholder="Alternate Mobile No.- <?php echo  $value1->alternate_mobile ?>" name="alternate_mobile" readonly>
+
      </div>
      <label for="exampleInputEmail1">Correspondance Address</label>
      <div class="input-group mb-3">
-       <input type="text" class="form-control" placeholder="Correspondance Address- <?php echo  $value1->cor_address ?>" name="cor_address" autocomplete="off" >
        <div class="input-group-append">
          <div class="input-group-text">
            <span class="fas fa-map"></span>
          </div>
        </div>
+       <input type="text" class="form-control" placeholder="Correspondance Address- <?php echo  $value1->cor_address ?>" name="cor_address" readonly>
+
      </div>
      <label for="exampleInputEmail1">Address 1*</label>
 
      <div class="input-group mb-3">
-       <input type="text" class="form-control" placeholder="Address 1- <?php echo  $value1->address1 ?>" name="address1" autocomplete="off" required>
+       <input type="text" class="form-control" placeholder="Address 1- <?php echo  $value1->address1 ?>" name="address1" readonly>
        <div class="input-group-append">
          <div class="input-group-text">
            <span class="fas fa-map"></span>
@@ -209,7 +217,7 @@ function giplCurl($api,$postdata){
      <label for="exampleInputEmail1">Address 2*</label>
 
      <div class="input-group mb-3">
-       <input type="text" class="form-control" placeholder="Address 2- <?php echo  $value1->address2 ?>" name="address2" autocomplete="off" required>
+       <input type="text" class="form-control" placeholder="Address 2- <?php echo  $value1->address2 ?>" name="address2" readonly>
        <div class="input-group-append">
          <div class="input-group-text">
            <span class="fas fa-map"></span>
@@ -219,56 +227,61 @@ function giplCurl($api,$postdata){
      <label for="exampleInputEmail1">Address 3</label>
 
      <div class="input-group mb-3">
-       <input type="text" class="form-control" placeholder="Address 3- <?php echo  $value1->address3 ?>" name="address3" autocomplete="off" >
        <div class="input-group-append">
          <div class="input-group-text">
            <span class="fas fa-envelope"></span>
          </div>
        </div>
+       <input type="text" class="form-control" placeholder="Address 3- <?php echo  $value1->address3 ?>" name="address3" readonly>
+
      </div>
      <label for="exampleInputEmail1">District*</label>
      <div class="input-group mb-3">
-       <input type="text" class="form-control" placeholder="District- <?php echo  $value1->district ?>" name="district" autocomplete="off" required>
        <div class="input-group-append">
          <div class="input-group-text">
            <span class="fas fa-map"></span>
          </div>
        </div>
+       <input type="text" class="form-control" placeholder="District- <?php echo  $value1->district ?>" name="district" readonly>
+
      </div>
      <label for="exampleInputEmail1">State*</label>
 
      <div class="input-group mb-3">
-       <input type="text" class="form-control" placeholder="State- <?php echo  $value1->state ?>" name="state" autocomplete="off" required>
        <div class="input-group-append">
          <div class="input-group-text">
            <span class="fas fa-map"></span>
          </div>
        </div>
+       <input type="text" class="form-control" placeholder="State- <?php echo  $value1->state ?>" name="state" readonly>
+
      </div> 
      <label for="exampleInputEmail1">Pincode*</label>
 
      <div class="input-group mb-3">
-       <input type="text" class="form-control" placeholder="PinCode- <?php echo  $value1->pincode ?>" name="pincode" autocomplete="off" required>
        <div class="input-group-append">
          <div class="input-group-text">
            <span class="fas fa-map"></span>
          </div>
        </div>
+       <input type="text" class="form-control" placeholder="PinCode- <?php echo  $value1->pincode ?>" name="pincode" readonly>
+
      </div> 
      <label for="exampleInputEmail1">Religion*</label>
 
      <div class="input-group mb-3">
-       <input type="text" class="form-control" placeholder="Religion- <?php echo  $value1->relegion ?>" name="relegion" autocomplete="off" required>
        <div class="input-group-append">
          <div class="input-group-text">
            <span class="fas fa-user"></span>
          </div>
        </div>
+       <input type="text" class="form-control" placeholder="Religion- <?php echo  $value1->relegion ?>" name="relegion" readonly>
+
      </div>
      <label for="exampleInputEmail1">Nationality*</label>
 
      <div class="input-group mb-3">
-       <input type="text" class="form-control" placeholder="Nationality- <?php echo  $value1->nationality ?>" name="nationality" autocomplete="off" required>
+       <input type="text" class="form-control" placeholder="Nationality- <?php echo  $value1->nationality ?>" name="nationality" readonly>
        <div class="input-group-append">
          <div class="input-group-text">
            <span class="fas fa-map"></span>
@@ -277,7 +290,7 @@ function giplCurl($api,$postdata){
      </div>  
      <label for="exampleInputEmail1">Category*</label>
      <div class="input-group mb-3">
-       <input type="text" class="form-control" placeholder="Category- <?php echo  $value1->category ?>" name="category" autocomplete="off" required>
+       <input type="text" class="form-control" placeholder="Category- <?php echo  $value1->category ?>" name="category" readonly>
        <div class="input-group-append">
          <div class="input-group-text">
            <span class="fas fa-user"></span>
@@ -290,7 +303,7 @@ function giplCurl($api,$postdata){
    <hr>
    <label for="exampleInputEmail1">Highest Qualification*</label>
      <div class="input-group mb-3">
-       <input type="text" class="form-control" placeholder="Category- <?php echo  $value1->h_qualification ?>" name="h_qualification" autocomplete="off" required>
+       <input type="text" class="form-control" placeholder="Category- <?php echo  $value1->h_qualification ?>" name="h_qualification" readonly>
        <div class="input-group-append">
          <div class="input-group-text">
            <span class="fas fa-user"></span>
@@ -300,7 +313,7 @@ function giplCurl($api,$postdata){
 
      <label for="exampleInputEmail1">Subject/Stream/Degree*</label>
      <div class="input-group mb-3">
-<input type="text" class="form-control" placeholder="Subject/Stream/Degree<?php echo  $value1->subject ?>" name="subject" autocomplete="off" required>
+<input type="text" class="form-control" placeholder="Subject/Stream/Degree<?php echo  $value1->subject ?>" name="subject" readonly>
 <div class="input-group-append">
  <div class="input-group-text">
    <span class="fas fa-user"></span>
@@ -309,7 +322,7 @@ function giplCurl($api,$postdata){
 </div>
 <label for="exampleInputEmail1">Passing Date*</label>
      <div class="input-group mb-3">
-<input type="date" class="form-control" placeholder="Passing Date<?php echo  $value1->passing_date ?>" name="passing_date" autocomplete="off" required>
+<input type="date" class="form-control" placeholder="Passing Date<?php echo  $value1->passing_date ?>" name="passing_date" readonly>
 <div class="input-group-append">
  <div class="input-group-text">
    <span class="fas fa-user"></span>
@@ -318,7 +331,7 @@ function giplCurl($api,$postdata){
 </div>
 <label for="exampleInputEmail1">Marks Obtained(%)*</label>
      <div class="input-group mb-3">
-<input type="number" class="form-control" placeholder="Marks Obtained(%)-<?php echo  $value1->h_percentage ?>" name="h_percentage" autocomplete="off" required>
+<input type="number" class="form-control" placeholder="Marks Obtained(%)-<?php echo  $value1->h_percentage ?>" name="h_percentage" readonly>
 <div class="input-group-append">
  <div class="input-group-text">
    <span class="fas fa-number"></span>
@@ -327,7 +340,7 @@ function giplCurl($api,$postdata){
 </div> 
 <label for="exampleInputEmail1">Grade*</label>
 <div class="input-group mb-3">
-<input type="number" class="form-control" placeholder="Grade- <?php echo  $value1->grade ?>" name="grade" autocomplete="off" required>
+<input type="number" class="form-control" placeholder="Grade- <?php echo  $value1->grade ?>" name="grade" readonly>
 <div class="input-group-append">
  <div class="input-group-text">
    <span class="fas fa-number"></span>
@@ -336,7 +349,7 @@ function giplCurl($api,$postdata){
 </div> 
      <label for="exampleInputEmail1">Language*</label>
      <div class="input-group mb-3">
-<input type="number" class="form-control" placeholder="Language- <?php echo  $value1->language ?>" name="language" autocomplete="off" required>
+<input type="number" class="form-control" placeholder="Language- <?php echo  $value1->language ?>" name="language" readonly>
 <div class="input-group-append">
  <div class="input-group-text">
    <span class="fas fa-number"></span>
@@ -346,7 +359,7 @@ function giplCurl($api,$postdata){
 
      <label for="exampleInputEmail1">Able to Read*</label>
      <div class="input-group mb-3">
-<input type="number" class="form-control" placeholder="Read- <?php echo  $value1->read ?>" name="read" autocomplete="off" required>
+<input type="number" class="form-control" placeholder="Read- <?php echo  $value1->is_read ?>" name="read" readonly>
 <div class="input-group-append">
  <div class="input-group-text">
    <span class="fas fa-number"></span>
@@ -356,7 +369,7 @@ function giplCurl($api,$postdata){
 
      <label for="exampleInputEmail1">Able to Write*</label>
      <div class="input-group mb-3">
-<input type="number" class="form-control" placeholder="Write- <?php echo  $value1->write ?>" name="write" autocomplete="off" required>
+<input type="number" class="form-control" placeholder="Write- <?php echo  $value1->is_write ?>" name="write" readonly>
 <div class="input-group-append">
  <div class="input-group-text">
    <span class="fas fa-number"></span>

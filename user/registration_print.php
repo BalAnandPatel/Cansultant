@@ -85,9 +85,9 @@ function giplCurl($api,$postdata){
                      <tr> <td><small>Grade: <small></td><td> <small> <?php echo ucfirst($value1->grade);?><br></small></td></tr>
                      <tr> <td><small>Passing Date: <small></td><td> <small> <?php echo ucfirst($value1->passing_date);?><br></small></td></tr>
                      <tr> <td><small>Language: <small></td><td> <small> <?php echo ucfirst($value1->language);?><br></small></td></tr>
-                     <tr> <td><small>Are you able to read?: <small></td><td> <small> <?php echo ucfirst($value1->read);?><br></small></td></tr>
-                     <tr> <td><small>Are you able to write?: <small></td><td> <small> <?php echo ucfirst($value1->write);?><br></small></td></tr>
-                     <tr> <td><small>Are you able to speak?: <small></td><td> <small> <?php echo ucfirst($value1->speak);?><br></small></td></tr>
+                     <tr> <td><small>Are you able to read?: <small></td><td> <small> <?php echo ucfirst($value1->is_read);?><br></small></td></tr>
+                     <tr> <td><small>Are you able to write?: <small></td><td> <small> <?php echo ucfirst($value1->is_write);?><br></small></td></tr>
+                     <tr> <td><small>Are you able to speak?: <small></td><td> <small> <?php echo ucfirst($value1->is_speak);?><br></small></td></tr>
                      <tr> <td><small>Disability Category: <small></td><td> <small> <?php echo ucfirst($value1->disability_cat);?><br></small></td></tr>
                      <tr> <td><small>Type of Disability: <small></td><td> <small> <?php echo ucfirst($value1->disability_type);?><br></small></td></tr>
                      <tr> <td><small>Are you Ex-Serviceman?: <small></td><td> <small> <?php echo ucfirst($value1->ex_serviceman);?><br></small></td></tr>

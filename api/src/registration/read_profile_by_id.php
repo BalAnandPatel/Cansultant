@@ -20,7 +20,7 @@ $db = $database->getConnection();
 $reg = new registration($db);
   
 $data = json_decode(file_get_contents("php://input"));
-// read products will be here
+// is_read products will be here
 $reg->id=$data->id;
 
 // query products
@@ -70,16 +70,17 @@ if($num>0){
     "passing_date "=>$passing_date,
     "h_percentage "=>$h_percentage,
     "grade "=>$grade,
-    "language "=>$language,
-    "read "=>$read,
-    "write "=>$write,
+    "languages "=>$languages,
+    "is_read "=>$is_read,
+    "is_write "=>$is_write,
+    "is_speak "=>$is_speak,
     "zone "=>$zone,
     "post "=>$post,
     "postcode "=>$postcode,
     "disability_cat"=>$disability_cat,
     "disability_type "=>$disability_type,
     "ex_serviceman "=>$ex_serviceman,
-    "disabled_ex_serviceman "=>$disabled_ex_serviceman,
+    "exam_name "=>$exam_name,
     "serving_defence_per "=>$serving_defence_per,
     "service_period "=>$service_period,
     "created_by "=>$created_by,

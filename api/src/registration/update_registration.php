@@ -65,15 +65,16 @@ if(
     $reg->passing_date = $data->passing_date;
     $reg->h_percentage = $data->h_percentage;
     $reg->grade = $data->grade;
-    $reg->language = $data->language;
-    $reg->read = $data->read;
-    $reg->write = $data->write;
-    $reg->speak=$data->speak;
+    $reg->languages = $data->languages;
+    $reg->is_read = $data->is_read;
+    $reg->is_write = $data->is_write;
+    $reg->is_speak=$data->is_speak;
     $reg->disability_cat = $data->disability_cat;
     $reg->disability_type = $data->disability_type;
     $reg->ex_serviceman = $data->ex_serviceman;
     $reg->serving_defence_per = $data->serving_defence_per;
     $reg->service_period = $data->service_period;
+    $reg->exam_name=$data->exam_name;
 
     if($reg->update_registration()){
   

@@ -1,6 +1,6 @@
 <?php
 include '../../constant.php';
-
+// var_dump($_POST);
 if(isset($_POST["full_name"])){
 $full_name=strtoupper($_POST["full_name"]);
 $father_name=$_POST["father_name"];
@@ -27,18 +27,15 @@ $subject=strtoupper($_POST["subject"]);
 $passing_date=$_POST["passing_date"];
 $h_percentage=$_POST["h_percentage"];
 $grade=$_POST["grade"];
-$language=strtoupper($_POST["language"]);
-$read=$_POST["read"];
-$write=$_POST["write"];
-$speak=$_POST["speak"];
-// $zone=$_POST["zone"];
-// $post=$_POST["post"];
-// $postcode=$_POST["postcode"];
+$languages=strtoupper($_POST["language"]);
+$is_read=$_POST["read"];
+$is_write=$_POST["write"];
+$is_speak=$_POST["speak"];
 $disability_cat=$_POST["disability_cat"]? $disability_cat : "NO";
-$disability_type=$_POST["disability_type"]? $disability_type : "NO";
-$ex_serviceman=$_POST["ex_serviceman"]? $ex_serviceman : "NO";
-// $disabled_ex_serviceman=$_POST["disabled_ex_serviceman"];
-$serving_defence_per=$_POST["serving_defence_per"]? $serving_defence_per : "NO";
+$disability_type=($_POST["disability_type"]!="")? $disability_type : "NO";
+$ex_serviceman=$_POST["ex_serviceman"];
+$serving_defence_per=$_POST["serving_defence_per"];
+$exam_name=$_POST["exam_name"];
 $service_period=$_POST["service_period"]? $service_period : "0";
 $created_on=date("Y-m-d H:i:s");
 $created_by="USER";
@@ -48,43 +45,61 @@ $password= date("dmY", strtotime($dob));
 $url = $URL . "registration/insert_registration.php";
 $url_read_maxId="registration/read_reg_maxId.php";
 
-
 $data = array(
-  "full_name" => $full_name,  "father_name" => $father_name,  "mother_name" => $mother_name, 
-  "status"=>"0","admit_card"=>"0","result"=>"0","password"=>$password, "spouse_name" => $spouse_name, 
-  "marital_status"=>$marital_status, "dob" => $dob,  "gender" => $gender, "email" => $email, "mobile" => $mobile, 
-  "alternate_mobile" => $alternate_mobile,   "address1" => $address1,  "address2" => $address2, 
+
+  "full_name" => $full_name,
+  "father_name" => $father_name,
+  "mother_name"=>$mother_name,
+  "status"=>"0",
+  "admit_card"=>"0",
+  "result"=>"0",
+  "password"=>$password,
+   "spouse_name" => $spouse_name, 
+  "marital_status"=>$marital_status, 
+  "dob" => $dob, 
+   "gender" => $gender,
+    "email" => $email,
+     "mobile" => $mobile, 
+  "alternate_mobile" => $alternate_mobile, 
+    "address1" => $address1, 
+     "address2" => $address2, 
    "address3" => $address3,
-   "cor_address"=>$cor_address, "district" => $district,  "state" => $state,  
+   "cor_address"=>$cor_address,
+    "district" => $district,
+      "state" => $state,  
      "pincode" => $pincode,
-    "religion" => $religion,  "category" => $category,"nationality"=>$nationality, 
-      "h_qualification" => $h_qualification, "subject" => $subject, 
+    "religion" => $religion, 
+     "category" => $category,
+     "nationality"=>$nationality, 
+      "h_qualification" => $h_qualification,
+       "subject" => $subject, 
       "passing_date" => $passing_date, 
-      "h_percentage" => $h_percentage, "grade" => $grade, "language" => $language, 
-      "read" => $read, "write" => $write,
-      "speak"=>$speak,
-      //  "zone" => $zone, "post" => $post, "postcode" => $postcode,  
+      "h_percentage" => $h_percentage,
+       "grade" => $grade, 
+       "languages" => $languages, 
+      "is_read" => $is_read,
+       "is_write" => $is_write,
+      "is_speak"=>$is_speak,
        "disability_cat" => $disability_cat, 
         "disability_type" => $disability_type,
          "ex_serviceman" => $ex_serviceman,  
-        //  "disabled_ex_serviceman" => $disabled_ex_serviceman,
+         "exam_name" => $exam_name,
          "serving_defence_per" => $serving_defence_per,
             "service_period" => $service_period, 
             "created_on" => $created_on, 
             "registration_no"=>$registration_no, 
-             "created_by" => $created_by);
+           "created_by" => $created_by);
 
-     print_r($data);
+    //  print_r($data);
      $postdata = json_encode($data);
 
 $result_registration=url_encode_Decode($url,$postdata);
-print_r($result_registration);
+ print_r($result_registration);
 if($result_registration->message=="Successfull"){
-
     $data_maxId=array();
-
     $result_max_registration=url_encode_Decode($url_read_maxId,$maxId_postdata);
     $id=$result_max_registration->records[0]->id;
+    header('Location:../registration_view.php?id='.$id);
 }
 
 }

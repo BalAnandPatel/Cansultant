@@ -19,7 +19,7 @@ $reg = new registration($db);
   
 // get posted data
 $data = json_decode(file_get_contents("php://input"));
-print_r($data);  
+// print_r($data);  
 // make sure data is not empty
 if(
     
@@ -65,41 +65,27 @@ if(
     $reg->passing_date = $data->passing_date;
     $reg->h_percentage = $data->h_percentage;
     $reg->grade = $data->grade;
-    $reg->language = $data->language;
-    $reg->read = $data->read;
-    $reg->write = $data->write;
-    $reg->speak=$data->speak;
-    // $reg->zone = $data->zone;
-    // $reg->post = $data->post;
-    // $reg->postcode = $data->postcode;
+    $reg->languages = $data->languages;
+    $reg->is_read = $data->is_read;
+    $reg->is_write = $data->is_write;
+    $reg->is_speak=$data->is_speak;
     $reg->disability_cat = $data->disability_cat;
     $reg->disability_type = $data->disability_type;
     $reg->ex_serviceman = $data->ex_serviceman;
-   // $reg->disabled_ex_serviceman = $data->disabled_ex_serviceman;
     $reg->serving_defence_per = $data->serving_defence_per;
+    $reg->exam_name=$data->exam_name;
     $reg->service_period = $data->service_period;
-//   //  $reg->state_exam1==null;
-//     $reg->state_exam2="";
-//     $reg->center_exam1="";
-//     $reg->center_exam2="";
     $reg->created_by = $data->created_by;
     $reg->created_on = $data->created_on;
     $reg->registration_no = $data->registration_no;
-    // $reg->updated_by = "";
-    // $reg->updated_on = "";
     
-    var_dump($reg);
+    //var_dump($reg);
     // create the reg
     if($reg->insert_registration()){
-  
-        // set response code - 201 created
+
         http_response_code(201);
-  
-        // tell the user
         echo json_encode(array("message" => "Successfull"));
     }
-  
-    // if unable to create the reg, tell the user
     else{
   
         // set response code - 503 service unavailable
