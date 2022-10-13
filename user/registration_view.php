@@ -83,7 +83,7 @@ function giplCurl($api,$postdata){
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="registration_edit.php" method="post" enctype="multipart/form-data">
+              <form action="update_registration.php" method="post" enctype="multipart/form-data">
                 <div class="card-body">
 
                 <?php 
