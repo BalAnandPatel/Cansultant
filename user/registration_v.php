@@ -1,13 +1,14 @@
 <?php
+//This page is used by admin to view the login details of created agents.
 include '../constant.php';
 
-$url = $URL ."exam/read_exam.php";
-
-$data=array();
+$url = $URL ."registration/read_profile_by_id.php";
+$id=$_GET['id'];
+$data=array("id"=>$id);
 $postdata1 = json_encode($data);
 $results=giplCurl($url,$postdata1);
 
-//print_r($results);
+print_r($results);
 
 function giplCurl($api,$postdata){
     $url = $api; 
@@ -15,7 +16,7 @@ function giplCurl($api,$postdata){
       curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
       curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
       $response = curl_exec($client);
-     //print_r($response);
+     print_r($response);
       return $result = json_decode($response);
   }
 ?>
@@ -51,12 +52,20 @@ function giplCurl($api,$postdata){
 </div>
   <div class="card">
     <div class="card-body register-card-body">
-      <p class="login-box-msg"><a href="index.php"><b class="login-box-msg">Alreadr Register? Please Login.</b></a></p>
-      
-      <h2 class="login-box-msg"><b><u>Personal Details</u></b></h2>
-      <hr>
-      <form action="action/registration_post.php" method="post">
-      
+    <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Registration Detail- Please save it for future use</h3>
+              </div>
+              
+      <form action="registration_edit.php" method="post">
+      <div class="card-body">
+
+      <?php 
+								     
+                     foreach($results as $key => $value){
+                     foreach($value as $key1 => $value1)
+                      {
+                    ?>
           <div class="input-group mb-3">
           
             <div class="input-group-append">
@@ -64,23 +73,8 @@ function giplCurl($api,$postdata){
                 <span class="fas fa-boxes"></span>
               </div>
             </div>
-            <select class="form-control" name="exam_name">
-              <option value="select" selected>Please Select Exam</option>
-              
-                <?php
-
-                foreach ($results as $key => $value) {
-                  foreach ($value as $key1 => $value1) {
-
-                ?>
-                    <option value="<?php echo $value1->exam_name ?>">
-                    <?php echo $value1->exam_name ?></option>
-                <?php
-                  }
-                ?>
-              <?php } ?>
-
-            </select>
+            <input type="text" class="form-control" placeholder="Exam name- <?php echo  $value1->exam_name ?>" name="exam_name" readonly>
+            
          
             &nbsp;&nbsp;
                   <div class="input-group-append">
@@ -88,7 +82,7 @@ function giplCurl($api,$postdata){
                       <span class="fas fa-user"></span>
                     </div>
                   </div>
-                  <input type="text" class="form-control" placeholder="Full name" name="full_name" autocomplete="off" required>
+                  <input type="text" class="form-control" placeholder="Full name- <?php echo  $value1->full_name ?>" name="full_name" readonly readonly>
           </div>
 
           <div class="input-group mb-3">
@@ -98,19 +92,15 @@ function giplCurl($api,$postdata){
                 <span class="fas fa-user"></span>
               </div>
             </div>
-            <input type="date" class="form-control" placeholder="Date of Birth" name="dob" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Date of Birth">         
+            <input type="date" class="form-control" placeholder="Date of Birth-<?php echo date("d/m/y",$value1->dob) ?>" name="dob" readonly  data-toggle="tooltip" title="Please Enter Date of Birth" readonly>         
             &nbsp;&nbsp;
                          <div class="input-group-append">
                     <div class="input-group-text">
                       <span class="fas fa-user"></span>
                     </div>
                   </div>
-                  <select class="form-control" name="gender" >
-         <option class="form-control" value="0">Please Select Gender</option>
-             <option class="form-control" value="Male">Male</option>
-             <option class="form-control" value="Female">Female</option>
-             <option class="form-control" value="Other">Other</option>
-         </select>
+                  <input type="date" class="form-control" placeholder="Gender-<?php echo  $value1->gender ?>" name="gender" readonly  data-toggle="tooltip" title="Please Enter Date of Birth" readonly>         
+
           </div>
         <div class="input-group mb-3">
           <div class="input-group-append">
@@ -118,7 +108,7 @@ function giplCurl($api,$postdata){
               <span class="fas fa-user"></span>
             </div>
           </div>
-          <input type="text" class="form-control" placeholder="Father's name" name="father_name" autocomplete="off" required>
+          <input type="text" class="form-control" placeholder="Father's name-<?php echo $value1->father_name ?>" name="father_name" readonly>
 
           &nbsp;&nbsp;        
           <div class="input-group-append">
@@ -126,7 +116,7 @@ function giplCurl($api,$postdata){
               <span class="fas fa-user"></span>
             </div>
           </div>
-          <input type="text" class="form-control" placeholder="Mother's name" name="mother_name" autocomplete="off" required>
+          <input type="text" class="form-control" placeholder="Mother's name-<?php echo $value1->mother_name ?>" name="mother_name" readonly>
 
         </div>
 
@@ -136,18 +126,15 @@ function giplCurl($api,$postdata){
               <span class="fas fa-user"></span>
             </div>
           </div>
-         <select class="form-control" name="marital_status" >
-         <option class="form-control" value="0">Please Select Marital Status</option>
-         <option class="form-control" value="Married">Married</option>
-             <option class="form-control" value="Unmarried">Unmarried</option>
-                     </select>
+         <input type="text" class="form-control" placeholder="Mother's name-<?php echo $value1->marital_status ?>" name="marital_status" readonly>
+         
                      &nbsp;&nbsp;        
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
             </div>
           </div>
-          <input type="text" class="form-control" placeholder="Spouse's name" name="spouse_name" autocomplete="off" >
+          <input type="text" class="form-control" placeholder="Spouse's name-<?php echo $value1->spouse_name ?>" name="spouse_name" autocomplete="off" >
         </div>
         
         <div class="input-group mb-3">
@@ -156,7 +143,7 @@ function giplCurl($api,$postdata){
               <span class="fas fa-envelope"></span>
             </div>
           </div>
-          <input type="email" class="form-control" placeholder="Email" name="email" autocomplete="off" required>
+          <input type="text" class="form-control" placeholder="Spouse's name-<?php echo $value1->email ?>" name="spouse_name" autocomplete="off" >
 
           &nbsp;&nbsp;       
           <div class="input-group-append">
@@ -164,7 +151,7 @@ function giplCurl($api,$postdata){
               <span class="fas fa-phone"></span>
             </div>
           </div>
-          <input type="number" class="form-control" placeholder="Mobile No." name="mobile" autocomplete="off" required>
+          <input type="number" class="form-control" placeholder="Mobile No.-<?php echo $value1->mobile ?>" name="mobile" readonly>
 
         </div>
         <div class="input-group mb-3">
@@ -191,14 +178,14 @@ function giplCurl($api,$postdata){
               <span class="fas fa-address-book"></span>
             </div>
           </div>
-          <input type="text" class="form-control" placeholder="Address 1" name="address1" autocomplete="off" required>
+          <input type="text" class="form-control" placeholder="Address 1" name="address1" readonly>
           &nbsp;&nbsp; 
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-address-book"></span>
             </div>
           </div>
-          <input type="text" class="form-control" placeholder="Address 2" name="address2" autocomplete="off" required>
+          <input type="text" class="form-control" placeholder="Address 2" name="address2" readonly>
 
         </div>
 
@@ -216,7 +203,7 @@ function giplCurl($api,$postdata){
               <span class="fas fa-map"></span>
             </div>
           </div>
-          <input type="text" class="form-control" placeholder="District" name="district" autocomplete="off" required>
+          <input type="text" class="form-control" placeholder="District" name="district" readonly>
         </div>
 
         <div class="input-group mb-3">
@@ -225,7 +212,7 @@ function giplCurl($api,$postdata){
               <span class="fas fa-map"></span>
             </div>
           </div>
-          <input type="text" class="form-control" placeholder="State" name="state" autocomplete="off" required>
+          <input type="text" class="form-control" placeholder="State" name="state" readonly>
           &nbsp;&nbsp; 
       
           <div class="input-group-append">
@@ -233,7 +220,7 @@ function giplCurl($api,$postdata){
               <span class="fas fa-map-pin"></span>
             </div>
           </div>
-          <input type="text" class="form-control" placeholder="PinCode" name="pincode" autocomplete="off" required>
+          <input type="text" class="form-control" placeholder="PinCode" name="pincode" readonly>
         </div> 
 
         <div class="input-group mb-3">
@@ -242,7 +229,7 @@ function giplCurl($api,$postdata){
               <span class="fas fa-user"></span>
             </div>
           </div>
-          <input type="text" class="form-control" placeholder="Religion" name="religion" autocomplete="off" required>
+          <input type="text" class="form-control" placeholder="Religion" name="religion" readonly>
 
           &nbsp;&nbsp; 
           <div class="input-group-append">
@@ -250,7 +237,7 @@ function giplCurl($api,$postdata){
               <span class="fas fa-flag"></span>
             </div>
           </div>
-        <input type="text" class="form-control" placeholder="Nationality" name="nationality" autocomplete="off" required>
+        <input type="text" class="form-control" placeholder="Nationality" name="nationality" readonly>
 
         </div>  
         
@@ -277,7 +264,7 @@ function giplCurl($api,$postdata){
       <span class="fas fa-graduation-cap"></span>
     </div>
   </div>
-  <input type="text" class="form-control" placeholder="Subject/Stream/Degree" name="subject" autocomplete="off" required>
+  <input type="text" class="form-control" placeholder="Subject/Stream/Degree" name="subject" readonly>
 
 </div>
 
@@ -287,7 +274,7 @@ function giplCurl($api,$postdata){
       <span class="fas fa-user"></span>
     </div>
   </div>
-  <input type="date" class="form-control" placeholder="Passing Date" name="passing_date" autocomplete="off" required>
+  <input type="date" class="form-control" placeholder="Passing Date" name="passing_date" readonly>
 
 &nbsp;&nbsp;
   <div class="input-group-append">
@@ -295,7 +282,7 @@ function giplCurl($api,$postdata){
       <span class="fas fa-percent"></span>
     </div>
   </div>
-  <input type="text" class="form-control" placeholder="Marks Obtained(%)" name="h_percentage" autocomplete="off" required>
+  <input type="text" class="form-control" placeholder="Marks Obtained(%)" name="h_percentage" readonly>
 
 </div> 
 
@@ -415,6 +402,10 @@ function giplCurl($api,$postdata){
             <button type="submit" class="btn btn-primary btn-block">Register</button>
           </div>
           <!-- /.col -->
+        </div>
+        <?php
+                      }}
+        ?>
         </div>
       </form>
 

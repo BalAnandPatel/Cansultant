@@ -370,7 +370,7 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
 
      <label for="exampleInputEmail1">Able to Read*</label>
      <div class="input-group mb-3">
-<input type="number" class="form-control" placeholder="Read- <?php echo  $value1->read ?>" name="read" autocomplete="off" required>
+<input type="number" class="form-control" placeholder="Read- <?php echo  $value1->is_read ?>" name="read" autocomplete="off" required>
 <div class="input-group-append">
  <div class="input-group-text">
    <span class="fas fa-number"></span>
@@ -380,7 +380,7 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
 
      <label for="exampleInputEmail1">Able to Write*</label>
      <div class="input-group mb-3">
-<input type="number" class="form-control" placeholder="Write- <?php echo  $value1->write ?>" name="write" autocomplete="off" required>
+<input type="number" class="form-control" placeholder="Write- <?php echo  $value1->is_write ?>" name="write" autocomplete="off" required>
 <div class="input-group-append">
  <div class="input-group-text">
    <span class="fas fa-number"></span>

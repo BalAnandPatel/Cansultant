@@ -23,7 +23,7 @@ function giplCurl($api,$postdata){
 <html>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SP News</title>
+  <title>Registration</title>
   <!---link to style sheet----->
   <link rel="stylesheet" href="../common/css/style.css">
   <!-- Google Font: Source Sans Pro -->
@@ -62,7 +62,7 @@ function giplCurl($api,$postdata){
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Member Login Detail</h1>
+            <h1 class="m-0">Registration Detail</h1>
           </div><!-- /.col -->
           <!-- /.col -->
         </div><!-- /.row -->
@@ -92,7 +92,6 @@ function giplCurl($api,$postdata){
                      foreach($value as $key1 => $value1)
                       {
                     ?>
-          <form action="action/registration_post.php" method="post">
           <div class="input-group mb-3">
         <div class="input-group-append">
             <div class="input-group-text">
@@ -128,7 +127,7 @@ function giplCurl($api,$postdata){
      <div class="input-group mb-3">
        <div class="input-group-append">
          <div class="input-group-text">
-           <span class="fas fa-calendar"></span>
+           <span class="fas fa-user"></span>
          </div>
        </div>
        <input type="text" class="form-control" placeholder="Gender - <?php echo  $value1->gender ?>" name="gender" readonly>
@@ -468,6 +467,7 @@ function giplCurl($api,$postdata){
 <?php }
                      }
 ?>
+                </div>
                 <div class="card-footer">
                   <button type="submit" name="submit" class="btn btn-primary">BACK TO REGISTRATION</button>
                 </div>
