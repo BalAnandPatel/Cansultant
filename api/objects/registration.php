@@ -160,7 +160,7 @@ class registration{
           
     }
     function read_reg_maxId(){
-        $query="Select max(id) as id from " . $this->table_name .  "";
+        $query="Select max(id) as id from " . $this->table_name ."";
         $stmt = $this->conn->prepare($query); 
         $stmt->execute();
         return $stmt;
