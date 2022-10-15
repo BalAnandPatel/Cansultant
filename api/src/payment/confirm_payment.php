@@ -10,51 +10,53 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 
 // include database and object files
 include_once '../../config/database.php';
-include_once '../../objects/exam.php';
+include_once '../../objects/payment.php';
   
 // instantiate database and product object
 $database = new Database();
 $db = $database->getConnection();
   
 // initialize object
-$exam = new exam($db);
+$payment = new payment($db);
   
 $data = json_decode(file_get_contents("php://input"));
- $exam->exam_name=$data->exam_name;
-$stmt = $exam->read_exam_details();
+$payment->user_id=$data->user_id;
+$payment->amount=$data->amount;
+$payment->transaction_id=$data->transaction_id;
+
+$stmt = $payment->read_payment_details();
 $num = $stmt->rowCount();
   
 // check if more than 0 record found
 if($num>0){
   
     // products array
-    $exams_arr=array();
-    $exams_arr["records"]=array();
+    $payments_arr=array();
+    $payments_arr["records"]=array();
 
 
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
      
         extract($row);
   
-        $exam_item=array(
+        $payment_item=array(
 
-            "id" => $id,
-       "exam_name"=>$exam_name,
+            "pid" => $pid,
+       "user_id"=>$user_id,
        "amount"=>$amount,
-    "type"=>$type,
-    "result_date "=>$result_date,
-    "exam_date "=>$exam_date,
-    "admit_card_date"=>$admit_card_date,
+    "transaction_id"=>$transaction_id,
+    "request_id "=>$request_id,
+    
     "status"=>$status,
     "created_by "=>$created_by,
     "created_on "=>$created_on, 
         );
   
-        array_push($exams_arr["records"], $exam_item);
+        array_push($payments_arr["records"], $payment_item);
     }
   
     // show products data in json format
-    echo json_encode($exams_arr);
+    echo json_encode($payments_arr);
 
      // set response code - 200 OK
      http_response_code(200);

@@ -192,7 +192,7 @@ class registration{
     function update_registration(){
   
         // query to insert record
-        $query = "UPDATE 
+    echo    $query = "UPDATE 
                     " . $this->table_name . "
                 SET
                          full_name=:full_name,
@@ -211,7 +211,7 @@ class registration{
                           email=:email, 
                           address1=:address1,
                           address2=:address2,
-                           address13=:address3,
+                           address3=:address3,
                          cor_address=:cor_address ,
                          district=:district,
                          state=:state,
@@ -233,7 +233,7 @@ class registration{
                           ex_serviceman=:ex_serviceman,
                           serving_defence_per=:serving_defence_per, 
                            service_period=:service_period
-                          WHERE id=:id
+                              WHERE id=:id
                           "; 
                           
         // prepare query

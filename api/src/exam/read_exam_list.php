@@ -20,8 +20,8 @@ $db = $database->getConnection();
 $exam = new exam($db);
   
 $data = json_decode(file_get_contents("php://input"));
- $exam->exam_name=$data->exam_name;
-$stmt = $exam->read_exam_details();
+
+$stmt = $exam->read_exam_list();
 $num = $stmt->rowCount();
   
 // check if more than 0 record found
