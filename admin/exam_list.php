@@ -1,5 +1,5 @@
 <?php
-include "../Cansultant/user/include/header.php";
+include "../admin/include/header.php";
 
 	$url = $URL."exam/read_exam_list.php";
 	$data = array( );
@@ -11,7 +11,7 @@ include "../Cansultant/user/include/header.php";
 	//curl_setopt($client, CURLOPT_POST, 5);
 	curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
 	$response = curl_exec($client);
- //print_r($response);
+ print_r($response);
   $result = json_decode($response);
 // print_r($result)
   ?>
@@ -84,9 +84,9 @@ include "../Cansultant/user/include/header.php";
                     <td><?php echo $value1->amount ?></td>
                     <td><?php if($value1->status==0) echo "PENDING"; elseif($value1->status==1) echo "ACTIVE"; elseif($value1->status==2) echo "DISABLEDA"; ?></td>
                     <td><?php echo $value1->admit_card_date ?></td>
-                    <td><?php echo $value1->exam_date ?></td>
+                    <td><?php echo date("m-d-Y", strtotime($value1->exam_date)) ?></td>
                     
-                    <td><?php echo $value1->result_date ?></td>
+                    <td><?php echo date("m-d-Y", strtotime($value1->result_date)) ?></td>
                     <td><?php echo $value1->created_on ?></td>
                    
                     

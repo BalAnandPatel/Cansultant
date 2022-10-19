@@ -2,20 +2,20 @@
 //This page is used by admin to view the login details of created agents.
 include '../constant.php';
 
-echo  $exam_name=$_POST["exam_name"];
-echo $registration_no=$_POST["registration_no"];
+ $exam_name=$_POST["exam_name"];
+ $registration_no=$_POST["registration_no"];
 $full_name=$_POST["full_name"];
 $id=$_POST["id"];
 
 $img="img/".$id."/profile"."/".$id.".png";
 $img_thumb="img/".$id."/profile"."/".$id."_thumb".".png";
 
-echo $url = $URL ."exam/read_exam_details.php";
+ $url = $URL ."exam/read_exam_details.php";
 
 $data=array("exam_name"=>$exam_name);
 $postdata1 = json_encode($data);
 $results=giplCurl($url,$postdata1);
-print_r($results);
+//print_r($results);
 
 
 function giplCurl($api,$postdata){
@@ -24,7 +24,7 @@ function giplCurl($api,$postdata){
       curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
       curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
       $response = curl_exec($client);
-      print_r($response);
+      //print_r($response);
       return  json_decode($response);
   }
 

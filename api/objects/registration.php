@@ -180,7 +180,8 @@ class registration{
 
     function login(){
         $query="Select 
-        id,password,  email  from " .$this->table_name .  " where email=:email and password=:password";
+        id,password,  email,full_name,created_on,updated_on,exam_name  from " .$this->table_name .  " 
+        where email=:email and password=:password";
         $stmt = $this->conn->prepare($query); 
         $stmt->bindParam(":email", $this->email);
         $stmt->bindParam(":password", $this->password);
@@ -192,7 +193,7 @@ class registration{
     function update_registration(){
   
         // query to insert record
-    echo    $query = "UPDATE 
+        $query = "UPDATE 
                     " . $this->table_name . "
                 SET
                          full_name=:full_name,

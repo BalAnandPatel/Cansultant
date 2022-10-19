@@ -622,7 +622,7 @@ function giplCurl($api,$postdata){
               }?>
              </form>
 
-             <div class="col-sm-4">
+             <!-- <div class="col-sm-4">
  <form action="registration_view.php" method="post" enctype="multipart/form-data">
           <input type="hidden" name="id" value="<?php echo $value1->id ?>" >
             
@@ -631,7 +631,7 @@ function giplCurl($api,$postdata){
             <button type="submit" class="btn btn-warning btn-block">GO BACK</button>
         
  </form> 
-          </div>
+          </div> -->
 
     <!-- /.form-box -->
   </div><!-- /.card -->

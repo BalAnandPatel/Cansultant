@@ -1,72 +1,69 @@
 <?php
-// required headers
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
-  
-// database connection will be here
-
-// include database and object files
 include_once '../../config/database.php';
 include_once '../../objects/registration.php';
-  
-// instantiate database and product object
+require '../../../common/php-jwt/src/JWT.php';
+require '../../../common/php-jwt/src/ExpiredException.php';
+require '../../../common/php-jwt/src/SignatureInvalidException.php';
+require '../../../common/php-jwt/src/BeforeValidException.php';
+require '../../../constant.php';
+use \Firebase\JWT\JWT;
+
+ $issuedat_claim = time(); // issued at
+ $notbefore_claim = $issuedat_claim ; //not before in seconds
+ $expire_claim = $issuedat_claim + 30; // expire time in seconds
+
+$data = json_decode(file_get_contents("php://input"));
+//var_dump($data);
 $database = new Database();
 $db = $database->getConnection();
-  
-// initialize object
-$reg = new registration($db);
-  
-$data = json_decode(file_get_contents("php://input"));
-// read products will be here
+$login = new registration($db);
+$login->email = $data->email;
+$login->password = $data->password;
+//$login->updated_on=date('Y-m-d H:i:s');
 
-$reg->email=$data->email;
-$reg->password=$data->password;
-// query products
-$stmt = $reg->login();
+$stmt = $login->login();
 $num = $stmt->rowCount();
-  
-// check if more than 0 record found
-if($num>0){
-  
-    // products array
-    $regs_arr=array();
-    $regs_arr["records"]=array();
-
-
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-     
+if($num>0){       
+        
+if ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+       // var_dump($row);
         extract($row);
-  
-        $reg_item=array(
-
-            "id" => $id,
-            "email"=>$email,
-            "password"=>$password,
-           
-        );
-  
-        array_push($regs_arr["records"], $reg_item);
-    }
-  
-    // show products data in json format
-    echo json_encode($regs_arr);
-
-     // set response code - 200 OK
-     http_response_code(200);
+	$token = array(
+            "iss" => $ISSUER_CLAIM,
+            "aud" => $AUDIENCE_CLAIM,
+            "iat" => $issuedat_claim,
+            "nbf" => $notbefore_claim,
+            "exp" => $expire_claim,
+            "data" => array(
+                "message" => $LOGIN_SUCCESS_MSG,
+                "email" => $email,
+                "full_name" =>$full_name,
+                "password" =>$password,
+                "id"=>$id,
+                "created_on"=>$created_on,
+                "updated_on"=>$updated_on,
+                "exam_name"=>$exam_name,
+        ));
+	//var_dump($token);
+   $jwt = JWT::encode($token, $SECRET_KEY);     
+   
+        echo json_encode(
+            array(
+                "access_token" => $jwt
+            ));
+        }
+        http_response_code(200);
 }
-  
-// no products found will be here
+
 else{
-  
-    // set response code - 404 Not found
-    http_response_code(404);
-  
-    // tell the user no products found
-    echo json_encode(
-        array("message" => "No user found.")
-    );
+
+        http_response_code(401);
+        echo json_encode(array("message" => $LOGIN_FAILED_MSG));
 }
+
 ?>

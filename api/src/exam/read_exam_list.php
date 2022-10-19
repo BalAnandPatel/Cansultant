@@ -42,6 +42,7 @@ if($num>0){
        "exam_name"=>$exam_name,
        "amount"=>$amount,
     "type"=>$type,
+    "total_mark"=>$total_mark,
     "result_date "=>$result_date,
     "exam_date "=>$exam_date,
     "admit_card_date"=>$admit_card_date,

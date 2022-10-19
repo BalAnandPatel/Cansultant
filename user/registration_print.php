@@ -9,7 +9,7 @@ $id=$_GET['id'];
 $data=array("id"=>$id);
 $postdata1 = json_encode($data);
 $result=giplCurl($url,$postdata1);
-print_r($result);
+// print_r($result);
 
 $img="img/".$id."/profile"."/".$id.".png";
 $img_thumb="img/".$id."/profile"."/".$id."_thumb".".png";
@@ -42,11 +42,6 @@ if(($result_payment->records[0]->status==1) && ($result_payment->records[0]->amo
 else{
    $amount=0.00;
 }
-
-
-
-
-
 
 ?>
 
@@ -231,7 +226,7 @@ else{
                         <td>
                            <span class="text-inverse">Father Name</span><br>
                           </td>
-                        <td class="text-right"><i class="fa fa-credit-card"> </i>
+                        <td class="text-right"><i class="fa fa"> </i>
                          <?php echo strtoupper($value1->father_name)?></td>
                    </tr>
                    <tr>
@@ -242,8 +237,8 @@ else{
                         <td>
                            <span class="text-inverse">Mother Name</span><br>
                           </td>
-                        <td class="text-right"><i class="fa fa-user text-muted" style="font-size:12px;"></i>
-                        <?php echo $value1->mother_name; ?></td>
+                        <td class="text-right"><i class="fa fa text-muted" style="font-size:12px;"></i>
+                        <?php echo strtoupper($value1->mother_name); ?></td>
                    </tr>
 
                    <tr>
@@ -321,7 +316,7 @@ else{
                           <td>
                              <span class="text-inverse">District</span><br>
                             </td>
-                          <td class="text-right"><i class="fa fa-map-pin text-muted" style="font-size:12px;"></i>
+                          <td class="text-right"><i class="fa fa text-muted" style="font-size:12px;"></i>
                           <?php echo $value1->district; ?></td>
                      </tr>                   <tr>
                      

@@ -10,9 +10,9 @@ include '../../common/php-jwt/src/BeforeValidException.php';
 use \Firebase\JWT\JWT;
 $pwd= $_POST["password"]; 
 $email= $_POST["email"];
-$url = $URL."/registration/login.php";
+echo $url = $URL."registration/login.php";
 $data = array( "password" =>$pwd, "email" =>$email);
-//print_r($data);
+print_r($data);
 $postdata = json_encode($data);
 $client = curl_init($url);
 
@@ -35,15 +35,12 @@ if($result->data->message=="Login Successful"){
  $name=$result->data->full_name;
 
  $_SESSION["ID"]=$uid;
- $_SESSION["EMAIL"]=$email;
+ $_SESSION["EMAIL"]=$result->data->email;
  $_SESSION["NAME"]=$name;
  $_SESSION["JWT"]=$result;
-//  $_SESSION['PAYMENT_STATUS']=$result->data->rank_payment_upl;
  $_SESSION['LAST_LOGIN']=$result->data->updated_on;
  $_SESSION['MEMBBER_FROM']=$result->data->created_on;
- //print_r($_SESSION['SPONSOR_ID']);
-
- header('Location:../profile.php');
+ header('Location:../dashboard.php');
 } else
 {
  header('Location:../index.php?msg='.$result->message);
@@ -55,7 +52,7 @@ function giplCurl($api,$postdata){
     curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
     curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
     $response = curl_exec($client);
-  //  print_r($response);
+  //print_r($response);
     return $result = json_decode($response);
 }
 
