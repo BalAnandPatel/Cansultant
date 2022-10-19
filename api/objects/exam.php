@@ -7,7 +7,8 @@
         $this->conn = $db;
     }
 
-    public $id,$exam_name,$type,$total_mark,$amount, $status,$exam_date,$result_date,$admit_card_date,$created_by,$created_on;
+    public $id,$exam_name,$type,$total_mark,$amount, $status,$exam_date,$result_date,
+    $admit_card_date,$created_by,$created_on;
 
     public function read_exam(){
         $query="Select  id,exam_name,type,total_mark, amount,status,exam_date,result_date,admit_card_date,created_by,created_on
@@ -36,7 +37,7 @@
     }
 
     public function insert_exam(){
-        $query="INSERT INTO
+     echo   $query="INSERT INTO
         " . $this->table_name . "
     SET
              exam_name=:exam_name,
@@ -68,7 +69,7 @@
         $stmt->bindParam(":type", $this->type);
         $stmt->bindParam(":amount", $this->amount);
         $stmt->bindParam(":total_mark", $this->total_mark);
-        $stmt->bindParam(":marital_status", $this->exam_date);
+        $stmt->bindParam(":exam_date", $this->exam_date);
         $stmt->bindParam(":status", $this->status);
         $stmt->bindParam(":admit_card_date", $this->admit_card_date);
         $stmt->bindParam(":result_date", $this->result_date);

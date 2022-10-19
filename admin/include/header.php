@@ -111,28 +111,28 @@
                  <a href="#" class="nav-link">
                  <i class="nav-icon fas fa-user"></i>
                  <p>
-                   Member Details
+                   Registration Details
                    <i class="right fas fa-angle-left"></i>
                  </p>
                  </a>
               <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="adm_pending_member_list.php" class="nav-link">
+                <a href="pending_registration_list.php" class="nav-link">
                 <i class="fas fa-arrow-alt-circle-right"></i>
-                  <p>Pending Member Details</p>
+                  <p>Pending Registration Details</p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="adm_active_member_list.php" class="nav-link">
+                <a href="approved_registration_list.php" class="nav-link">
                 <i class="fas fa-arrow-alt-circle-right"></i>
-                  <p>Active Member Details</p>
+                  <p>Active Registration Details</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="adm_reject_member_list.php" class="nav-link">
+                <a href="rejected_registration_list.php" class="nav-link">
                 <i class="fas fa-arrow-alt-circle-right"></i>
-                  <p>Rejected Member Details</p>
+                  <p>Rejected Registration Details</p>
                 </a>
               </li>
             </ul>
@@ -142,30 +142,30 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-hand-holding-usd"></i>
               <p>
-                Donation Details
+                Exam Details
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               
               <li class="nav-item">
-                <a href="adm_pending_donation_detail.php" class="nav-link">
+                <a href="insert_exam.php" class="nav-link">
                 <i class="fas fa-arrow-alt-circle-right"></i>
-                  <p>Pending Donation</p>
+                  <p>Insert Exam</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="adm_approved_donation_detail.php" class="nav-link">
+                <a href="exam_list.php" class="nav-link">
                 <i class="fas fa-arrow-alt-circle-right"></i>
-                  <p>Approved  Donation</p>
+                  <p>Exam  List</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="adm_reject_donation.php" class="nav-link">
+              <!-- <li class="nav-item">
+                <a href="exam_list.php" class="nav-link">
                 <i class="fas fa-arrow-alt-circle-right"></i>
                   <p>Rejected Donation</p>
                 </a>
-              </li>
+              </li> -->
             </ul>
           </li>
           

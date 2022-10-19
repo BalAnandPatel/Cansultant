@@ -1,8 +1,7 @@
 <?php
-include "../admin/include/header.php";
-
-	$url = $URL."exam/read_exam_list.php";
-	$data = array( );
+include "include/header.php";
+	$url = $URL."registration/read_registration_by_status.php";
+	$data = array( "status"=>"2");
 
   //print_r($data);
 	$postdata = json_encode($data);
@@ -22,13 +21,13 @@ include "../admin/include/header.php";
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Exam List Details</h1>
+            <h1>Rejected Members Details</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Exam List Details</li>
-              <li class="breadcrumb-item active">Exam List Details</li>
+              <li class="breadcrumb-item active">Members Details</li>
+              <li class="breadcrumb-item active">Rejected Members Details</li>
             </ol>
           </div>
         </div>
@@ -38,7 +37,19 @@ include "../admin/include/header.php";
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-      
+      <?php if(isset($_SESSION['registration'])) {?>
+        <?php if(($_SESSION['registration']=="Payment Slip Rejected Successfully.")) {?> 
+    <div class="alert alert-success" id="success-alert" role="alert">
+                <?php echo $_SESSION['registration']; unset($_SESSION['registration'])?> 
+               </div>
+            <?php  }
+            else {         
+            ?>
+            <div class="alert alert-danger" id="success-alert" role="alert">
+                <?php echo $_SESSION['registration']; unset($_SESSION['registration'])?> 
+               </div>
+            <?php }} ?>
+     
         <div class="row">
           <div class="col-12">
             <div class="card">
@@ -48,7 +59,7 @@ include "../admin/include/header.php";
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">EXAM LIST DETAILS</h3> 
+                <h3 class="card-title">Rejected MEMBER DETAILS</h3> 
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -56,15 +67,19 @@ include "../admin/include/header.php";
                   <thead>
                   <tr>
                   
-                    <th>Id</th>
-                    <th>Exam_Name</th>
-                    <th>Type</th>
-                    <th>Amount</th>
+                    <th>User</th>
+                    <th>Registration No.</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Father Name</th>
+                    <th>Mother Name</th>
+                    <th>Address</th>
+                    <th>Higher Education</th>
+                    <th>Marks Obtained</th>
+                    <th>Grade</th>
                     <th>Status</th>
-                    <th>AdmitCard_Date</th>
-                    <th>Exam_Date</th>
-                    <th>Result_Date</th>
-                    <th>Created_Date</th>
+                    <th>Reg. Date</th>
+                    <th width="100px" colspan="2">Action</th>
                   </tr>
                   	
                   </thead>
@@ -78,18 +93,19 @@ include "../admin/include/header.php";
                   ?>  
                   <tr>
                     <td><?php echo $value1->id ?></td>
-                    <td><?php echo $value1->exam_name ?></td>
-                                     
-                    <td><?php echo $value1->type?></td>
-                    <td><?php echo $value1->amount ?></td>
-                    <td><?php if($value1->status==0) echo "PENDING"; elseif($value1->status==1) echo "ACTIVE"; elseif($value1->status==2) echo "DISABLEDA"; ?></td>
-                    <td><?php echo $value1->admit_card_date ?></td>
-                    <td><?php echo $value1->exam_date ?></td>
+                    <td><?php echo $value1->registration_no ?></td>
+                    <td><img height="100" widht="100" src="<?php echo $ADMIN_IMG_PATH.$value1->id."//".$value1->id."png" ?>"></td>
                     
-                    <td><?php echo $value1->result_date ?></td>
+                    <td><?php echo $value1->full_name?></td>
+                    <td><?php echo $value1->father_name ?></td>
+                    <td><?php echo $value1->Mother_name ?></td>
+                    <td><?php echo $value1->address1 ?></td>
+                    <td><?php echo $value1->h_qualification ?></td>
+                    
+                    <td><?php echo $value1->h_percentage ?></td>
+                    <td><?php echo $value1->grade ?></td>
+                    <td><?php if($value1->status==0) echo "PENDING"; elseif($value1->status==1) echo "ACTIVE"; elseif($value1->status==2) echo "REJECTED"; ?></td>
                     <td><?php echo $value1->created_on ?></td>
-                   
-                    
                     
                   </tr>
                   <?php

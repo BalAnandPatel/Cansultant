@@ -44,7 +44,7 @@ if(
     if($exam->insert_exam()){
 
         http_response_code(201);
-        echo json_encode(array("message" => "Successfull"));
+        echo json_encode(array("message"=>"Successfull"));
     }
     else{
   
