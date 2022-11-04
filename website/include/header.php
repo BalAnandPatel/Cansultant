@@ -108,7 +108,7 @@
                                                 <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                                                 <ul class="main-menu__list">
                                                     <li class="dropdown current megamenu">
-                                                        <a href="#index.php">Home </a>
+                                                        <a href="index.php">Home </a>
                                                         <ul>
                                                             <li>
                                                                 
