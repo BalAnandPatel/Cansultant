@@ -44,9 +44,8 @@
               <span class="fas fa-user"></span>
             </div>
           </div>
-        </div>
+        
         <label for="exampleInputEmail1">Date of Birth*</label>
-        <div class="input-group mb-3">
           <input type="date" class="form-control" placeholder="Date of Birth" name="dob" autocomplete="off" required>
           <div class="input-group-append">
             <div class="input-group-text">
