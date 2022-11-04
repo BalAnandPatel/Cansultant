@@ -58,10 +58,10 @@
                             </div>
                             <p class="about-three__text-1">
                             <i class="fa fa-hand-point-right" style="margin-right:5px; color:green;"></i>
-                            THE MOTIVE OF SHAILJA SAMEER EDUCATION AND GREEN REVOLUTION (OPC) PVT. LTD. ARE REFORMS THE EDUCATION, AGRICULTURE AND UNEMPLOYMENT FACTOR IN UTTAR PRADESH</p>
+                            THE MOTIVE OF SHAILJA SAMEER EDUCATION AND GREEN REVOLUTION (OPC) PVT. LTD. ARE REFORMS THE EDUCATION, AGRICULTURE AND UNEMPLOYMENT FACTOR IN UTTAR PRADESH.</p>
                             <p class="about-three__text-1">
-                            <i class="fa fa-hand-point-right" style="margin-right:5px; color:green;"></"></i>
-                            ORGANIZATION HAVE MULTI PROJECT IN MULTI SECTORAS: EDUCATION REMIDIES CENTER, AGRICULTURE REMIDIES CENTER AND SMALL SCALE/HOME INDUSTRIES PROJECTS LIKE.</p>
+                            <i class="fa fa-hand-point-right" style="margin-right:5px; color:green;"></i>
+                            <b>ORGANIZATION HAVE MULTI PROJECT IN MULTI SECTORAS:</b> EDUCATION REMIDIES CENTER, AGRICULTURE REMIDIES CENTER AND SMALL SCALE/HOME INDUSTRIES PROJECTS LIKE.</p>
                             <p class="about-three__text-1">
                             <i class="fa fa-hand-point-right" style="margin-right:5px; color:green;"></i>
                             ABOVE GIVEN CAN BE REFORMS THE LEVEL OF EDUCATION, THE LEVEL OF AGRICULTURE AND HOME INDUSTRIES/SMALL SCALE INDUSTRIES PROJECTS IT IS REFORMS MAINLY THE WOMEN'S ECONOMICLE, SOCIAL CONDITION.</p>

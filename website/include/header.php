@@ -121,11 +121,11 @@
                                                     <li class="dropdown">
                                                         <a href="services.php">Services</a>
                                                         <ul class="shadow-box">
-                                                            <li><a href="education.php">Education</a>
+                                                            <li><a href="service_education.php">Education</a>
                                                             </li>
-                                                            <li><a href="agriculture.php">Agriculture</a>
+                                                            <li><a href="service_agriculture.php">Agriculture</a>
                                                             </li>
-                                                            <li><a href="msme.php">Smart Scall Industries
+                                                            <li><a href="service_small_scale.php">Small Scale Industries
                                                                     </a></li>
                                                             </ul>
                                                     </li>

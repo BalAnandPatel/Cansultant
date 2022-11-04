@@ -1,0 +1,117 @@
+<?php
+include "include/header.php";
+?>
+
+        <div class="stricky-header stricked-menu main-menu">
+            <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
+        </div><!-- /.stricky-header -->
+
+        <!--Page Header Start-->
+        <section class="page-header">
+            <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg)">
+            </div>
+            <div class="container">
+                <div class="page-header__inner">
+                    <ul class="thm-breadcrumb list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><span>/</span></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><span>/</span></li>
+                        <li>Agriculture</li>
+                    </ul>
+                    <h2>Agriculture Services</h2>
+                </div>
+            </div>
+        </section>
+        <!--Page Header End-->
+
+        <!--Services Details Start-->
+        <div class="services-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="services-details__left">
+                        <div class="sidebar__single sidebar__category">
+                                <h3 class="sidebar__title">All Services</h3>
+                                <ul class="sidebar__category-list list-unstyled">
+                                    <li class="active"><a href="service_education.php">Education<span
+                                                class="icon-right-arrow"></span></a>
+                                    </li>
+                                    <li><a href="service_agriculture.php">Agriculture<span
+                                                class="icon-right-arrow"></span></a></li>
+                                    <li><a href="service_small_scale.php">Small Scale Industries<span
+                                                class="icon-right-arrow"></span></a>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                           <!--  <div class="services-details__need-help">
+                                <div class="services-details__need-help-bg"
+                                    style="background-image: url(assets/images/services/services-details-need-help-bg.jpg);">
+                                </div>
+                                <h3 class="services-details__need-help-title">We’re Salling our <br> agriculture <br>
+                                    products</h3>
+                                <div class="services-details__need-help-icon">
+                                    <span class="icon-phone-ringing"></span>
+                                </div>
+                                <div class="services-details__need-help-contact">
+                                    <p>Lorem ipsum dolor sit am cons sid</p>
+                                    <a href="tel:12463330088">+ 1- (246) 333-0088</a>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-7">
+                        <div class="services-details__right">
+                            <div class="services-details__content-box">
+                                <div class="services-details__img">
+                                    <img src="assets/images/services/services-details-img-1.jpg" alt="">
+                                    <div class="services-details__img-icon">
+                                        <span class="icon-organic-food"></span>
+                                    </div>
+                                </div>
+                                <h3 class="services-details__title">AGRICULTURE</h3>
+                                <p class="services-details__text-1">
+                                	Organic forming by the company which is a method of agriculture. which is based on the use of synthetic fertilizers and pesticides and which uses Crop rotation Green manure compost etc to mantian the fertility of land. 
+                                	<br>Do not use of chemical, fertilizers, insecticides, weedicides and growth control manufactured in factories to obtion long term and stable yield in such farming organic fertilizers are used, which control the pollution of both soil and enviroment.
+                                	<br>Increasing population is a serious problem all over the world with the Increasing population, the use of various chemical fertilizere, toxic pesticides to obtian food production by human for the supply of food.
+                                	<br>The use of chemical fertilizer, toxic posticide affects the cycle of exchange between natural Organic and Inorganic Substances in the ecosystem.
+                                	<br>Due to which the fertility of the land deteriorates as well as the enviroment is polluted and human health declines.
+                                	<br>In ancient times, forming was done friendly to human health and to the natural enviroment.
+                                	<br> Due to which the cycle of exochange between organic and Inorganic substances was going on Continuosly. As result of which water, air, land and enviroment were not polluted.
+                                	<br>Agriculture and animal husbandry combined was highly profitable.
+                                	<br>Agriculture is the mainstay of rural economy in India, and main source of the income of the former.
+                                	<br>In view of the increasing population since the time of green revolution it is neccesary to increase Production in terms of Income.
+                                	<br>For higher production, more amount of chemical fertilizer and pesticides how to be use in forming.
+                                	<br>Due to which the marginal formers are incurring exessive cast in the week Also getting polluted, Also the food items are becoming poisonous.
+                                	<br>To deal with all the above problems of this type, form the last years, the sceme of forming on the principle of sustainable forming has been made by Shailja Sameer education and green revolution (OPC) Pvt Ltd.
+                                	<br>In which organic farming will be operated by the company's agricultural experts and experienced employees engaged in Organic farming.
+                                	<br>The company will be encouraged to adopt organic forming, posters, tableaux, banners, literature, solo drama, puppet performances for the promotion of Organic forming at tahshil level in each district of the state.
+                                	<br> The work of public awareness among the formers will be done by the employees.
+                                	<br>Human health is closely rebted to organic forming by Cultivating this method, the body remains companratively more healthy and comes organic forming does not spoil and comes organic forming also gives more yield than chemical farming. 
+                                </p>
+                                 <h3 class="services-details__title">Benefits of Organic forming</h3>
+                                 <p class="services-details__text-1">
+                                 	1. The fertility of land increases.
+                                    <br>2. The irrigation internal is increases.
+                                    <br>3. Reduced dependence on chemical fertilizers leads to cost reduction.
+                                    <br>4. The productivity of crops increases.
+                                    <br>5. The increases in the demand of organic products in the market increases the income of the formers.
+                                    <br>6. The use of organic manure improved the quality of the land.
+                                    <br>7. The water holding capacity of the land increaser. There is less evaporation of water from land.
+                                    <br>8. There is an increase in the water level of the soil, food grains and a reduction in the population caused by The water in the ground. The use of waste to make manure reduces dispaces
+                                    <br>9. Decreasing the lost of crop production and increase in income decliving of
+
+organic fertilizes to complete with the international market.
+                                 </p>
+                            </div>
+                      
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Services Details End-->
+<?php
+include "include/footer.php";
+?>
