@@ -10,7 +10,7 @@ include '../../common/php-jwt/src/BeforeValidException.php';
 use \Firebase\JWT\JWT;
 $pwd= $_POST["password"]; 
 $email= $_POST["email"];
-$url = $URL."/admin_login/admin_login.php";
+$url = $URL."admin_login/admin_login.php";
 $data = array( "password" =>$pwd, "email" =>$email);
 //print_r($data);
 $postdata = json_encode($data);
@@ -38,8 +38,6 @@ if(!isset($result->data->message)){
  $_SESSION["EMAIL"]=$email;
  $_SESSION["NAME"]=$name;
  $_SESSION["JWT"]=$result;
-//  $_SESSION['PAYMENT_STATUS']=$result->data->rank_payment_upl;
- $_SESSION['LAST_LOGIN']=$result->data->updated_on;
  $_SESSION['MEMBBER_FROM']=$result->data->created_on;
  //print_r($_SESSION['SPONSOR_ID']);
 

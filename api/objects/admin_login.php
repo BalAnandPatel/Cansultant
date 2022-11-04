@@ -8,9 +8,9 @@ class admin{
         $this->conn = $db;
     }
 
-    function login(){
+    function adm_login(){
         $query="Select 
-        id,password,  email  from " .$this->table_name .  " where email=:email and password=:password";
+        id,password,  email,full_name,created_on,updated_on  from " .$this->table_name .  " where email=:email and password=:password";
         $stmt = $this->conn->prepare($query); 
         $stmt->bindParam(":email", $this->email);
         $stmt->bindParam(":password", $this->password);

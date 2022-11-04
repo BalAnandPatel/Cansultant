@@ -19,8 +19,8 @@ $reg = new registration($db);
   
 // get posted data
 $data = json_decode(file_get_contents("php://input"));
-// print_r($data);  
-// make sure data is not empty
+var_dump($data);  
+// mavarke sure data is not empty
 if(
     
     !empty($data->full_name) &&
@@ -31,11 +31,11 @@ if(
     !empty($data->email) &&
     !empty($data->address1) &&
     !empty($data->district) &&
-    !empty($data->state) &&
-    !empty($data->created_on)
+    !empty($data->state)
 )
 
 {
+    $reg->id=$data->id;
     $reg->full_name = $data->full_name;
     $reg->mother_name = $data->mother_name;
     $reg->father_name = $data->father_name;
@@ -65,15 +65,16 @@ if(
     $reg->passing_date = $data->passing_date;
     $reg->h_percentage = $data->h_percentage;
     $reg->grade = $data->grade;
-    $reg->language = $data->language;
-    $reg->read = $data->read;
-    $reg->write = $data->write;
-    $reg->speak=$data->speak;
+    $reg->languages = $data->languages;
+    $reg->is_read = $data->is_read;
+    $reg->is_write = $data->is_write;
+    $reg->is_speak=$data->is_speak;
     $reg->disability_cat = $data->disability_cat;
     $reg->disability_type = $data->disability_type;
     $reg->ex_serviceman = $data->ex_serviceman;
     $reg->serving_defence_per = $data->serving_defence_per;
     $reg->service_period = $data->service_period;
+   
 
     if($reg->update_registration()){
   
@@ -91,7 +92,7 @@ if(
         http_response_code(503);
   
         // tell the user
-        echo json_encode(array("message" => "Unable to create registration"));
+        echo json_encode(array("message" => "Unable to update registration"));
     }
 }
   
@@ -102,6 +103,6 @@ else{
     http_response_code(400);
   
     // tell the user
-    echo json_encode(array("message" => "Unable to create registration. Data is incomplete."));
+    echo json_encode(array("message" => "Unable to update registration. Data is incomplete."));
 }
 ?>
