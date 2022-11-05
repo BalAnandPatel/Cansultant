@@ -153,13 +153,12 @@
                                                         </ul> -->
                                                     </li>
                                                     <li class="dropdown">
-                                                        <a href="#">Blog</a>
-                                                        <!-- <ul class="shadow-box">
-                                                            <li><a href="blog.html">Blog</a></li>
-                                                            <li><a href="blog-carousel.html">Blog Carousel</a></li>
-                                                            <li><a href="blog-sidebar.html">Blog Sidebar</a></li>
-                                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                                        </ul> -->
+                                                        <a href="#">Blogs</a>
+                                                        <ul class="shadow-box">
+                                                            <li><a href="blog_details_education.php">Education</a></li>
+                                                            <li><a href="blog_details_agriculture.php">Agriculture</a></li>
+                                                            <li><a href="blog_smallscale_industry.php">Small Scale Industry</a></li>
+                                                        </ul>
                                                     </li>
                                                     <li class="dropdown">
                                                         <a href="#">Shop</a>

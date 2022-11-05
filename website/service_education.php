@@ -65,10 +65,9 @@ include "include/header.php";
                         <div class="services-details__right">
                             <div class="services-details__content-box">
                                 <div class="services-details__img">
-                                    <img src="assets/images/services/services-details-img-1.jpg" alt="">
+                                    <img src="assets/images/services/services-details-img-5.jpg" alt="">
                                     <div class="services-details__img-icon">
-                                        <span class="icon-organic-food"></span>
-                                    </div>
+                                    <i class='fas fa-graduation-cap'></i>                                    </div>
                                 </div>
                                 <h3 class="services-details__title">Role of Student in education level improvement</h3>
                                 <p class="services-details__text-1">

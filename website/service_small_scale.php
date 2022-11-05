@@ -45,7 +45,7 @@ include "include/header.php";
                                    
                                 </ul>
                             </div>
-                            <div class="services-details__need-help">
+                           <!--  <div class="services-details__need-help">
                                 <div class="services-details__need-help-bg"
                                     style="background-image: url(assets/images/services/services-details-need-help-bg.jpg);">
                                 </div>
@@ -58,16 +58,16 @@ include "include/header.php";
                                     <p>Lorem ipsum dolor sit am cons sid</p>
                                     <a href="tel:12463330088">+ 1- (246) 333-0088</a>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-xl-8 col-lg-7">
                         <div class="services-details__right">
                             <div class="services-details__content-box">
                                 <div class="services-details__img">
-                                    <img src="assets/images/services/services-details-img-1.jpg" alt="">
+                                    <img src="assets/images/services/services.jpg" alt="">
                                     <div class="services-details__img-icon">
-                                        <span class="icon-organic-food"></span>
+                                        <i class='fas fa-hand-holding-usd'></i>
                                     </div>
                                 </div>
                                 <h3 class="services-details__title">Small Scale Industries/Home Industries</h3>
