@@ -140,17 +140,13 @@
                                                         </ul>
                                                     </li>-->
                                                     <li class="dropdown">
-                                                        <a href="#">Pages</a>
-                                                        <!-- <ul class="shadow-box">
-                                                            <li><a href="farmers.html">Farmers</a></li>
-                                                            <li><a href="farmers-carousel.html">Farmers Carousel</a>
-                                                            </li>
-                                                            <li><a href="testimonials.html">Testimonials</a></li>
-                                                            <li><a href="testimonials-carousel.html">Testimonial
-                                                                    Carousel</a></li>
-                                                            <li><a href="faq.html">FAQs</a></li>
-                                                            <li><a href="404.html">404 Error</a></li>
-                                                        </ul> -->
+                                                        <a href="#">Our Projects</a>
+                                                        <ul class="shadow-box">
+                                                            <li><a href="project_agriculture.php">Agriculture Project</a></li>
+                                                            <li><a href="project_education.php">Education Project</a></li>
+                                                            <li><a href="project_small_scale.php">Small Scale Industry Project</a></li>
+                                                            
+                                                        </ul>
                                                     </li>
                                                     <li class="dropdown">
                                                         <a href="#">Blogs</a>
