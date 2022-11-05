@@ -70,103 +70,45 @@ include "include/header.php";
                                         <span class="icon-organic-food"></span>
                                     </div>
                                 </div>
-                                <h3 class="services-details__title">Agriculture Products</h3>
-                                <p class="services-details__text-1">Lorem ipsum is simply free text used by copytyping
-                                    refreshing. Neque porro est qui dolorem ipsum quia quaed inventore veritatis et
-                                    quasi architecto beatae vitae dicta sunt explicabo. Aelltes port lacus quis enim var
-                                    sed efficitur turpis gilla sed sit amet finibus eros. Lorem Ipsum is simply dummy
-                                    text of the printing and typesetting industry. Lorem Ipsum has been the ndustry
-                                    standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                                    type and scrambled it to make a type specimen book.</p>
-                                <p class="services-details__text-2">When an unknown printer took a galley of type and
-                                    scrambled it to make a type specimen book. It has survived not only five centuries,
-                                    but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                <h3 class="services-details__title">Small Scale Industries/Home Industries</h3>
+                                <p class="services-details__text-1">
+                                <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                Small Scale Industry is also called cottage industry this is a field that gives maximum Jobs to the people. Small Scale industry has a very important contribution in strengthening the economy of our India Country.
+                                <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                At present, unemployed youth are getting employment by doing Jobs in small scale Industries.
+                                <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                Under shailja Sameer education & green revolution (opc) private Limited, a person based on skill will be taught about any technical skill and training will be given after that he will be hired.
+                                <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                Small Scale Industry contributes the most in terms of employment opportunities.
+                                <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                Countries like India where unemployment is high and availbility of labour is changing with the changing times according to the needs of the sociaty, depend on the direction and product of small Scale industries.
+                                <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                Among the difficulties faced in the field of small Scale Industries, the selection of right aria, the supply of raw materials, technology and market availability are the main ones.
+                                <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                Objective of the company is Based on the investment limit uttar pradech, the company has divided the industries in to the category of micro, cottage. Small Scale industries.
+                                <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                Generally by small scale Industries, we mean those Small Scale bussiness, which the company aims to short with the people.</p>
+
+                                <h3 class="services-details__title">Need for Small Scale Industries</h3>
+                                <p class="services-details__text-1">
+                                <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                Small Scale Industry is also called cottage industry this is a field that gives maximum Jobs to the people. Small Scale industry has a very important contribution in strengthening the economy of our India Country.
+                                <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                The development of any country can be estimated from the status of its industries Countries like japan have become sefficient becauce they have a very developed System of Small Scale Industries.
+                                <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                Every citizen is engaged in some production work in oust ancient india, the villages used to be self Supporting.
+                                <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                Rapid machinations resulted in increased unemployment and pollution, As we have left small scale Industries, these problems have increased.<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                Big industries have started and wallowing Small scale Industries our country is now counted Among the developing Countries.
+                                <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                It is difficult to set up a large Industries Under preasure of capital -Small Scale industry system can be developed in the country by using more human resources, which can eliminate Unemployment as well as give a new way to economic development.
+                                <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                The main objective of this project to make women strong and self-reliant along with, unemployment youth farmers and students.
+                                <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                Motivated to make women financially strong by connecting her with home industry.</p>
+
                             </div>
-                            <div class="service-details__choose">
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <div class="service-details__choose-img">
-                                            <img src="assets/images/services/service-details-benefit-img.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="service-details__choose-content">
-                                            <h4 class="service-details__choose-title">Why Choose?</h4>
-                                            <p class="service-details__choose-text">Duis aute irure dolor in
-                                                reprehenderit in voluptate velit esse cillum.</p>
-                                            <ul class="list-unstyled service-details__choose-points">
-                                                <li>
-                                                    <div class="icon">
-                                                        <i class="icon-tick"></i>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Refresing to get such a touch</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <i class="icon-tick"></i>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Duis aute irure dolor in in voluptate</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <i class="icon-tick"></i>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Velit esse cillum eu fugiat pariatur</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="service-details__faq">
-                                <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
-                                    <div class="accrodion active">
-                                        <div class="accrodion-title">
-                                            <h4>Company Provides a Full Range of Services?</h4>
-                                        </div>
-                                        <div class="accrodion-content">
-                                            <div class="inner">
-                                                <p>Suspendisse finibus urna mauris, vitae consequat quam vel. Vestibulum
-                                                    leo
-                                                    ligula, vitae commodo nisl. Lorem ipsum dolor sit amet, consectetur
-                                                    adipisi cing elit.</p>
-                                            </div><!-- /.inner -->
-                                        </div>
-                                    </div>
-                                    <div class="accrodion">
-                                        <div class="accrodion-title">
-                                            <h4>Home Improvement Works are Expensive?</h4>
-                                        </div>
-                                        <div class="accrodion-content">
-                                            <div class="inner">
-                                                <p>Suspendisse finibus urna mauris, vitae consequat quam vel. Vestibulum
-                                                    leo
-                                                    ligula, vitae commodo nisl. Lorem ipsum dolor sit amet, consectetur
-                                                    adipisi cing elit.</p>
-                                            </div><!-- /.inner -->
-                                        </div>
-                                    </div>
-                                    <div class="accrodion">
-                                        <div class="accrodion-title">
-                                            <h4>Taking Seamless Key Performance Indicators?</h4>
-                                        </div>
-                                        <div class="accrodion-content">
-                                            <div class="inner">
-                                                <p>Suspendisse finibus urna mauris, vitae consequat quam vel. Vestibulum
-                                                    leo
-                                                    ligula, vitae commodo nisl. Lorem ipsum dolor sit amet, consectetur
-                                                    adipisi cing elit.</p>
-                                            </div><!-- /.inner -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        
                         </div>
                     </div>
                 </div>

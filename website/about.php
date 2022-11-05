@@ -33,7 +33,7 @@
                                             <img src="assets/images/resources/about-1.jpg" height="254px" alt="">
                                         </div>
                                         <div class="about-three__left-img about-three__left-img--2">
-                                            <img src="assets/images/resources/about-3.jpg" height="254px" alt="">
+                                            <img src="assets/images/resources/about-4.jpg" height="254px" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -57,16 +57,16 @@
                                 </div>
                             </div>
                             <p class="about-three__text-1">
-                            <i class="fa fa-hand-point-right" style="margin-right:5px; color:green;"></i>
+                            <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                             THE MOTIVE OF SHAILJA SAMEER EDUCATION AND GREEN REVOLUTION (OPC) PVT. LTD. ARE REFORMS THE EDUCATION, AGRICULTURE AND UNEMPLOYMENT FACTOR IN UTTAR PRADESH.</p>
                             <p class="about-three__text-1">
-                            <i class="fa fa-hand-point-right" style="margin-right:5px; color:green;"></i>
-                            <b>ORGANIZATION HAVE MULTI PROJECT IN MULTI SECTORAS:</b> EDUCATION REMIDIES CENTER, AGRICULTURE REMIDIES CENTER AND SMALL SCALE/HOME INDUSTRIES PROJECTS LIKE.</p>
+                            <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                            <b>ORGANIZATION HAVE MULTI PROJECT IN MULTI SECTORAS</b> EDUCATION REMIDIES CENTER, AGRICULTURE REMIDIES CENTER AND SMALL SCALE/HOME INDUSTRIES PROJECTS LIKE.</p>
                             <p class="about-three__text-1">
-                            <i class="fa fa-hand-point-right" style="margin-right:5px; color:green;"></i>
+                            <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                             ABOVE GIVEN CAN BE REFORMS THE LEVEL OF EDUCATION, THE LEVEL OF AGRICULTURE AND HOME INDUSTRIES/SMALL SCALE INDUSTRIES PROJECTS IT IS REFORMS MAINLY THE WOMEN'S ECONOMICLE, SOCIAL CONDITION.</p>
                             <p class="about-three__text-1">
-                            <i class="fa fa-hand-point-right" style="margin-right:5px; color:green;"></i>
+                            <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                             OVERALL THE COMPANY MAIN MOTIVE TO IMPROVE THE EDUCATION LEVEL OF STUDENTS, AGRICULTURE OF THE FORMERS ALSO REFORMS, FORMER'S ECONOMICAL STATUS AND WOMEN'S ECONOMICAL AND SOCIAL STATUS.</p>
                     
                         </div>

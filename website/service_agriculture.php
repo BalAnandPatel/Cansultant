@@ -70,26 +70,44 @@ include "include/header.php";
                                         <span class="icon-organic-food"></span>
                                     </div>
                                 </div>
-                                <h3 class="services-details__title">AGRICULTURE</h3>
+                                <h3 class="services-details__title">Agriculture</h3>
                                 <p class="services-details__text-1">
+                                <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                 	Organic forming by the company which is a method of agriculture. which is based on the use of synthetic fertilizers and pesticides and which uses Crop rotation Green manure compost etc to mantian the fertility of land. 
-                                	<br>Do not use of chemical, fertilizers, insecticides, weedicides and growth control manufactured in factories to obtion long term and stable yield in such farming organic fertilizers are used, which control the pollution of both soil and enviroment.
-                                	<br>Increasing population is a serious problem all over the world with the Increasing population, the use of various chemical fertilizere, toxic pesticides to obtian food production by human for the supply of food.
-                                	<br>The use of chemical fertilizer, toxic posticide affects the cycle of exchange between natural Organic and Inorganic Substances in the ecosystem.
-                                	<br>Due to which the fertility of the land deteriorates as well as the enviroment is polluted and human health declines.
-                                	<br>In ancient times, forming was done friendly to human health and to the natural enviroment.
-                                	<br> Due to which the cycle of exochange between organic and Inorganic substances was going on Continuosly. As result of which water, air, land and enviroment were not polluted.
-                                	<br>Agriculture and animal husbandry combined was highly profitable.
-                                	<br>Agriculture is the mainstay of rural economy in India, and main source of the income of the former.
-                                	<br>In view of the increasing population since the time of green revolution it is neccesary to increase Production in terms of Income.
-                                	<br>For higher production, more amount of chemical fertilizer and pesticides how to be use in forming.
-                                	<br>Due to which the marginal formers are incurring exessive cast in the week Also getting polluted, Also the food items are becoming poisonous.
-                                	<br>To deal with all the above problems of this type, form the last years, the sceme of forming on the principle of sustainable forming has been made by Shailja Sameer education and green revolution (OPC) Pvt Ltd.
-                                	<br>In which organic farming will be operated by the company's agricultural experts and experienced employees engaged in Organic farming.
-                                	<br>The company will be encouraged to adopt organic forming, posters, tableaux, banners, literature, solo drama, puppet performances for the promotion of Organic forming at tahshil level in each district of the state.
-                                	<br> The work of public awareness among the formers will be done by the employees.
-                                	<br>Human health is closely rebted to organic forming by Cultivating this method, the body remains companratively more healthy and comes organic forming does not spoil and comes organic forming also gives more yield than chemical farming. 
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    Do not use of chemical, fertilizers, insecticides, weedicides and growth control manufactured in factories to obtion long term and stable yield in such farming organic fertilizers are used, which control the pollution of both soil and enviroment.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    Increasing population is a serious problem all over the world with the Increasing population, the use of various chemical fertilizere, toxic pesticides to obtian food production by human for the supply of food.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    The use of chemical fertilizer, toxic posticide affects the cycle of exchange between natural Organic and Inorganic Substances in the ecosystem.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    Due to which the fertility of the land deteriorates as well as the enviroment is polluted and human health declines.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    In ancient times, forming was done friendly to human health and to the natural enviroment.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    Due to which the cycle of exochange between organic and Inorganic substances was going on Continuosly. As result of which water, air, land and enviroment were not polluted.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    Agriculture and animal husbandry combined was highly profitable.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    Agriculture is the mainstay of rural economy in India, and main source of the income of the former.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    In view of the increasing population since the time of green revolution it is neccesary to increase Production in terms of Income.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    For higher production, more amount of chemical fertilizer and pesticides how to be use in forming.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    Due to which the marginal formers are incurring exessive cast in the week Also getting polluted, Also the food items are becoming poisonous.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    To deal with all the above problems of this type, form the last years, the sceme of forming on the principle of sustainable forming has been made by Shailja Sameer education and green revolution (OPC) Pvt Ltd.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    In which organic farming will be operated by the company's agricultural experts and experienced employees engaged in Organic farming.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    The company will be encouraged to adopt organic forming, posters, tableaux, banners, literature, solo drama, puppet performances for the promotion of Organic forming at tahshil level in each district of the state.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    The work of public awareness among the formers will be done by the employees.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    Human health is closely rebted to organic forming by Cultivating this method, the body remains companratively more healthy and comes organic forming does not spoil and comes organic forming also gives more yield than chemical farming. 
                                 </p>
+                                
                                  <h3 class="services-details__title">Benefits of Organic forming</h3>
                                  <p class="services-details__text-1">
                                  	1. The fertility of land increases.

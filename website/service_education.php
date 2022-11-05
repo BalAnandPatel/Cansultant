@@ -71,27 +71,52 @@ include "include/header.php";
                                     </div>
                                 </div>
                                 <h3 class="services-details__title">Role of Student in education level improvement</h3>
-                                <p class="services-details__text-1">In our country, however civic duties have been included in the education theory.<br>However not all students have their complete knowledge If today's students want to improve the level of education by keeping the spirit of knowledge acquisition and not using their power in strike Sabotage and political activities, if we invest in rewoving the short coming of the education field, then Surely the level of our education can improve.</p>
+                                <p class="services-details__text-1">
+                                <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                In our country, however civic duties have been included in the education theory.
+                                <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                However not all students have their complete knowledge If today's students want to improve the level of education by keeping the spirit of knowledge acquisition and not using their power in strike Sabotage and political activities, if we invest in rewoving the short coming of the education field, then Surely the level of our education can improve.</p>
+
                                 <h3 class="services-details__title">Current education level</h3>
-                                <p class="services-details__text-1">The nature of the present education system in our country is based on blank bookish knowledge. Our education level has dropped Labor is achievable and expense is achievable.<br>Due to lack of vocational training and self employment and students are becoming victims of unemployment even after taking higher education.<br>
-                                Along with the same time, here is atendency in them to stay away from physical labour and become white callar babu.<br>Even though the nature of education is multiracial today's students are not getting its full benefits and they becoming paradoxical. This situation is very worrying.</p>
+                                <p class="services-details__text-1">
+                                <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                The nature of the present education system in our country is based on blank bookish knowledge. Our education level has dropped Labor is achievable and expense is achievable.
+                                <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                Due to lack of vocational training and self employment and students are becoming victims of unemployment even after taking higher education.
+                                <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                Along with the same time, here is atendency in them to stay away from physical labour and become white callar babu.
+                                <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                Even though the nature of education is multiracial today's students are not getting its full benefits and they becoming paradoxical. This situation is very worrying.</p>
+
                                 <h3 class="services-details__title">Measuries for improvement of students</h3>
                                 <p class="services-details__text-1">
+                                    <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                 	Fundamental changes should be made in the education system as per the need.
-                                	<br>Students should also acquire practical and professional knowledge.
-                                	<br>Special attention should be paid to discipline and duty loyalty in the education living.
-                                	<br>Knowledge cultivation should be considerd as the highest goal of life.
-                                	<br>To be awakaned towards the fulfillment of national and Social responsibility.
-                                	<br>Education should be considerd as means of building ideal character and valuse.
-                                	<br> All the defects of the education system should be removed.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    Students should also acquire practical and professional knowledge.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    Special attention should be paid to discipline and duty loyalty in the education living.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    Knowledge cultivation should be considerd as the highest goal of life.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    To be awakaned towards the fulfillment of national and Social responsibility.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    Education should be considerd as means of building ideal character and valuse.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    All the defects of the education system should be removed.
                                 </p>
+
                                 <h3 class="services-details__title">Benifits of education reform</h3>
                                 <p class="services-details__text-1">
+                                    <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                 	By taking corrective measures in the education live from time to testudents will get the benefit that they will develop a sense of self-reliance, they will be able to develop their proper characters, intellectual and social responsibility properly.
-                                	<br>Due to education reform unemployment will not be abakery, youth power will be property utilized in the interest of our country and all around in this way by improving the education living students will get many benefits and they will be able to play the role of good citizens.
+                                	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                                    Due to education reform unemployment will not be abakery, youth power will be property utilized in the interest of our country and all around in this way by improving the education living students will get many benefits and they will be able to play the role of good citizens.
                                 </p>
+
                                 <h3 class="services-details__title">Epilogue</h3>
                                 <p class="services-details__text-1">
+                                <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                  By having a direct relationship with the education sector, Students can play an excellent rate in improving the quality and form of education.
                                 </p>
                             </div>

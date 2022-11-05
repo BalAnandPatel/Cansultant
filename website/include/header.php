@@ -119,7 +119,7 @@
                                                         <a href="about.php">About</a>
                                                     </li>
                                                     <li class="dropdown">
-                                                        <a href="services.php">Services</a>
+                                                        <a href="#">Services</a>
                                                         <ul class="shadow-box">
                                                             <li><a href="service_education.php">Education</a>
                                                             </li>
