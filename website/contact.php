@@ -39,7 +39,7 @@
                                 </div>
                                 <div class="contact-details__text">
                                     <p>Have Question?</p>
-                                    <h3><a href="tel:9288006802">Free +92 (8800) 6802</a></h3>
+                                    <h3><a href="#">Free +92 (8800) 6802</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                                 </div>
                                 <div class="contact-details__text">
                                     <p>Write Email</p>
-                                    <h3><a href="mailto:needhelp@company.com">needhelp@company.com</a></h3>
+                                    <h3><a href="#">needhelp@company.com</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -125,7 +125,7 @@
                                     <textarea name="message" placeholder="Write a Comment"></textarea>
                                 </div>
                                 <div class="contact-form__btn-box">
-                                    <a href="about.html" class="thm-btn contact-two__btn">Send a Message<i
+                                    <a href="#" class="thm-btn contact-two__btn">Send a Message<i
                                             class="icon-right-arrow"></i> </a>
                                 </div>
                             </div>
