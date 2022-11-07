@@ -140,13 +140,22 @@
                                                         </ul>
                                                     </li>-->
                                                     <li class="dropdown">
-                                                        <a href="#">Our Projects</a>
+                                                        <a href="#">Projects</a>
                                                         <ul class="shadow-box">
-                                                            <li><a href="project_agriculture.php">Agriculture Project</a></li>
-                                                            <li><a href="project_education.php">Education Project</a></li>
-                                                            <li><a href="project_small_scale.php">Small Scale Industry Project</a></li>
+                                                            <li><a href="project_education.php">Education Projects</a></li>
+                                                            <li><a href="project_agriculture.php">Agriculture Projects</a></li>
+                                                            <li><a href="project_small_scale.php">Small Scale Industry Projects</a></li>
                                                             
                                                         </ul>
+                                                    </li>
+                                                     <li class="dropdown">
+                                                        <a href="recruitment.php">Recruitment</a>
+                                                        <!-- <ul class="shadow-box">
+                                                            <li><a href="products.html">Products</a></li>
+                                                            <li><a href="product-details.html">Product Details</a></li>
+                                                            <li><a href="cart.html">Cart</a></li>
+                                                            <li><a href="checkout.html">Checkout</a></li>
+                                                        </ul> -->
                                                     </li>
                                                     <li class="dropdown">
                                                         <a href="#">Blogs</a>
@@ -156,17 +165,8 @@
                                                             <li><a href="blog_smallscale_industry.php">Small Scale Industry</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li class="dropdown">
-                                                        <a href="#">Shop</a>
-                                                        <!-- <ul class="shadow-box">
-                                                            <li><a href="products.html">Products</a></li>
-                                                            <li><a href="product-details.html">Product Details</a></li>
-                                                            <li><a href="cart.html">Cart</a></li>
-                                                            <li><a href="checkout.html">Checkout</a></li>
-                                                        </ul> -->
-                                                    </li>
                                                     <li>
-                                                        <a href="#contact.html">Contact</a>
+                                                        <a href="contact.php">Contact Us</a>
                                                     </li>
                                                 </ul>
                                             </div>
