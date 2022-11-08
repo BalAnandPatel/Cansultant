@@ -232,7 +232,7 @@ include 'include/header.php';
                                     <img src="assets/images/services/services-one-1.jpg" alt="">
                                 </div>
                                 <div class="services-one__icon">
-                                    <span class="icon-tractor"></span>
+                                    <span class="icon-organic-food"></span>
                                 </div>
                             </div>
                             <div class="services-one__content">
@@ -247,10 +247,10 @@ include 'include/header.php';
                         <div class="services-one__single">
                             <div class="services-one__img-box">
                                 <div class="services-one__img">
-                                    <img src="assets/images/services/services-one-2.jpg" alt="">
+                                    <img src="assets/images/services/service-2.jpg" height="196px" alt="">
                                 </div>
                                 <div class="services-one__icon">
-                                    <span class="icon-organic-food"></span>
+                                    <span class="icon-vegetables"></span>
                                 </div>
                             </div>
                             <div class="services-one__content">
@@ -265,10 +265,10 @@ include 'include/header.php';
                         <div class="services-one__single">
                             <div class="services-one__img-box">
                                 <div class="services-one__img">
-                                    <img src="assets/images/services/services-one-3.jpg" alt="">
+                                    <img src="assets/images/services/services.jpg" height="196px" alt="">
                                 </div>
                                 <div class="services-one__icon">
-                                    <span class="icon-vegetables"></span>
+                                     <span class="icon-tractor"></span>
                                 </div>
                             </div>
                             <div class="services-one__content">
