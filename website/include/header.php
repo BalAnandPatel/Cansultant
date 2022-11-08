@@ -80,7 +80,7 @@
                                         <i class="icon-email"></i>
                                     </div>
                                     <div class="text">
-                                        <p><a href="mailto:needhelp@company.com">info@ssegr.com</a></p>
+                                        <p><a href="mailto:needhelp@company.com">info@ssegr.org.in</a></p>
                                     </div>
                                 </li>
                                 <li>
@@ -157,7 +157,7 @@
                                                         </ul>
                                                     </li>
                                                     <li class="dropdown">
-                                                        <a href="#">Shop</a>
+                                                        <a href="#">Notification</a>
                                                         <!-- <ul class="shadow-box">
                                                             <li><a href="products.html">Products</a></li>
                                                             <li><a href="product-details.html">Product Details</a></li>

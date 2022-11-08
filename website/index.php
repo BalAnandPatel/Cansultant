@@ -52,8 +52,8 @@ include 'include/header.php';
                             <div class="row">
                                 <div class="col-xl-12">
                                     <div class="main-slider__content">
-                                        <p class="main-slider__sub-title">We are Producing Natural Products</p>
-                                        <h2 class="main-slider__title">Agriculture.</h2>
+                                        <p class="main-slider__sub-title">We are Provide Education for Student</p>
+                                        <h2 class="main-slider__title">Education.</h2>
                                         <div class="main-slider__btn-box">
                                             <a href="about.html" class="thm-btn main-slider__btn">Discover More <i
                                                     class="icon-right-arrow"></i> </a>
@@ -72,8 +72,8 @@ include 'include/header.php';
                             <div class="row">
                                 <div class="col-xl-12">
                                     <div class="main-slider__content">
-                                        <p class="main-slider__sub-title">We are Producing Natural Products</p>
-                                        <h2 class="main-slider__title">Agriculture.</h2>
+                                        <p class="main-slider__sub-title">We are Provide Small Scale Industries Services</p>
+                                        <h2 class="main-slider__title">Small Scale Industries.</h2>
                                         <div class="main-slider__btn-box">
                                             <a href="about.html" class="thm-btn main-slider__btn">Discover More <i
                                                     class="icon-right-arrow"></i> </a>
