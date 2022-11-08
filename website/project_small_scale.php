@@ -28,7 +28,7 @@
                     <div class="col-xl-12">
                         <div class="project-details__top">
                             <div class="project-details__img">
-                                <img src="assets/images/project/project-3.jpg" height="400px" alt="">
+                                <img src="assets/images/project/project-4.jpg" height="400px" alt="">
                             </div>
                         </div>
                     </div>

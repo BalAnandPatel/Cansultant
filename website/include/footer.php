@@ -24,11 +24,11 @@
                                         <h3 class="footer-widget__title">Explore</h3>
                                     </div>
                                     <ul class="footer-widget__Explore-list list-unstyled">
-                                        <li><a href="#about.html">About</a></li>
-                                        <li><a href="#farmers.html">Term & Condition</a></li>
-                                        <li><a href="#project-01.html">Refund Policy</a></li>
-                                        <li><a href="#services.html">Privacy Policy</a></li>
-                                        <li><a href="#contact.html">Contact</a></li>
+                                         <li><a href="index.php">Home</a></li>
+                                        <li><a href="about.php">About</a></li>
+                                        <li><a href="service_agriculture.php">Services</a></li>
+                                        <li><a href="blog_details_agriculture.php">Blogs</a></li>
+                                        <li><a href="contact.php">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -96,13 +96,13 @@
                                             </div>
                                         </li>
                                     </ul>
-                                    <form class="footer-widget__Contact-form">
+                                 <!--    <form class="footer-widget__Contact-form">
                                         <div class="footer-widget__Contact-input-box">
                                             <input type="email" placeholder="Email Address" name="email">
                                             <button type="submit" class="footer-widget__Contact-btn"><i
                                                     class="icon-right-arrow"></i></button>
                                         </div>
-                                    </form>
+                                    </form> -->
                                 </div>
                             </div>
                         </div>
