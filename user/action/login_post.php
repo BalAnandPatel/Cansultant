@@ -10,9 +10,9 @@ include '../../common/php-jwt/src/BeforeValidException.php';
 use \Firebase\JWT\JWT;
 $pwd= $_POST["password"]; 
 $email= $_POST["email"];
-echo $url = $URL."registration/login.php";
+$url = $URL."registration/login.php";
 $data = array( "password" =>$pwd, "email" =>$email);
-print_r($data);
+//print_r($data);
 $postdata = json_encode($data);
 $client = curl_init($url);
 

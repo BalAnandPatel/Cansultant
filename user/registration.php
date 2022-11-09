@@ -34,7 +34,6 @@ var name = file.name;//you can set the name to the paragraph id
 document.getElementById('selectedFileThumb').innerHTML=name;//set name using core javascript
 // alert(name);
 }
-
 </script>
 
 
@@ -75,54 +74,45 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
   <div class="row">
     
           <div class="col-sm-6">
-          <div class="form-group">
-  <label for="input">Select exam </label>
-
-          <div class="input-group-append">
-              <div class="input-group-text">
-                <span class="fas fa-boxes"></span>
-              </div>
-          <select class="form-control" name="exam_name">
-              <option value="select" selected>Please Select Exam</option>
+            <div class="form-group">
+              <label for="input">Select exam </label>
+               <div class="input-group-append">
+                 <div class="input-group-text">
+                 <span class="fas fa-boxes"></span>
+                </div>
+                <select class="form-control" name="exam_name">
+                 <option value="select" selected>Please Select Exam</option>
               
-                <?php
+                   <?php
 
-                foreach ($results as $key => $value) {
-                  foreach ($value as $key1 => $value1) {
+                   foreach ($results as $key => $value) {
+                   foreach ($value as $key1 => $value1) {
 
-                ?>
-                    <option value="<?php echo $value1->exam_name ?>">
+                   ?>
+                   <option value="<?php echo $value1->exam_name ?>">
                     <?php echo $value1->exam_name ?></option>
-                <?php
-                  }
-                ?>
-              <?php } ?>
-
-            </select>
+                   <?php
+                    }
+                    ?>
+                  <?php } ?>
+                </select>
             </div>
           </div>
-<<<<<<< HEAD
-        
-        <label for="exampleInputEmail1">Date of Birth*</label>
-          <input type="date" class="form-control" placeholder="Date of Birth" name="dob" autocomplete="off" required>
-=======
-            </div>
+        </div>
 
-            <div class="col-sm-6">
-               <div class="form-group">
-  <label for="input">Full Name </label>
-
->>>>>>> ae69c40c26eeea4bf8ba718cd69b64dfd1ea5d59
-          <div class="input-group-append">
+        <div class="col-sm-6">
+          <div class="form-group">
+           <label for="input">Full Name </label>
+             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-boxes"></span>
               </div>
               <input type="text" class="form-control" placeholder="Full Name" name="full_name" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Full Name">         
-          
+             </div>
           </div>
-          </div>
-            </div>
-            </div>
+        </div>
+
+        </div>
  
   <div class="row">
           <div class="col-sm-6">
