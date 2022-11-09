@@ -1,8 +1,8 @@
 <?php
-include "../admin/include/header.php";
+  include "include/header.php";
 
-	$url = $URL."exam/read_exam_list.php";
-	$data = array( );
+  $url = $URL."exam/read_exam_list.php";
+	$data = array();
 
   //print_r($data);
 	$postdata = json_encode($data);
@@ -13,7 +13,7 @@ include "../admin/include/header.php";
 	$response = curl_exec($client);
  //print_r($response);
   $result = json_decode($response);
-// print_r($result)
+  //print_r($result);
   ?>
 
   <div class="content-wrapper">
@@ -83,11 +83,11 @@ include "../admin/include/header.php";
                     <td><?php echo $value1->type?></td>
                     <td><?php echo $value1->amount ?></td>
                     <td><?php if($value1->status==0) echo "PENDING"; elseif($value1->status==1) echo "ACTIVE"; elseif($value1->status==2) echo "DISABLEDA"; ?></td>
-                    <td><?php echo $value1->admit_card_date ?></td>
-                    <td><?php echo $value1->exam_date ?></td>
+                    <td><?php echo $value1->admit_card_date; ?></td>
+                    <td><?php echo $value1->exam_date; ?></td>
                     
-                    <td><?php echo $value1->result_date ?></td>
-                    <td><?php echo $value1->created_on ?></td>
+                    <td><?php echo $value1->result_date; ?></td>
+                    <td><?php echo $value1->created_on; ?></td>
                    
                     
                     

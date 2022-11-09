@@ -21,13 +21,13 @@ include "include/header.php";
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Pending Members Details</h1>
+            <h1>Approved Members Details</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item active">Members Details</li>
-              <li class="breadcrumb-item active">Pending Members Details</li>
+              <li class="breadcrumb-item active">Approved Members Details</li>
             </ol>
           </div>
         </div>
@@ -59,7 +59,7 @@ include "include/header.php";
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">PENDING MEMBER DETAILS</h3> 
+                <h3 class="card-title">APPROVED MEMBER DETAILS</h3> 
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -98,7 +98,7 @@ include "include/header.php";
                     
                     <td><?php echo $value1->full_name?></td>
                     <td><?php echo $value1->father_name ?></td>
-                    <td><?php echo $value1->Mother_name ?></td>
+                    <td><?php echo $value1->mother_name ?></td>
                     <td><?php echo $value1->address1 ?></td>
                     <td><?php echo $value1->h_qualification ?></td>
                     

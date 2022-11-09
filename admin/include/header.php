@@ -117,7 +117,7 @@
                  </a>
               <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pending_registration_list.php" class="nav-link">
+                <a href="pending registration_list.php" class="nav-link">
                 <i class="fas fa-arrow-alt-circle-right"></i>
                   <p>Pending Registration Details</p>
                 </a>

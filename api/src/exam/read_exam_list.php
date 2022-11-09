@@ -39,16 +39,16 @@ if($num>0){
         $exam_item=array(
 
             "id" => $id,
-       "exam_name"=>$exam_name,
-       "amount"=>$amount,
-    "type"=>$type,
-    "total_mark"=>$total_mark,
-    "result_date "=>$result_date,
-    "exam_date "=>$exam_date,
-    "admit_card_date"=>$admit_card_date,
-    "status"=>$status,
-    "created_by "=>$created_by,
-    "created_on "=>$created_on, 
+            "exam_name"=>$exam_name,
+            "amount"=>$amount,
+            "type"=>$type,
+            "total_mark"=>$total_mark,
+            "result_date"=>$result_date,
+            "exam_date"=>$exam_date,
+            "admit_card_date"=>$admit_card_date,
+            "status"=>$status,
+            "created_by"=>$created_by,
+            "created_on"=>$created_on, 
         );
   
         array_push($exams_arr["records"], $exam_item);

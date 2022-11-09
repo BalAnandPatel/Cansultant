@@ -98,7 +98,7 @@ include "include/header.php";
                     
                     <td><?php echo $value1->full_name?></td>
                     <td><?php echo $value1->father_name ?></td>
-                    <td><?php echo $value1->Mother_name ?></td>
+                    <td><?php echo $value1->mother_name ?></td>
                     <td><?php echo $value1->address1 ?></td>
                     <td><?php echo $value1->h_qualification ?></td>
                     

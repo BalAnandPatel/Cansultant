@@ -1,5 +1,5 @@
 <?php
-class admin{
+class Admin{
 
     private $conn;
     private $table_name = "admin";
