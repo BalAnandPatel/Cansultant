@@ -39,7 +39,7 @@
                                 <h3 class="blog-details__title">Education reform</h3>
                                 <p class="blog-details__text-2">
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                if the time of independence. One importace deficiency in the education system was that education was hearly art and humanity based. with passage of time, this deficiency has been removed to some extent. Now India has the third number of science graduates in the world.
+                                If the time of independence. One importace deficiency in the education system was that education was hearly art and humanity based. with passage of time, this deficiency has been removed to some extent. Now India has the third number of science graduates in the world.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                 But one serious flow is still thes Indian scientific teaching is not basically search based. Thus the young scientist do get scientific knowledge but not many of them can do research, because research is castly affairs Because a haphazard churning of art students, doctors and engineer in Indian institute, there has been wide spread of unemployment in a large scale in these fields.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
