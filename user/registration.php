@@ -57,14 +57,14 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
 
 <body class="hold-transition register-page">
 <div class="register-box">
-  <div class="register-logo">
+  <div class="register-logo bg-gray mb-0">
     <a href="#"><b>REGISTRATION</b></a>
   </div>
   <div class="card">
     <div class="card-body register-card-body">
       
       
-      <h2 class="login-box-msg"><b><u>Personal Details</u></b></h2>
+      <h2 class="login-box-msg"><u>Personal Details</u></h2>
       <p class="login-box-msg"><a href="index.php"><b class="login-box-msg">Alreadr Register? Please Login.</b></a></p>
       <hr>
      
