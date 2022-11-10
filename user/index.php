@@ -15,11 +15,11 @@
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
-  <div class="login-logo">
-    <a href="#"><b>Welcome Back!!</b></a>
-  </div>
   <!-- /.login-logo -->
   <div class="card">
+    <div class="login-logo bg-gray">
+    <a href="#"><b>Welcome Back!!</b></a>
+  </div>
     <div class="card-body login-card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
@@ -56,15 +56,20 @@
           <!-- /.col -->
         </div>
       </form>
-
-      <p class="mb-1">
+<div class="row mt-3">
+  <div class="col-6">
+      <p class="mb-2">
       <i class="fa fa-lock"></i>
-        <a href="forgot-password.php">I forgot my password</a>
+        <a href="#forgot-password.php" class="text-center text-bold">Forgot Password ?</a>
       </p>
-      <p class="mb-0">
-      <i class="fa fa-user"></i>
-        <a href="registration.php" class="text-center">Register a new membership</a>
+    </div>
+    <div class="col-6">
+        <p class="mb-0">
+      <i class="fa fa-user ml-2"></i>
+        <a href="Instructions.php" class="text-center text-bold">New Registration</a>
       </p>
+    </div>
+  </div>
     </div>
     <!-- /.login-card-body -->
   </div>

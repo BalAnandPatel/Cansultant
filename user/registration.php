@@ -652,7 +652,7 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
                   </div>
                 </div></div>
           <div class="col-4"  style="margin: 0px 281px 0px;">
-            <button type="submit" class="btn btn-primary btn-block">Register</button>
+            <button type="submit" class="btn btn-success btn-block">Register</button>
           </div>
           <!-- /.col -->
         </div>
