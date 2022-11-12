@@ -21,7 +21,7 @@
   <div class="register-logo">
     <a href="#"><b></b></a>
   </div>
-  <div class="card">
+  <div class="card card-success card-outline">
     <div class="card-body register-card-body">
       
       
@@ -95,21 +95,69 @@
           </div>
 
             <div class="row">
-
-    
-            <div class="col-sm-6">
-          <div class="form-group">
-  <label for="input">Exam Date </label>
+  <div class="col-sm-6">
+               <div class="form-group">
+  <label for="input">Eligibility</label>
 
           <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-boxes"></span>
               </div>
-            <input type="date" class="form-control" placeholder="Exam Date" name="exam_date" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Date of Birth">         
+              <input type="text" class="form-control" placeholder="Exam Eligibility" name="eligibility" autocomplete="off" required  data-toggle="tooltip">         
+          
+          </div>
+          </div>
+            </div>
+          
+            <div class="col-sm-6">
+               <div class="form-group">
+  <label for="input">Total Post</label>
+
+          <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-boxes"></span>
+              </div>
+              <input type="text" class="form-control" placeholder="Total Post" name="total_post" autocomplete="off" required  data-toggle="tooltip">         
+          
+          </div>
+          </div>
+            </div>
+          </div>
+
+            <div class="row">
+
+    
+            <div class="col-sm-6">
+          <div class="form-group">
+  <label for="input">Exam Start Date </label>
+
+          <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-boxes"></span>
+              </div>
+            <input type="date" class="form-control" name="exam_date_start" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Date of Birth">         
 
             </div>
           </div>
             </div>
+
+             <div class="col-sm-6">
+          <div class="form-group">
+  <label for="input">Exam End date </label>
+
+          <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-boxes"></span>
+              </div>
+            <input type="date" class="form-control" name="exam_date_end" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Date of Birth">         
+
+            </div>
+          </div>
+            </div>
+            </div>
+
+            <div class="row">
+
 
              <div class="col-sm-6">
           <div class="form-group">
@@ -124,9 +172,6 @@
             </div>
           </div>
             </div>
-            </div>
-
-            <div class="row">
 
                <div class="col-sm-6">
           <div class="form-group">
@@ -145,7 +190,7 @@
            
                   
           <div class="col-4"  style="margin: 0px 281px 0px;">
-            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            <button type="submit" class="btn btn-success btn-block">Submit</button>
           </div>
           <!-- /.col -->
         </div>

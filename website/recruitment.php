@@ -65,37 +65,45 @@ include "include/header.php";
                     <table class="table cart-table">
                         <thead>
                             <tr>
-                              <!--   <th>Item</th> -->
+                                <th>S.N</th> 
                                 <th>Exam Name</th>
-                                <th>Exam Type</th>
-                                <th>Exam Amount</th>
-                                <th>Exam Date</th>
+                                <th>Exam Fee</th>
+                                <th>Total Post</th>
+                                <th>Eligibility</th>
+                                <th>Exam Start Date</th>
+                                <th>Exam End Date</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
 
                              <?php 
-                                     
+
+                                $counter=0;
                                 foreach($result as $key => $value){
                                 foreach($value as $key1 => $value1)
                                {
+                              
                              ?> 
 
                             <tr>
+                                <div class="product-box">
+                                <td><h3><?php echo ++$counter; ?></h3></td>
+                                </div>
                                 <td>
                                     <div class="product-box">
                                         <h3><a href="#"><?php echo $value1->exam_name; ?></a></h3>
                                     </div>
                                 </td>
-                                <td><?php echo $value1->type; ?></td>
-                                <td><?php echo $value1->amount; ?></td>
-                                <td><?php echo $value1->exam_date; ?></td>
+                                <td><?php echo $value1->amount; ?>/-</td>
+                                <td><?php echo $value1->total_post; ?></td>
+                                <td><?php echo $value1->eligibility; ?></td>
+                                <td><?php echo date("d-m-Y",strtotime($value1->exam_date_start)); ?></td>
+                                <td><?php echo date("d-m-Y",strtotime($value1->exam_date_end)); ?></td>
                                  <td>
-                                     <div class="error-page__btn-box mt-0">
-                                <a href="../user/index.php" target="blank" class="thm-btn error-page__btn">Apply<i
-                                        class="icon-right-arrow"></i> </a>
-                            </div>
+                                   <div class="error-page__btn-box mt-0">
+                                     <a href="../user/Instructions.php" target="blank" class="thm-btn error-page__btn">Apply<i class="icon-right-arrow"></i> </a>
+                                    </div>
                                  </td>
                             </tr>
 

@@ -31,8 +31,11 @@ if(
     $exam->exam_name = $data->exam_name;
     $exam->amount = $data->amount;
     $exam->type = $data->type;
-    $exam->exam_date = $data->exam_date;
+    $exam->eligibility = $data->eligibility;
+    $exam->exam_date_start = $data->exam_date_start;
+    $exam->exam_date_end = $data->exam_date_end;
     $exam->total_mark = $data->total_mark;
+    $exam->total_post = $data->total_post;
     $exam->status = $data->status;
     $exam->admit_card_date = $data->admit_card_date;
     $exam->result_date = $data->result_date;

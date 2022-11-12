@@ -61,10 +61,10 @@
                     <th>Type</th>
                     <th>Amount</th>
                     <th>Status</th>
-                    <th>AdmitCard_Date</th>
-                    <th>Exam_Date</th>
-                    <th>Result_Date</th>
-                    <th>Created_Date</th>
+                    <th>Admit Card Date</th>
+                    <th>Exam Start Date</th>
+                    <th>Result Date</th>
+                    <th>Created Date</th>
                   </tr>
                   	
                   </thead>
@@ -83,11 +83,11 @@
                     <td><?php echo $value1->type?></td>
                     <td><?php echo $value1->amount ?></td>
                     <td><?php if($value1->status==0) echo "PENDING"; elseif($value1->status==1) echo "ACTIVE"; elseif($value1->status==2) echo "DISABLEDA"; ?></td>
-                    <td><?php echo $value1->admit_card_date; ?></td>
-                    <td><?php echo $value1->exam_date; ?></td>
+                    <td><?php echo date("d-m-Y",strtotime($value1->admit_card_date)); ?></td>
+                    <td><?php echo date("d-m-Y",strtotime($value1->exam_date_start)); ?></td>
                     
-                    <td><?php echo $value1->result_date; ?></td>
-                    <td><?php echo $value1->created_on; ?></td>
+                    <td><?php echo date("d-m-Y",strtotime($value1->result_date)); ?></td>
+                    <td><?php echo date("d-m-Y",strtotime($value1->created_on)); ?></td>
                    
                     
                     
