@@ -10,7 +10,7 @@
     public $id,$exam_name,$type,$total_mark,$total_post,$amount,$eligibility,$status,$exam_date_start,$exam_date_end,$result_date,$admit_card_date,$created_by,$created_on;
 
     public function read_exam(){
-        $query="Select  id,exam_name,type,total_mark, amount,status,exam_date,result_date,admit_card_date,created_by,created_on
+        $query="Select  id,exam_name,type,total_mark, amount,status,exam_date_start, result_date,admit_card_date,created_by,created_on
         from " .$this->table_name .  " where status=1";
         $stmt = $this->conn->prepare($query); 
         $stmt->execute();
@@ -18,7 +18,7 @@
     }
 
     public function read_exam_details(){
-        $query="Select  id,exam_name,type,total_mark, amount,status,exam_date,result_date,admit_card_date,created_by,created_on
+        $query="Select  id,exam_name,type,total_mark, amount,status,exam_date_start, result_date,admit_card_date,created_by,created_on
         from " .$this->table_name .  " where exam_name=:exam_name";
         $stmt = $this->conn->prepare($query); 
         $stmt->bindParam(":exam_name", $this->exam_name);

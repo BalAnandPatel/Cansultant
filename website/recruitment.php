@@ -46,7 +46,7 @@ include "include/header.php";
                         <div class="error-page__inner">
                             <h3 class="error-page__tagline">Recruitment</h3>
                             <p class="error-page__text"><b>SHAILJA SANEER EDUCATION AND GREEN REVOLUTIO (OPC) PVT.LTD.</b></p>
-                            <p class="error-page__text">RECRUITED 53900 VARIOUS POST IN EDUCATION, AGRICUTURE AND HOME INDUSTRY / SMALL SCALE INDUSTRY SECTOR.</p>
+                            <p class="error-page__text" style="font-size:15px;">* RECRUITED 53900 VARIOUS POST IN EDUCATION, AGRICUTURE AND HOME INDUSTRY / SMALL SCALE INDUSTRY SECTOR.</p>
                             <div class="error-page__btn-box mt-5">
                                 <a href="index.php" class="thm-btn error-page__btn">For more details check the notification<i
                                         class="icon-right-arrow"></i> </a>

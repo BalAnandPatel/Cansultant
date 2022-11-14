@@ -2,8 +2,8 @@
 //This page is used by admin to view the login details of created agents.
 include '../constant.php';
 
- $exam_name=$_POST["exam_name"];
- $registration_no=$_POST["registration_no"];
+$exam_name=$_POST["exam_name"];
+$registration_no=$_POST["registration_no"];
 $full_name=$_POST["full_name"];
 $id=$_POST["id"];
 
@@ -34,7 +34,7 @@ function giplCurl($api,$postdata){
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Registration</title>
+  <title>Payment</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -52,13 +52,13 @@ function giplCurl($api,$postdata){
 <body class="hold-transition register-page">
 <div class="register-box">
   <div class="register-logo">
-    <a href="#"><b>REGISTRATION</b></a>
+    <a href="#"><b>PAYMENT</b></a>
   </div>
-  <div class="card">
+  <div class="card card-success card-outline">
     <div class="card-body register-card-body">
-      <p class="login-box-msg"><a href="index.php"><b class="login-box-msg">Alreadr Register? Please Login.</b></a></p>
+      <!-- <p class="login-box-msg"><a href="index.php"><b class="login-box-msg">Alreadr Register? Please Login.</b></a></p> -->
       
-      <h2 class="login-box-msg"><b><u>Personal Details</u></b></h2>
+      <h2 class="login-box-msg"><b><u>Payment Details</u></b></h2>
       <hr>
       <div class="container-fluid">
 
@@ -82,7 +82,7 @@ function giplCurl($api,$postdata){
             
       <div class="container-fluid">
    
-      <p> Dear <b><?php echo $full_name  ?></b>, Thank you for the registration for examination : <b><?php echo $exam_name ?></b>. Your Registration Number is : <?php $registration_no?></p>
+      <p> Dear <b><?php echo $full_name  ?></b>, Thank you for the registration for examination : <b><?php echo $exam_name ?></b>. Your Registration Number is :<b> <?php echo $registration_no; ?></b></p>
 <p>Your Registration Amount for examination :<b> <?php echo $exam_name ?></b> is<b> &#8377;<?php echo $results->records[0]->amount ?></b> only.  </p>
 
                       

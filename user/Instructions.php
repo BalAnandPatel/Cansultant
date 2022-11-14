@@ -63,22 +63,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 With supporting text below as a natural lead-in to additional content.</p>
                 <p class="card-text"><i class="fa fa-hand-point-right mr-2"></i>
                 With supporting text below as a natural lead-in to additional content.</p>
-                <form>
+                <form action="registration.php">
                 <div class="form-group">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
                     <label class="form-check-label" for="gridCheck">
                     Check me out
                     </label>
                    </div>
                 </div>
-              </form>
                 <!-- <div class="btn btn-success">Click hear to Proceed</div> -->
                 <a href="registration.php">
-                <button type="button" class="btn btn-success btn-sm btn-block">
+                <button type="submit" class="btn btn-success btn-sm btn-block">
                   Click hear to Proceed
                 </button>
               </a>
+               </form>
               </div>
             </div>
           </div>

@@ -72,9 +72,7 @@ include "include/header.php";
                                 </div>
                                 <h3 class="services-details__title">Small Scale Industries/Home Industries</h3>
                                 <p class="services-details__text-1">
-                                <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                Small Scale Industry is also called cottage industry this is a field that gives maximum Jobs to the people. Small Scale industry has a very important contribution in strengthening the economy of our India Country.
-                                <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
+                               <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                 At present, unemployed youth are getting employment by doing Jobs in small scale Industries.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                 Under shailja Sameer education & green revolution (opc) private Limited, a person based on skill will be taught about any technical skill and training will be given after that he will be hired.

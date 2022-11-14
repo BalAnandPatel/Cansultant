@@ -108,7 +108,7 @@ include "include/header.php";
                                 <h3 class="services-details__title">Benifits of education reform</h3>
                                 <p class="services-details__text-1">
                                     <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                	By taking corrective measures in the education live from time to testudents will get the benefit that they will develop a sense of self-reliance, they will be able to develop their proper characters, intellectual and social responsibility properly.
+                                	By taking corrective measures in the education live from time to time students will get the benefit that they will develop a sense of self-reliance, they will be able to develop their proper characters, intellectual and social responsibility properly.
                                 	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                     Due to education reform unemployment will not be abakery, youth power will be property utilized in the interest of our country and all around in this way by improving the education living students will get many benefits and they will be able to play the role of good citizens.
                                 </p>

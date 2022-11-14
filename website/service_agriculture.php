@@ -73,7 +73,7 @@ include "include/header.php";
                                 <h3 class="services-details__title">Agriculture</h3>
                                 <p class="services-details__text-1">
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                	Organic forming by the company which is a method of agriculture. which is based on the use of synthetic fertilizers and pesticides and which uses Crop rotation Green manure compost etc to mantian the fertility of land. 
+                                	Organic forming by the company which is a method of agriculture. which is based on the non use of synthetic fertilizers and pesticides and which uses Crop rotation Green manure compost etc to mantian the fertility of land. 
                                 	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                     Do not use of chemical, fertilizers, insecticides, weedicides and growth control manufactured in factories to obtion long term and stable yield in such farming organic fertilizers are used, which control the pollution of both soil and enviroment.
                                 	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>

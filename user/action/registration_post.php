@@ -31,12 +31,12 @@ $languages=strtoupper($_POST["language"]);
 $is_read=$_POST["read"];
 $is_write=$_POST["write"];
 $is_speak=$_POST["speak"];
-$disability_cat=$_POST["disability_cat"]? $disability_cat : "NO";
-$disability_type=($_POST["disability_type"]!="")? $disability_type : "NO";
+$disability_cat=$_POST["disability_cat"]!="" ? $disability_cat=$_POST["disability_cat"] : "NO";
+$disability_type=($_POST["disability_type"]!="")? $disability_type=$_POST["disability_type"] : "NO";
 $ex_serviceman=$_POST["ex_serviceman"];
 $serving_defence_per=$_POST["serving_defence_per"];
 $exam_name=$_POST["exam_name"];
-$service_period=$_POST["service_period"]? $service_period : "0";
+$service_period=$_POST["service_period"]? $service_period=$_POST["service_period"] : "0";
 $created_on=date("Y-m-d H:i:s");
 $created_by="USER";
 $registration_no = rand(1000000000,9999999999);
@@ -193,7 +193,7 @@ function url_encode_Decode($url,$postdata){
 curl_setopt($client, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
 $response = curl_exec($client);
-print_r($response);
+//print_r($response);
 return $result = json_decode($response);
 
 }

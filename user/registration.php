@@ -10,12 +10,12 @@ $results=giplCurl($url,$postdata1);
 //print_r($results);
 
 function giplCurl($api,$postdata){
-    $url = $api; 
+      $url = $api; 
       $client = curl_init($url);
       curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
       curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
       $response = curl_exec($client);
-     //print_r($response);
+      //print_r($response);
       return $result = json_decode($response);
   }
 ?>
