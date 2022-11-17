@@ -24,11 +24,13 @@
                                         <h3 class="footer-widget__title">Explore</h3>
                                     </div>
                                     <ul class="footer-widget__Explore-list list-unstyled">
-                                         <li><a href="index.php">Home</a></li>
+                                        <li><a href="index.php">Home</a></li>
                                         <li><a href="about.php">About</a></li>
                                         <li><a href="service_agriculture.php">Services</a></li>
                                         <li><a href="blog_details_agriculture.php">Blogs</a></li>
                                         <li><a href="contact.php">Contact Us</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="terms.php">Terms & Conditions</a></li>
                                     </ul>
                                 </div>
                             </div>
