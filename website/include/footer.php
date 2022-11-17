@@ -29,7 +29,7 @@
                                         <li><a href="service_agriculture.php">Services</a></li>
                                         <li><a href="blog_details_agriculture.php">Blogs</a></li>
                                         <li><a href="contact.php">Contact Us</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="privacy_policy.php">Privacy Policy</a></li>
                                         <li><a href="terms.php">Terms & Conditions</a></li>
                                     </ul>
                                 </div>

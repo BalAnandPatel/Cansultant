@@ -33,7 +33,7 @@
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                 Thank you for choosing S.S.E.G.R. We are glad that you have decided to join us.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                Before accessing or using the services and content available on our sites and application, please take a moment to peruse these Terms of Services which constitutes a legally binding agreement between you and M/S Learning Closet Pvt. Ltd. that is owner of Exampur.com and other related brands (thereafter we, us and our). This Agreement applies to the web sites, applications, channels and all other networks, owned and/or operated by M/S Learning Closet Pvt. Ltd. (hereinafter refer to as “our services”)
+                                Before accessing or using the services and content available on our sites and application, please take a moment to peruse these Terms of Services which constitutes a legally binding agreement between you and Shailja Sameer Education and Green Revolution (OPC) Pvt. Ltd. that is owner of ssegr.org.in and other related brands (thereafter we, us and our). This Agreement applies to the web sites, applications, channels and all other networks, owned and/or operated by Shailja Sameer Education and Green Revolution (OPC) Pvt. Ltd. (hereinafter refer to as “our services”)
                                 <h3 class="project-details__title-1">1. Acceptance of terms and conditions</h3>
                                 <p class="project-details__text-1">
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
@@ -69,7 +69,7 @@
                                 <h3 class="project-details__title-1">8. NO WARRANTY</h3>
                                 <p class="project-details__text-1">
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                <b>YOUR USE OF OUR SERVICES IS AT YOUR SOLE RISK. OUR SERVICES ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS. LEARNING CLOSET PVT. LTD. EXPRESSLY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.</b>
+                                <b>YOUR USE OF OUR SERVICES IS AT YOUR SOLE RISK. OUR SERVICES ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS. SHAILJA SAMEER EDUCATION AND GREEN REVOLUTION (OPC) PRIVATE LIMITED. EXPRESSLY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.</b>
                                 </p>
                                 <h3 class="project-details__title-1">9. Representation</h3>
                                 <p class="project-details__text-1">
