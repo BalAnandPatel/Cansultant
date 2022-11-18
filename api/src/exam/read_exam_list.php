@@ -43,7 +43,7 @@ if($num>0){
             "amount"=>$amount,
             "type"=>$type,
             "eligibility"=>$eligibility,
-            "total_mark"=>$total_mark,
+            "age"=>$age,
             "total_post"=>$total_post,
             "result_date"=>$result_date,
             "exam_date_start"=>$exam_date_start,

@@ -8,7 +8,7 @@ if(isset($_POST["exam_name"])){
  $amount=$_POST["amount"];
  $eligibility=ucfirst($_POST["eligibility"]);
  $total_post=$_POST["total_post"];
- $total_mark=$_POST["total_mark"];
+ $age=$_POST["age"];
  $exam_date_start=date("Y-m-d", strtotime($_POST["exam_date_start"]));
  $exam_date_end=date("Y-m-d", strtotime($_POST["exam_date_end"]));
  $admit_card_date=date("Y-m-d", strtotime($_POST["admit_card_date"]));
@@ -16,7 +16,7 @@ if(isset($_POST["exam_name"])){
 
  $url=$URL. "exam/insert_exam.php";
  $data = array("exam_name"=>$exam_name,"amount"=>$amount, "eligibility"=>$eligibility, 
- "total_post"=>$total_post, "type"=>$type, "total_mark"=>$total_mark, "exam_date_start"=>$exam_date_start,
+ "total_post"=>$total_post, "type"=>$type, "age"=>$age, "exam_date_start"=>$exam_date_start,
  "admit_card_date"=>$admit_card_date, "result_date"=>$result_date, "status"=>"1", "created_by"=>"Admin",
  "exam_date_end"=>$exam_date_end, "created_on"=>date("Y-m-d"));
 

@@ -60,6 +60,7 @@
                     <th>Exam_Name</th>
                     <th>Type</th>
                     <th>Amount</th>
+                    <th>Age</th>
                     <th>Status</th>
                     <th>Admit Card Date</th>
                     <th>Exam Start Date</th>
@@ -82,6 +83,7 @@
                                      
                     <td><?php echo $value1->type?></td>
                     <td><?php echo $value1->amount ?></td>
+                    <td><?php echo $value1->age; ?></td>
                     <td><?php if($value1->status==0) echo "PENDING"; elseif($value1->status==1) echo "ACTIVE"; elseif($value1->status==2) echo "DISABLEDA"; ?></td>
                     <td><?php echo date("d-m-Y",strtotime($value1->admit_card_date)); ?></td>
                     <td><?php echo date("d-m-Y",strtotime($value1->exam_date_start)); ?></td>

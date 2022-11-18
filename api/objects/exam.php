@@ -7,10 +7,10 @@
         $this->conn = $db;
     }
 
-    public $id,$exam_name,$type,$total_mark,$total_post,$amount,$eligibility,$status,$exam_date_start,$exam_date_end,$result_date,$admit_card_date,$created_by,$created_on;
+    public $id,$exam_name,$type,$age,$total_post,$amount,$eligibility,$status,$exam_date_start,$exam_date_end,$result_date,$admit_card_date,$created_by,$created_on;
 
     public function read_exam(){
-        $query="Select  id,exam_name,type,total_mark, amount,status,exam_date_start, result_date,admit_card_date,created_by,created_on
+        $query="Select  id,exam_name,type,age, amount,status,exam_date_start, result_date,admit_card_date,created_by,created_on
         from " .$this->table_name .  " where status=1";
         $stmt = $this->conn->prepare($query); 
         $stmt->execute();
@@ -18,7 +18,7 @@
     }
 
     public function read_exam_details(){
-        $query="Select  id,exam_name,type,total_mark, amount,status,exam_date_start, result_date,admit_card_date,created_by,created_on
+        $query="Select  id,exam_name,type, age, total_post, eligibility, amount,status,exam_date_start, result_date,admit_card_date,created_by,created_on
         from " .$this->table_name .  " where exam_name=:exam_name";
         $stmt = $this->conn->prepare($query); 
         $stmt->bindParam(":exam_name", $this->exam_name);
@@ -27,7 +27,7 @@
     }
 
     public function read_exam_list(){
-        $query="Select  id,exam_name,type,total_mark,total_post,eligibility,
+        $query="Select  id,exam_name,type,age,total_post,eligibility,
          amount,status,exam_date_start,exam_date_end,result_date,admit_card_date,created_by,created_on
         from " .$this->table_name;
         $stmt = $this->conn->prepare($query); 
@@ -44,7 +44,7 @@
              type=:type,
              amount=:amount, 
              eligibility=:eligibility,
-             total_mark=:total_mark,
+             age=:age,
              total_post=:total_post,
              exam_date_start=:exam_date_start,
              exam_date_end=:exam_date_end,
@@ -59,7 +59,7 @@
         $this->exam_name=htmlspecialchars(strip_tags($this->exam_name));
         $this->type=htmlspecialchars(strip_tags($this->type));
         $this->amount=htmlspecialchars(strip_tags($this->amount));
-        $this->total_mark=htmlspecialchars(strip_tags($this->total_mark));
+        $this->age=htmlspecialchars(strip_tags($this->age));
         $this->total_post=htmlspecialchars(strip_tags($this->total_post));
         $this->eligibility=htmlspecialchars(strip_tags($this->eligibility));
         $this->exam_date_end=htmlspecialchars(strip_tags($this->exam_date_end));
@@ -74,7 +74,7 @@
         $stmt->bindParam(":exam_name", $this->exam_name);
         $stmt->bindParam(":type", $this->type);
         $stmt->bindParam(":amount", $this->amount);
-        $stmt->bindParam(":total_mark", $this->total_mark);
+        $stmt->bindParam(":age", $this->age);
         $stmt->bindParam(":total_post", $this->total_post);
         $stmt->bindParam(":eligibility", $this->eligibility);
         $stmt->bindParam(":exam_date_end", $this->exam_date_end);

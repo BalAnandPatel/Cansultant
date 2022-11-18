@@ -20,7 +20,7 @@ $db = $database->getConnection();
 $exam = new exam($db);
   
 $data = json_decode(file_get_contents("php://input"));
- $exam->exam_name=$data->exam_name;
+$exam->exam_name=$data->exam_name;
 $stmt = $exam->read_exam_details();
 $num = $stmt->rowCount();
   
@@ -42,6 +42,9 @@ if($num>0){
             "exam_name"=>$exam_name,
             "amount"=>$amount,
             "type"=>$type,
+            "age"=>$age,
+            "eligibility"=>$eligibility,
+            "total_post"=>$total_post,
             "result_date"=>$result_date,
             "exam_date_start"=>$exam_date_start,
             "admit_card_date"=>$admit_card_date,

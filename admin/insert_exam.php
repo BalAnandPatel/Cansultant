@@ -81,13 +81,13 @@
           
             <div class="col-sm-6">
                <div class="form-group">
-  <label for="input">Total Marks</label>
+  <label for="input">Age</label>
 
           <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-boxes"></span>
               </div>
-              <input type="text" class="form-control" placeholder="Total Marks" name="total_mark" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Full Name">         
+              <input type="text" class="form-control" placeholder="Age" name="age" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Full Name">         
           
           </div>
           </div>
