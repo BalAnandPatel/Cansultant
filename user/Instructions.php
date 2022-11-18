@@ -67,20 +67,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="col-lg-10 m-auto">
 
             <div class="card card-success card-outline">
-              <div class="card-header">
-                <h5 class="m-0">Instructions and Procedure for online submission of Application Form</h5>
+              <div class="card-header text-center text-success text-bold">
+                <h5 class="m-0"><u>INSTRUCTIONS AND PROCEDURE FOR ONLINE SUBMISSION OF APPLICATION FORM</u></h5>
               </div>
               <div class="card-body">
                 <h5 class="card-title mb-2"><b>Exam Details</b></h5>
-               
+               <div class="table-responsive">
                 <table class="table table-bordered">
                   <thead>
                    <tr>
                      <th scope="col">POST NAME</th>
-                     <th scope="col">TOTLE POST</th>
                      <th scope="col">POST ELIGIBILITY</th>
                      <th scope="col">APPLICATION FEE</th>
                      <th scope="col">AGE</th>
+                     <th scope="col">DATE</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -93,34 +93,55 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     ?>  
                     <tr>
                       <td><?php echo $value1->exam_name; ?></td>
-                      <td><?php echo $value1->total_post; ?></td>
+    
                       <td><?php echo $value1->eligibility; ?></td>
                       <td><?php echo $value1->amount; ?></td>
                       <td><?php echo $value1->age; ?></td>
+                      <td><?php echo date("d-m-Y",strtotime($value1->exam_date_start)); ?></td>
                     </tr>
                   <?php } } ?>
                   </tbody>
                 </table>
               </div>
+              </div>
 
                 <div class="card-body">
-                <h5 class="card-title mb-2"><b>Special title treatment</b></h5>
+                <h5 class="card-title mb-2"><b>Instructions and Procedure for online submission of Application Form</b></h5>
                 <p class="card-text"><i class="fa fa-hand-point-right mr-2"></i>
-                With supporting text below as a natural lead-in to additional content.</p>
+                Please read the Information Bulletin of <?php echo $value1->exam_name; ?> <?php echo date("Y",strtotime($value1->exam_date_start)); ?> carefully before you start filling the Online Application  Form.</p>
                 <p class="card-text"><i class="fa fa-hand-point-right mr-2"></i>
-                With supporting text below as a natural lead-in to additional content.</p>
+                Candidates can apply for <?php echo $value1->exam_name; ?> <?php echo date("Y",strtotime($value1->exam_date_start)); ?> ‘ON-LINE’ through website https://ssegr.org.in
+                </p>
                 <p class="card-text"><i class="fa fa-hand-point-right mr-2"></i>
-                With supporting text below as a natural lead-in to additional content.</p>
+                  The candidate should supply all details while filling the Online Form. Candidates are required to take a print out of the computer generated Confirmation Page with Registration Number after successful submission of data.
+                </p>
                 <p class="card-text"><i class="fa fa-hand-point-right mr-2"></i>
-                With supporting text below as a natural lead-in to additional content.</p>
+                Candidates are not required to send hard copy of confirmation page to CTET Unit, CBSE. However, the candidates are advised to retain the hard copy of the application i.e. confirmation page, for future reference.</p>
                 <p class="card-text"><i class="fa fa-hand-point-right mr-2"></i>
-                With supporting text below as a natural lead-in to additional content.</p>
+                The fee can be remitted in the following ways:</p>
+                <ol type="1">
+                  <li>By Debit/Credit Card.</li>
+                  <li> By Internet Banking.</li>
+                </ol>
+                <p class="card-text"><i class="fa fa-hand-point-right mr-2"></i>
+                Application Procedure: 3 Simple Steps to be followed to apply online</p>
+                <p class="card-text"><b>Step 1:</b> Fill in the Online Application Form and note down system generated Registration No./Application No. The candidate should supply all details while filling the Online Form. After successful submission of the data, Registration No. will be generated and it will be used to complete the remaining Steps of the Application Form and also required for all future correspondence.</p>
+                <p class="card-text"><b> Upload latest Photograph and Signature</b></p>
+                <p class="card-text"><b>Note:</b></p>
+                <ul>
+                  <li>Latest photographs and signature should be in jpg format.</il>
+                  <li>Size of the photo image must be greater than 10 kb and less than 100 kb.</il>
+                  <li>Size of the signature image must be greater than 3 kb and less than 30 kb.</il>
+                </ul>
+                <p><b>Note:</b> The candidate particulars can be edited till the payment of fees has not been made. Once the payment of fees has been made, candidate particulars cannot be edited at this stage. Thereafter corrections can be made only during the period in which online correction will be allowed as per the given schedule of <?php echo $value1->exam_name; ?> <?php echo date("Y",strtotime($value1->exam_date_start)); ?> . No change will be accepted through offline mode i.e. through fax/application or by email etc. No correspondence in this regard will be entertained.</p>
+                <p class="card-text"><b>Step 2:</b> Pay Examination Fee by debit card/credit card or Pay Examination Fee by Internet Banking.</p>
+                <p class="card-text"><b>Step 3:</b> Print Confirmation Page for your record and future reference. All Steps are mandatory, On-line application submission will be considered as complete only after receipt of “Confirmation Page” by candidate.</p>
                 <form action="registration.php">
                 <div class="form-group">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck" required>
                     <label class="form-check-label" for="gridCheck">
-                    Check me out
+                     I have downloaded Information Bulletin, read and understood all the Instructions therein as well as those mentioned above, and filling up the online application form accordingly.
                     </label>
                    </div>
                 </div>
