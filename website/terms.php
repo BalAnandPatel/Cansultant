@@ -28,10 +28,10 @@
                     <div class="row">
                         <div class="col-xl-12 col-lg-8 mb-5">
                             <div class="project-details__content-left">
-                                <h3 class="project-details__title-1">Terms and Conditions for access and use of S.S.E.G.R Products and Services</h3>
+                                <h3 class="project-details__title-1">Terms and Conditions for access and use of Shailja Sameer Education and Green Revolution (OPC) Pvt. Ltd. Products and Services</h3>
                                 <p class="project-details__text-1">
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                Thank you for choosing S.S.E.G.R. We are glad that you have decided to join us.
+                                Thank you for choosing Shailja Sameer Education and Green Revolution (OPC) Pvt. Ltd. We are glad that you have decided to join us.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                 Before accessing or using the services and content available on our sites and application, please take a moment to peruse these Terms of Services which constitutes a legally binding agreement between you and Shailja Sameer Education and Green Revolution (OPC) Pvt. Ltd. that is owner of ssegr.org.in and other related brands (thereafter we, us and our). This Agreement applies to the web sites, applications, channels and all other networks, owned and/or operated by Shailja Sameer Education and Green Revolution (OPC) Pvt. Ltd. (hereinafter refer to as “our services”)
                                 <h3 class="project-details__title-1">1. Acceptance of terms and conditions</h3>
@@ -41,7 +41,7 @@
                                 <h3 class="project-details__title-1">2. Grant of Licence conditions</h3>
                                 <p class="project-details__text-1">
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                Subject to your compliance with these Terms, we, hereby grants you a revocable, non-exclusive, non-transferable, limited license to download, install, and use our services for limited use or access or view our networks and use our services, solely for your personal and non-commercial purposes and expressly conditioned upon your agreement that all such access and use shall be governed by all of the terms and conditions set forth in this Agreement. You have no right to sublicense the license rights granted in this section.</p>
+                                Subject to your compliance with these Terms, we, here by grants you a revocable, non-exclusive, non-transferable, limited license to download, install, and use our services for limited use or access or view our networks and use our services, solely for your personal and non-commercial purposes and expressly conditioned upon your agreement that all such access and use shall be governed by all of the terms and conditions set forth in this Agreement. You have no right to sublicense the license rights granted in this section.</p>
                                 <h3 class="project-details__title-1">3. Restrictions on usage</h3>
                                 <p class="project-details__text-1">
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
@@ -69,7 +69,7 @@
                                 <h3 class="project-details__title-1">8. NO WARRANTY</h3>
                                 <p class="project-details__text-1">
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                <b>YOUR USE OF OUR SERVICES IS AT YOUR SOLE RISK. OUR SERVICES ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS. SHAILJA SAMEER EDUCATION AND GREEN REVOLUTION (OPC) PRIVATE LIMITED. EXPRESSLY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.</b>
+                                <b>YOUR USE OF OUR SERVICES IS AT YOUR SOLE RISK. OUR SERVICES ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS. SHAILJA SAMEER EDUCATION AND GREEN REVOLUTION (OPC) PRIVATE LIMITED EXPRESSLY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.</b>
                                 </p>
                                 <h3 class="project-details__title-1">9. Representation</h3>
                                 <p class="project-details__text-1">

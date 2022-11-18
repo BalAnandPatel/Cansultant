@@ -174,7 +174,7 @@ include "../constant.php";
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="main-menu__right">
+                                      <!--   <div class="main-menu__right">
                                             <div class="main-menu__search-cart-btn-box">
                                                 <div class="main-menu__search-box">
                                                     <a href="#"
@@ -188,13 +188,13 @@ include "../constant.php";
                                                         <i class="icon-right-arrow"></i> </a>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </nav>
                         </div>
                     </div>
-                    <div class="main-header__phone-contact-box">
+                   <!--  <div class="main-header__phone-contact-box">
                         <div class="main-header__phone-number">
                             <a href="tel:9200886823">+92 (0088) 6823</a>
                         </div>
@@ -205,7 +205,7 @@ include "../constant.php";
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </header>
