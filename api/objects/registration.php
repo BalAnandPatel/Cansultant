@@ -167,10 +167,16 @@ class registration{
     }
     function read_profile_by_id(){
         $query="Select 
-        id, full_name, father_name, mother_name, spouse_name, exam_name, marital_status,status,result,admit_card,password,  gender,dob , mobile  , alternate_mobile , email, address1
-    , address2, address3 , cor_address  , district , state , pincode , religion, category ,nationality, h_qualification , subject, passing_date
-     , h_percentage, grade,languages , is_read,is_write, is_speak,zone,post,postcode,disability_cat,disability_type,ex_serviceman,exam_name
-    , serving_defence_per,service_period , state_exam1,state_exam2,center_exam1,center_exam2 created_by,created_on,registration_no
+        id, full_name, father_name, mother_name, spouse_name,
+        exam_name, marital_status, status, result, admit_card, 
+        password, gender, dob, mobile, alternate_mobile, email,
+        address1, address2, address3, cor_address, district, state,
+        pincode, religion, category, nationality, h_qualification, subject,
+        passing_date, h_percentage, grade, languages, is_read, is_write, is_speak,
+        zone, post, postcode, disability_cat, disability_type, ex_serviceman, exam_name,
+        serving_defence_per, service_period, state_exam1, state_exam2, center_exam1, center_exam2,
+        created_by, created_on, registration_no
+        
         from " .$this->table_name .  " where id=:id";
         $stmt = $this->conn->prepare($query); 
         $stmt->bindParam(":id", $this->id);

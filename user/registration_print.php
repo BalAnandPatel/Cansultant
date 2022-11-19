@@ -5,7 +5,8 @@ include "../constant.php";
 //include "include/header.php";
 $id=$_GET["id"];
 $url = $URL ."registration/read_profile_by_id.php";
-$id=$_GET['id'];
+//$id=$_GET['id'];
+$id='48';
 $data=array("id"=>$id);
 $postdata1 = json_encode($data);
 $result=giplCurl($url,$postdata1);
@@ -16,17 +17,17 @@ $img_thumb="img/".$id."/profile"."/".$id."_thumb".".png";
 
 function giplCurl($api,$postdata){
     $url = $api; 
-      $client = curl_init($url);
-      curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
-      curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
-      $response = curl_exec($client);
-  //   print_r($response);
-      return $result = json_decode($response);
+    $client = curl_init($url);
+    curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
+    curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
+    $response = curl_exec($client);
+    //print_r($response);
+    return $result = json_decode($response);
   }
 
 
 
-  $url_exam = $URL ."exam/read_exam_details.php";
+$url_exam = $URL ."exam/read_exam_details.php";
 $data_exam=array("exam_name"=>$result->records[0]->exam_name);
 $postdata = json_encode($data_exam);
 $result_exam=giplCurl($url_exam,$postdata);
