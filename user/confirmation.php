@@ -6,7 +6,7 @@ include "../constant.php";
 //$id=$_GET["id"];
 $url = $URL ."registration/read_profile_by_id.php";
 //$id=$_GET['id'];
-$id='48';
+$id='50';
 $data=array("id"=>$id);
 $postdata1 = json_encode($data);
 $result=giplCurl($url,$postdata1);
@@ -37,6 +37,7 @@ $url_payment = $URL ."payment/read_payment_details.php";
 $data_payment=array("amount"=>$result_exam->records[0]->amount, "user_id"=>$result->records[0]->id);
 $postdata_payment = json_encode($data_payment);
 $result_payment=giplCurl($url_payment,$postdata_payment);
+//print_r($result_payment);
 if(($result_payment->records[0]->status==1) && ($result_payment->records[0]->amount==$result_exam->records[0]->amount)){
    $amount=$result_payment->records[0]->amount;
 } 
@@ -59,28 +60,44 @@ else{
   <link rel="stylesheet" href="../common/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../common/dist/css/adminlte.min.css">
+
+
 </head>
 <body>
+
+  <style>
+
+   #options {
+    align-content:center;
+    align-items:center;
+    text-align: center;
+}
+
+  </style>
+
 <div class="wrapper">
   <!-- Main content -->
-  <section class="invoice m-5">
+  <section class="invoice m-0">
   
     <!-- info row -->
     <div class="row invoice-info">
-      <div class="col-sm-3 invoice-col text-center p-3">
+      <div class="col-sm-3 invoice-col text-center pt-1">
        <div class="text-center">
          <img src="../website/assets/images/resources/logo-1.png" class="img-fluid " alt="logo image">
         </div>
       </div>
       <!-- /.col -->
-      <div class="col-sm-6 invoice-col text-center p-5">
+      <div class="col-sm-6 invoice-col text-center pt-3">
         <address>
           <strong><big><?php echo $result->records[0]->exam_name ?></big></strong>
           <p>Confirmation Page</p>
+          <div class="btn-group" id="options">
+            <button class="btn btn-primary btn-sm" id="printpagebutton" type="button" onclick="printpage()">Print</button>
+          </div>
         </address>
       </div>
       <!-- /.col -->
-      <div class="col-sm-3  invoice-col text-center p-3">
+      <div class="col-sm-3  invoice-col text-center pt-1">
        <div class="text-center">
          <img src="../website/assets/images/resources/logo-1.png" class="img-fluid" alt="logo image">
         </div>
@@ -119,11 +136,11 @@ else{
             <th>Candidate's Name</th>
             <td><?php echo $value1->full_name; ?></td>
             <th>Date of Birth</th>
-            <td><?php echo $value1->dob; ?></td>
+            <td><?php echo date("d-m-y", strtotime($value1->dob)); ?></td>
           </tr>
           <tr>
             <th>Mother's Name</th>
-            <td><?php echo $value1->mother_name; ?></td>
+            <td><?php echo ucwords($value1->mother_name); ?></td>
              <th>Gender</th>
             <td><?php echo $value1->gender; ?></td>
           </tr>
@@ -134,8 +151,14 @@ else{
             <td><?php echo $value1->category; ?></td>
           </tr>
           <tr>
+            <th>Marital Status</th>
+            <td><?php echo $value1->marital_status; ?></td>
             <th>Nationality</th>
             <td><?php echo $value1->nationality; ?></td>
+          </tr>
+          <tr>
+            <th>Spouse Name</th>
+            <td><?php echo $value1->spouse_name; ?></td>
             <th>Religion</th>
             <td><?php echo $value1->religion; ?></td>
           </tr>
@@ -208,7 +231,7 @@ else{
           </tr>
           <tr>
             <th>Passing Date</th>
-            <td><?php echo $value1->passing_date; ?></td>
+            <td><?php echo date('d-m-y',strtotime($value1->passing_date)); ?></td>
              <th>Highest Qualification Mark</th>
             <td><?php echo $value1->h_percentage; ?></td>
           </tr>
@@ -247,7 +270,7 @@ else{
         </table>
 
         <p class="text-success"><strong><u>Uploaded Image and Signature</u></strong></p>
-        <table class="table table-bordered">
+        <table class="table table-sm table-bordered">
           <thead>
              <?php 
                      
@@ -264,13 +287,13 @@ else{
           <tr>
             <td class="text-center">
                 <picture>
-                 <img src="<?php echo  $img; ?>" class="img-fluid img-thumbnail" style="height:150px; width:150px;" alt="...">
+                 <img src="<?php echo  $img; ?>" class="img-responsive img-fluid img-thumbnail" style="height:150px; width:150px;" alt="...">
                 </picture>
             </td>
             <td class="text-center">
                <picture>
                  <source srcset="<?php echo  $img_thumb; ?>"  type="image/svg+xml">
-                 <img src="<?php echo  $img_thumb; ?>" class="img-fluid img-thumbnail" style="height:50px; width:200px;" alt="...">
+                 <img src="<?php echo  $img_thumb; ?>" class="img-responsive img-fluid img-thumbnail" style="height:50px; width:200px;" alt="...">
                 </picture>
             </td>
           </tr>
@@ -299,13 +322,18 @@ else{
           </thead>
           <tbody>
           <tr>
-            <td><?php echo $value1->full_name; ?></td>
-            <td><?php echo $value1->full_name; ?></td>
-            <td><?php echo $value1->full_name; ?></td>
-            <td><?php echo $value1->full_name; ?></td>
-            <td><?php echo $value1->full_name; ?></td>
-            <td><?php echo $value1->full_name; ?></td>
-            <td><?php echo $value1->full_name; ?></td>
+            <td>Application Fee</td>
+            <td><?php echo $value1->registration_no; ?></td>
+            <td><?php $value1->full_name; ?></td>
+            <td>
+              <?php 
+               $date=$result_payment->records[0]->created_on;
+               echo date("d-m-Y",$date);
+              ?>
+             </td>
+            <td><?php echo $amount; ?></td>
+            <td><?php echo $result_payment->records[0]->user_id; ?></td>
+            <td><?php  $value1->full_name; ?></td>
           </tr>
           <?php } } ?>
           </tbody>
@@ -321,6 +349,17 @@ else{
 </div>
 <!-- ./wrapper -->
 <!-- Page specific script -->
+<script>
+   function printpage() {
+        //Get the print button and put it into a variable
+        var printButton = document.getElementById("printpagebutton");
+        //Set the print button visibility to 'hidden' 
+        printButton.style.visibility = 'hidden';
+        //Print the page content
+        window.print()
+        printButton.style.visibility = 'visible';
+    }
+</script>
 <!--
 <script>
   window.addEventListener("load", window.print());

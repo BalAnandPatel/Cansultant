@@ -41,14 +41,13 @@ if($num>0){
         $payment_item=array(
 
             "pid" => $pid,
-       "user_id"=>$user_id,
-       "amount"=>$amount,
-    "transaction_id"=>$transaction_id,
-    "request_id "=>$request_id,
-    
-    "status"=>$status,
-    "created_by "=>$created_by,
-    "created_on "=>$created_on, 
+            "user_id"=>$user_id,
+            "amount"=>$amount,
+            "transaction_id"=>$transaction_id,
+            "request_id "=>$request_id,
+            "status"=>$status,
+            "created_by "=>$created_by,
+            "created_on "=>$created_on, 
         );
   
         array_push($payments_arr["records"], $payment_item);

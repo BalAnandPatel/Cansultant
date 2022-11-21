@@ -65,7 +65,7 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
       
       
       <h2 class="login-box-msg"><u>Personal Details</u></h2>
-      <p class="login-box-msg"><a href="index.php"><b class="login-box-msg">Alreadr Register? Please Login.</b></a></p>
+      <!-- <p class="login-box-msg"><a href="index.php"><b class="login-box-msg">Alreadr Register? Please Login.</b></a></p> -->
       <hr>
      
       <form action="action/registration_post.php" method="post" enctype="multipart/form-data">

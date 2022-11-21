@@ -3,10 +3,10 @@ include '../../constant.php';
 // var_dump($_POST);
 // if(isset($_POST["full_name"])){
 $full_name=strtoupper($_POST["full_name"]);
-$father_name=$_POST["father_name"];
-$mother_name=$_POST["mother_name"];
+$father_name=strtoupper($_POST["father_name"]);
+$mother_name=strtoupper($_POST["mother_name"]);
 $marital_status=$_POST["marital_status"];
-$spouse_name=$_POST["spouse_name"];
+$spouse_name=strtoupper($_POST["spouse_name"]);
 $dob=$_POST["dob"];
 $gender=strtoupper($_POST["gender"]);
 $email=$_POST["email"];

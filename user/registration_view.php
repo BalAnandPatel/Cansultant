@@ -49,7 +49,7 @@ function giplCurl($api,$postdata){
   </div>
   <div class="card">
     <div class="card-body register-card-body">
-      <p class="login-box-msg"><a href="index.php"><b class="login-box-msg">Alreadr Register? Please Login.</b></a></p>
+      <!-- <p class="login-box-msg"><a href="index.php"><b class="login-box-msg">Alreadr Register? Please Login.</b></a></p> -->
       
       <h2 class="login-box-msg"><b><u>Personal Details</u></b></h2>
       <hr>
