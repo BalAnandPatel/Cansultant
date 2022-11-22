@@ -12,7 +12,10 @@ include "include/header.php";
 	$response = curl_exec($client);
   //print_r($response);
   $result = json_decode($response);
-  //print_r($result)
+  //print_r($result);
+
+  $image = $ADMIN_IMG_PATH.$result->records[0]->id."/profile/".$result->records[0]->id.".png";
+   
   ?>
 
   <div class="content-wrapper">
@@ -94,7 +97,7 @@ include "include/header.php";
                   <tr>
                     <td><?php echo $value1->id; ?></td>
                     <td><?php echo $value1->registration_no; ?></td>
-                    <td><img height="100" widht="100" src="<?php echo $ADMIN_IMG_PATH.$value1->id."//".$value1->id."png" ?>"></td>
+                    <td><img class="img-fluid img-thumbnail" alt="Responsive image" height="200" widht="200" src="<?php echo $image; ?>"></td>
                     
                     <td><?php echo $value1->full_name; ?></td>
                     <td><?php echo $value1->father_name; ?></td>
