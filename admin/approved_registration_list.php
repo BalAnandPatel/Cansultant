@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 include "include/header.php";
 	$url = $URL."registration/read_registration_by_status.php";
 	$data = array( "status"=>"1");
@@ -82,7 +83,6 @@ include "include/header.php";
                     <th>Grade</th>
                     <th>Status</th>
                     <th>Reg. Date</th>
-                    <th width="100px" colspan="2">Action</th>
                   </tr>
                   	
                   </thead>
@@ -108,23 +108,8 @@ include "include/header.php";
                     <td><?php echo $value1->h_percentage ?></td>
                     <td><?php echo $value1->grade ?></td>
                     <td><?php if($value1->status==0) echo "PENDING"; elseif($value1->status==1) echo "ACTIVE"; elseif($value1->status==2) echo "REJECTED"; ?></td>
-                    <td><?php echo $value1->created_on ?></td>
-                    <td>
-                    <form action="action/approve_user.php" method="post">
-                         <input type="hidden" name="id" value="<?php echo $value1->id ?>" readonly>
-                         <input type="hidden" name="registration_no" value="<?php echo $value1->registration_no ?>" readonly>
-                         <input type="hidden" name="created_on" value="<?php echo $value1->created_on ?>" readonly>
-                         <button type="submit" class="btn btn-block btn-outline-success">APPROVE</button></td>
-                       </form>  
-      
-                    <td>
-                       <form action="action/reject_user.php" method="post">
-                       <input type="hidden" name="id" value="<?php echo $value1->id ?>" readonly>
-                         <input type="hidden" name="registration_no" value="<?php echo $value1->registration_no ?>" readonly>
-                         <input type="hidden" name="created_on" value="<?php echo $value1->created_on ?>" readonly>
-                         <button type="submit" class="btn btn-block btn-outline-danger">REJECT</button>
-                       </form>
-                    </td>
+                    <td><?php echo date("d-m-Y",$value1->created_on); ?></td>
+                   
                   </tr>
                   <?php
                      }

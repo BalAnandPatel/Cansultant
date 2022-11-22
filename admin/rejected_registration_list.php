@@ -1,4 +1,5 @@
 <?php
+ error_reporting(0);
 include "include/header.php";
 	$url = $URL."registration/read_registration_by_status.php";
 	$data = array( "status"=>"2");
@@ -83,7 +84,6 @@ include "include/header.php";
                     <th>Grade</th>
                     <th>Status</th>
                     <th>Reg. Date</th>
-                    <th width="100px" colspan="2">Action</th>
                   </tr>
                   	
                   </thead>
@@ -109,7 +109,7 @@ include "include/header.php";
                     <td><?php echo $value1->h_percentage ?></td>
                     <td><?php echo $value1->grade ?></td>
                     <td><?php if($value1->status==0) echo "PENDING"; elseif($value1->status==1) echo "ACTIVE"; elseif($value1->status==2) echo "REJECTED"; ?></td>
-                    <td><?php echo $value1->created_on ?></td>
+                    <td><?php echo date("d-m-Y",$value1->created_on); ?></td>
                     
                   </tr>
                   <?php

@@ -19,6 +19,11 @@ function giplCurl($api,$postdata){
       return $result = json_decode($response);
   }
 ?>
+<?php
+
+$exam_name = $_POST['exam_name'];
+
+?>
 <script>
 function getFileData(object){
   //alert("Hello");
@@ -75,27 +80,12 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
     
           <div class="col-sm-6">
             <div class="form-group">
-              <label for="input">Select exam </label>
+              <label for="input">Apply For</label>
                <div class="input-group-append">
                  <div class="input-group-text">
                  <span class="fas fa-boxes"></span>
                 </div>
-                <select class="form-control" name="exam_name">
-                 <option value="select" selected>Please Select Exam</option>
-              
-                   <?php
-
-                   foreach ($results as $key => $value) {
-                   foreach ($value as $key1 => $value1) {
-
-                   ?>
-                   <option value="<?php echo $value1->exam_name ?>">
-                    <?php echo $value1->exam_name ?></option>
-                   <?php
-                    }
-                    ?>
-                  <?php } ?>
-                </select>
+                <input class="form-control" type="text" name="exam_name" value="<?php echo $exam_name; ?>" readonly>
             </div>
           </div>
         </div>

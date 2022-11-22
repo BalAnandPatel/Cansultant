@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 include "include/header.php";
 	$url = $URL."registration/read_registration_by_status.php";
 	$data = array( "status"=>"0");

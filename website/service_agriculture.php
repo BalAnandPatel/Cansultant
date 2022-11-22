@@ -34,10 +34,10 @@ include "include/header.php";
                         <div class="sidebar__single sidebar__category">
                                 <h3 class="sidebar__title">All Services</h3>
                                 <ul class="sidebar__category-list list-unstyled">
-                                    <li class="active"><a href="service_education.php">Education<span
+                                    <li><a href="service_education.php">Education<span
                                                 class="icon-right-arrow"></span></a>
                                     </li>
-                                    <li><a href="service_agriculture.php">Agriculture<span
+                                    <li class="active"><a href="service_agriculture.php">Agriculture<span
                                                 class="icon-right-arrow"></span></a></li>
                                     <li><a href="service_small_scale.php">Small Scale Industries<span
                                                 class="icon-right-arrow"></span></a>

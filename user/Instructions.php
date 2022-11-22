@@ -136,10 +136,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <p><b>Note:</b> The candidate particulars can be edited till the payment of fees has not been made. Once the payment of fees has been made, candidate particulars cannot be edited at this stage. Thereafter corrections can be made only during the period in which online correction will be allowed as per the given schedule of <?php echo $value1->exam_name; ?> <?php echo date("Y",strtotime($value1->exam_date_start)); ?> . No change will be accepted through offline mode i.e. through fax/application or by email etc. No correspondence in this regard will be entertained.</p>
                 <p class="card-text"><b>Step 2:</b> Pay Examination Fee by debit card/credit card or Pay Examination Fee by Internet Banking.</p>
                 <p class="card-text"><b>Step 3:</b> Print Confirmation Page for your record and future reference. All Steps are mandatory, On-line application submission will be considered as complete only after receipt of “Confirmation Page” by candidate.</p>
-                <form action="registration.php">
+                <form action="registration.php" method="post">
                 <div class="form-group">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                    <input type="hidden" name="exam_name" value="<?php echo $exam_name; ?>">
                     <label class="form-check-label" for="gridCheck">
                      I have downloaded Information Bulletin, read and understood all the Instructions therein as well as those mentioned above, and filling up the online application form accordingly.
                     </label>
