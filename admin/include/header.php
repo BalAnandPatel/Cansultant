@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-  <title>Recruitment</title>
+  <title>SHAILJA SAMEER EDUCATION AND GREEN REVOLUTION PRIVATE LIMITED</title>
   <!-- jsGrid -->
   <link rel="stylesheet" href="../common/plugins/jsgrid/jsgrid.min.css">
   <link rel="stylesheet" href="../common/plugins/jsgrid/jsgrid-theme.min.css">

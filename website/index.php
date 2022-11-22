@@ -35,7 +35,7 @@ include 'include/header.php';
                                         <p class="main-slider__sub-title">We are Producing Natural Products</p>
                                         <h2 class="main-slider__title">Agriculture.</h2>
                                         <div class="main-slider__btn-box">
-                                            <a href="project_agriculture.php" class="thm-btn main-slider__btn">Discover More <i
+                                            <a href="discover_more_ag.php" class="thm-btn main-slider__btn">Discover More <i
                                                     class="icon-right-arrow"></i> </a>
                                         </div>
                                     </div>
@@ -55,7 +55,7 @@ include 'include/header.php';
                                         <p class="main-slider__sub-title">We are Provide Education for Student</p>
                                         <h2 class="main-slider__title">Education.</h2>
                                         <div class="main-slider__btn-box">
-                                            <a href="project_education.php" class="thm-btn main-slider__btn">Discover More <i
+                                            <a href="discover_more_education.php" class="thm-btn main-slider__btn">Discover More <i
                                                     class="icon-right-arrow"></i> </a>
                                         </div>
                                     </div>
@@ -75,7 +75,7 @@ include 'include/header.php';
                                         <p class="main-slider__sub-title">We are Provide Small Scale Industries Services</p>
                                         <h2 class="main-slider__title">Small Scale Industries.</h2>
                                         <div class="main-slider__btn-box">
-                                            <a href="project_small_scale.php" class="thm-btn main-slider__btn">Discover More <i
+                                            <a href="discover_more_ss.php" class="thm-btn main-slider__btn">Discover More <i
                                                     class="icon-right-arrow"></i> </a>
                                         </div>
                                     </div>
