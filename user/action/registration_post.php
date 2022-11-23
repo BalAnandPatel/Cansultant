@@ -36,7 +36,7 @@ $disability_type=($_POST["disability_type"]!="")? $disability_type=$_POST["disab
 $ex_serviceman=$_POST["ex_serviceman"];
 $serving_defence_per=$_POST["serving_defence_per"];
 $exam_name=$_POST["exam_name"];
-$service_period=$_POST["service_period"]? $service_period=$_POST["service_period"] : "0";
+$service_period=($_POST["service_period"]!="")? $service_period=$_POST["service_period"] : "0";
 $created_on=date("Y-m-d H:i:s");
 $created_by="USER";
 $registration_no = rand(1000000000,9999999999);

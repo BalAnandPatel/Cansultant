@@ -98,8 +98,18 @@ include "include/header.php";
                                 <td><?php echo $value1->amount; ?>/-</td>
                                 <td><?php echo $value1->total_post; ?></td>
                                 <td><?php echo $value1->eligibility; ?></td>
-                                <td><?php echo date("d-m-Y",strtotime($value1->exam_date_start)); ?></td>
-                                <td><?php echo date("d-m-Y",strtotime($value1->exam_date_end)); ?></td>
+                                <td>
+                                    <?php 
+                                      $date = date("d-m-Y",strtotime($value1->exam_date_start)); 
+                                      echo $date=="01-01-1970" ? '0' : $date;
+                                     ?>    
+                                </td>
+                                <td>
+                                    <?php 
+                                      $date = date("d-m-Y",strtotime($value1->exam_date_end)); 
+                                      echo $date=="01-01-1970" ? '0' : $date;
+                                     ?>     
+                                 </td>
                                  <td>
                                    <div class="error-page__btn-box mt-0">
                                      <a href="../user/Instructions.php?examname=<?php echo $value1->exam_name; ?>" target="blank" class="thm-btn error-page__btn">Apply<i class="icon-right-arrow"></i> </a>

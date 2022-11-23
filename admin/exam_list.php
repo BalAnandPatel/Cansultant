@@ -66,6 +66,7 @@
                     <th>Exam Start Date</th>
                     <th>Result Date</th>
                     <th>Created Date</th>
+                    <th colspan="2">Action</th>
                   </tr>
                   	
                   </thead>
@@ -85,13 +86,47 @@
                     <td><?php echo $value1->amount ?></td>
                     <td><?php echo $value1->age; ?></td>
                     <td><?php if($value1->status==0) echo "PENDING"; elseif($value1->status==1) echo "ACTIVE"; elseif($value1->status==2) echo "DISABLEDA"; ?></td>
-                    <td><?php echo date("d-m-Y",strtotime($value1->admit_card_date)); ?></td>
-                    <td><?php echo date("d-m-Y",strtotime($value1->exam_date_start)); ?></td>
+                    <td>
+                      <?php
+                       $date = date("d-m-Y",strtotime($value1->admit_card_date)); 
+                       echo $date=="01-01-1970" ? '0' : $date; 
+                      ?>
+
+                    </td>
+
+                    <td>
+                      <?php 
+                       $date = date("d-m-Y",strtotime($value1->exam_date_start)); 
+                       echo $date=="01-01-1970" ? '0' : $date; 
+                       ?>
+                    </td>
                     
-                    <td><?php echo date("d-m-Y",strtotime($value1->result_date)); ?></td>
-                    <td><?php echo date("d-m-Y",strtotime($value1->created_on)); ?></td>
-                   
-                    
+                    <td>
+                      <?php
+                       $date = date("d-m-Y",strtotime($value1->result_date)); 
+                       echo $date=="01-01-1970" ? '0' : $date; 
+                      ?>
+                    </td>
+                    <td>
+                      <?php
+                       $date = date("d-m-Y",strtotime($value1->created_on)); 
+                       echo $date=="01-01-1970" ? '0' : $date; 
+                      ?>
+                    </td>
+                    <td>
+                      <form action="update_exam.php" method="post">
+                      <input type="hidden" name="exam_name" value="<?php echo $value1->exam_name; ?>">
+                      <button type="submit" name="update_exam" class="btn btn-primary"><i class="fa fa-edit"><b class="ml-1">Edit</b></i>
+                      </button>
+                    </form>
+                    </td>
+                    <td>
+                      <form action="action/delete_exam_post.php" method="post">
+                       <input type="hidden" name="id" value="<?php echo $value1->id; ?>">
+                       <button type="submit" class="btn btn-danger"><i class="fa fa-trash"><b class="ml-1">Delete</b></i>
+                      </button>
+                    </form>
+                    </td>
                     
                   </tr>
                   <?php

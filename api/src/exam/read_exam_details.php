@@ -20,6 +20,8 @@ $db = $database->getConnection();
 $exam = new exam($db);
   
 $data = json_decode(file_get_contents("php://input"));
+//print_r($data);
+
 $exam->exam_name=$data->exam_name;
 $stmt = $exam->read_exam_details();
 $num = $stmt->rowCount();
@@ -47,6 +49,7 @@ if($num>0){
             "total_post"=>$total_post,
             "result_date"=>$result_date,
             "exam_date_start"=>$exam_date_start,
+             "exam_date_end"=>$exam_date_end,
             "admit_card_date"=>$admit_card_date,
             "status"=>$status,
             "created_by"=>$created_by,
