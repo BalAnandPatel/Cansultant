@@ -4,7 +4,7 @@ include '../../constant.php';
 if(isset($_POST["exam_name"])){
 
  $exam_name=strtoupper($_POST["exam_name"]);
- $type=$_POST["type"];
+ $type=ucfirst($_POST["type"]);
  $amount=$_POST["amount"];
  $eligibility=ucfirst($_POST["eligibility"]);
  $total_post=$_POST["total_post"];

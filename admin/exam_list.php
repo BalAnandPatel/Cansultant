@@ -56,7 +56,7 @@
                   <thead>
                   <tr>
                   
-                    <th>Id</th>
+                    <th>S.N</th>
                     <th>Exam_Name</th>
                     <th>Type</th>
                     <th>Amount</th>
@@ -73,25 +73,26 @@
                   <tbody>
                   <?php 
 								     
+                     $counter=0;
                      foreach($result as $key => $value){
                      foreach($value as $key1 => $value1)
                      {
                      
                   ?>  
                   <tr>
-                    <td><?php echo $value1->id ?></td>
+                    <td><?php echo ++$counter ?></td>
                     <td><?php echo $value1->exam_name ?></td>
                                      
                     <td><?php echo $value1->type?></td>
                     <td><?php echo $value1->amount ?></td>
                     <td><?php echo $value1->age; ?></td>
                     <td><?php if($value1->status==0) echo "PENDING"; elseif($value1->status==1) echo "ACTIVE"; elseif($value1->status==2) echo "DISABLEDA"; ?></td>
+
                     <td>
                       <?php
                        $date = date("d-m-Y",strtotime($value1->admit_card_date)); 
                        echo $date=="01-01-1970" ? '0' : $date; 
                       ?>
-
                     </td>
 
                     <td>
@@ -123,7 +124,7 @@
                     <td>
                       <form action="action/delete_exam_post.php" method="post">
                        <input type="hidden" name="id" value="<?php echo $value1->id; ?>">
-                       <button type="submit" class="btn btn-danger"><i class="fa fa-trash"><b class="ml-1">Delete</b></i>
+                       <button type="submit" name="delete_exam" class="btn btn-danger"><i class="fa fa-trash"><b class="ml-1">Delete</b></i>
                       </button>
                     </form>
                     </td>

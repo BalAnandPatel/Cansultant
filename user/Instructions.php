@@ -97,7 +97,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <td><?php echo $value1->eligibility; ?></td>
                       <td><?php echo $value1->amount; ?></td>
                       <td><?php echo $value1->age; ?></td>
-                      <td><?php echo date("d-m-Y",strtotime($value1->exam_date_start)); ?></td>
+                      <td>
+                        <?php 
+                         $date = date("d-m-Y", strtotime($value1->exam_date_start)); 
+                         echo $date=="01-01-1970" ? '0' : $date; 
+                        ?>
+                      </td>
                     </tr>
                   <?php } } ?>
                   </tbody>

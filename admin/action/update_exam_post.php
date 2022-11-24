@@ -5,7 +5,7 @@ if(isset($_POST["update_exam"])){
  include "../../constant.php";	
 
  $exam_name=strtoupper($_POST["exam_name"]);
- $type=$_POST["type"];
+ $type=ucfirst($_POST["type"]);
  $amount=$_POST["amount"];
  $eligibility=ucfirst($_POST["eligibility"]);
  $total_post=$_POST["total_post"];
@@ -37,7 +37,7 @@ if(isset($_POST["update_exam"])){
     curl_setopt($client, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
     $response = curl_exec($client);
-    print_r($response);
+    //print_r($response);
     return $result = json_decode($response);
 
 }

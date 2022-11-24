@@ -109,7 +109,12 @@ include "include/header.php";
                     <td><?php echo $value1->h_percentage ?></td>
                     <td><?php echo $value1->grade ?></td>
                     <td><?php if($value1->status==0) echo "PENDING"; elseif($value1->status==1) echo "ACTIVE"; elseif($value1->status==2) echo "REJECTED"; ?></td>
-                    <td><?php echo $value1->created_on ?></td>
+                    <td>
+                      <?php 
+                       $date = date("d-m-Y", strtotime($value1->created_on)); 
+                       echo $date=="01-01-1970" ? '0' : $date; 
+                       ?>
+                    </td>
                     <td>
                     <form action="action/approve_user.php" method="post">
                          <input type="hidden" name="id" value="<?php echo $value1->id ?>" readonly>
