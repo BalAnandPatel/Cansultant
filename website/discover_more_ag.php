@@ -40,7 +40,7 @@
                                 <h3 class="project-details__title-1">Agriculture</h3>
                                 <p class="project-details__text-1">
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                To improve the condition of agriculture and farmers in utter pradesh through the Shailja Sameer Education and green revolution COPO PVT. LTD.
+                                To improve the condition of agriculture and farmers in utter pradesh through the Shailja Sameer Education and green revolution (OPC) PVT. LTD.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                 Along with this, in today's modern agricultural environment, efforts have been made to control all kinds of diseases and enviromental pollution due to use of harmful chemicals keeping all these thing in mind the emphasis is on organic forming.
                 

@@ -42,7 +42,7 @@
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                 Home industry plays a major role in the economy of any Country. Establishment of home industry increases per capital income and control of pollution can be found.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                Home industry is a great way to empowre women economically and Socially. Today the home industry is fully developed in developed Countries.
+                                Home industry is a great way to empower women economically and Socially. Today the home industry is fully developed in developed Countries.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                 If the home industry can be established in India in better way, then unemploymet can be controlled.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
