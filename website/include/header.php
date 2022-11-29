@@ -83,7 +83,7 @@ include "../constant.php";
                                         <i class="icon-email"></i>
                                     </div>
                                     <div class="text">
-                                        <p><a href="mailto:needhelp@company.com">info@ssegr.com</a></p>
+                                        <p><a href="mailto:needhelp@company.com">sneh8756@gmail.com</a></p>
                                     </div>
                                 </li>
                                 <li>
@@ -91,7 +91,7 @@ include "../constant.php";
                                         <i class="icon-pin"></i>
                                     </div>
                                     <div class="text">
-                                        <p>Address</p>
+                                        <p>MOHD IBRAHIM, FAKEER BUX, SUNNSHA, PRATAPGARH PRATAPGARH Pratapgarh Uttar Pradesh-230306 India</p>
                                     </div>
                                 </li>
                             </ul>
