@@ -39,7 +39,7 @@
                                 </div>
                                 <div class="contact-details__text">
                                     <p>Have Question?</p>
-                                    <h3><a href="#">Free +92 (8800) 6802</a></h3>
+                                    <h3><a href="#">+91 7068615924</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                                 </div>
                                 <div class="contact-details__text">
                                     <p>Write Email</p>
-                                    <h3><a href="#">needhelp@company.com</a></h3>
+                                    <h3><a href="#">sneh8756@gmail.com</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -61,7 +61,7 @@
                                 </div>
                                 <div class="contact-details__text">
                                     <p>Visit Office</p>
-                                    <h3>30 Broklyn Golden Street. USA</h3>
+                                    <h3>MOHD IBRAHIM, FAKEER BUX, SUNNSHA, PRATAPGARH PRATAPGARH Pratapgarh Uttar Pradesh - 230306 India</h3>
                                 </div>
                             </div>
                         </div>
