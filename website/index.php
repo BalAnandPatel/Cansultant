@@ -174,12 +174,12 @@ include 'include/header.php';
                                             class="icon-right-arrow"></i> </a>
                                 </div>
                                 <div class="about-one__ceo">
-                                    <div class="about-one__ceo-img">
-                                        <img src="assets/images/resources/about-one-ceo-img.jpg" alt="">
-                                    </div>
+                                   <!--  <div class="about-one__ceo-img">
+                                         <img src="assets/images/resources/about-one-ceo-mg.jpg" alt="Ceo img"> 
+                                    </div> -->
                                     <div class="about-one__ceo-content">
                                         <!-- <h4 class="about-one__ceo-name">Mike Hardson</h4> -->
-                                        <img src="assets/images/resources/sign.jpeg" width="250px" height="100px" alt="">
+                                        <img src="assets/images/resources/sign.png" width="250px" height="80px" alt="">
                                         <p class="about-one__ceo-title">CEO of Agrion</p>
                                     </div>
                                 </div>
