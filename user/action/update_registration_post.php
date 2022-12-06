@@ -4,8 +4,8 @@ include '../../constant.php';
 if(isset($_POST["full_name"])){
  $id=$_POST["id"];
 $full_name=strtoupper($_POST["full_name"]);
-$father_name=$_POST["father_name"];
-$mother_name=$_POST["mother_name"];
+$father_name=strtoupper($_POST["father_name"]);
+$mother_name=strtoupper($_POST["mother_name"]);
 $marital_status=$_POST["marital_status"];
 $spouse_name=$_POST["spouse_name"];
 $dob=date("Y-m-d", strtotime($_POST["dob"]));
