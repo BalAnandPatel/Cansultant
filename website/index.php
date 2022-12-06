@@ -178,7 +178,8 @@ include 'include/header.php';
                                         <img src="assets/images/resources/about-one-ceo-img.jpg" alt="">
                                     </div>
                                     <div class="about-one__ceo-content">
-                                        <h4 class="about-one__ceo-name">Mike Hardson</h4>
+                                        <!-- <h4 class="about-one__ceo-name">Mike Hardson</h4> -->
+                                        <img src="assets/images/resources/sign.jpeg" width="250px" height="100px" alt="">
                                         <p class="about-one__ceo-title">CEO of Agrion</p>
                                     </div>
                                 </div>
