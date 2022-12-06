@@ -91,7 +91,7 @@ include "../constant.php";
                                         <i class="icon-pin"></i>
                                     </div>
                                     <div class="text">
-                                        <p>MOHD IBRAHIM, FAKEER BUX, SUNNSHA, PRATAPGARH PRATAPGARH Pratapgarh Uttar Pradesh-230306 India</p>
+                                        <p>MOHD IBRAHIM, FAKEER BUX, SUNNSHA, PRATAPGARH PRATAPGARH Pratapgarh Uttar Pradesh-230306</p>
                                     </div>
                                 </li>
                             </ul>

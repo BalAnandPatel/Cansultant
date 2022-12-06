@@ -168,13 +168,13 @@ if($result_registration->message=="Successfull"){
 
       if ((move_uploaded_file($_FILES["fileUpload"]["tmp_name"], $target_file)) 
       && (move_uploaded_file($_FILES["fileUploadThumb"]["tmp_name"], $target_file_thumb))) {
-        echo "The file ". htmlspecialchars( basename( $_FILES["fileUpload"]["name"])). " has been uploaded.";
-        echo "The file ". htmlspecialchars( basename( $_FILES["fileUploadThumb"]["name"])). " has been uploaded.";
+        //echo "The file ". htmlspecialchars( basename( $_FILES["fileUpload"]["name"])). " has been uploaded.";
+       // echo "The file ". htmlspecialchars( basename( $_FILES["fileUploadThumb"]["name"])). " has been uploaded.";
         $_SESSION["registration"] = "File uploaded succesfully.";
           header('Location:../registration_view.php?id='.$id);
       }
        else {
-        echo "Sorry, there was an error uploading your file.";
+        //echo "Sorry, there was an error uploading your file.";
       
       $_SESSION["registration"] = "Sorry, there was an error uploading your file.";
         header('Location:../update_registration.php?id='.$id);
