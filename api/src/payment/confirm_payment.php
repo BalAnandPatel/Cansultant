@@ -24,7 +24,7 @@ $payment->user_id=$data->user_id;
 $payment->amount=$data->amount;
 $payment->transaction_id=$data->transaction_id;
 
-$stmt = $payment->read_payment_details();
+$stmt = $payment->confirm_payment();
 $num = $stmt->rowCount();
   
 // check if more than 0 record found
