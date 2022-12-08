@@ -51,9 +51,9 @@ include "include/header.php";
                                 <a href="index.php" class="thm-btn error-page__btn">For more details check the notification<i
                                         class="icon-right-arrow"></i> </a>
                             </div>
-                             <h3 class="error-page__tagline mt-2">If you have alrady Registerd</h3>
+                             <h3 class="error-page__tagline mt-5">If your paymet is faild</h3>
                              <div class="error-page__btn-box">
-                                <a href="index.php" class="thm-btn error-page__btn">Payment Now<i
+                                <a href="#" class="thm-btn error-page__btn" data-toggle="modal" data-target="#exampleModal" data-whatever="">Payment Now<i
                                         class="icon-right-arrow"></i> </a>
                             </div>
                         </div>
@@ -62,6 +62,41 @@ include "include/header.php";
             </div>
         </section>
         <!--Error Page End-->
+        <!-- modal box start -->
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <form action="../user/payment_verify.php" method="post">
+         <div class="modal-header">
+          <p class="h3 m-auto">Payment Verify</p>
+        </div>
+        <div class="modal-body">
+    
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Registration No.</label>
+            <input type="text" class="form-control" name="registration_no" placeholder="Registration No." id="recipient-name">
+          </div>
+           <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Mobile No.</label>
+            <input type="text" class="form-control" name="mobile" placeholder="Mobile No." id="recipient-name">
+          </div>
+           <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Date Of Birth</label>
+            <input type="date" class="form-control" name="dob" placeholder="Registration No." id="recipient-name">
+          </div>
+         
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="submit" name="submit" class="btn btn-success">Verify</button>
+      </div>
+     </form>
+    </div>
+  </div>
+</div>
+
+        <!--  modal box end -->
 
         <!--Start Cart Page-->
         <section class="cart-page">
@@ -165,6 +200,19 @@ include "include/header.php";
             </div>
         </section>
         <!--End Cart Page-->
+        <script>
+        
+        $('#exampleModal').on('show.bs.modal', function (event) {
+         var button = $(event.relatedTarget) // Button that triggered the modal
+         var recipient = button.data('whatever') // Extract info from data-* attributes
+         // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+         // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        var modal = $(this)
+        modal.find('.modal-title').text('New message to ' + recipient)
+       modal.find('.modal-body input').val(recipient)
+        })
+
+        </script>
 <?php
 include "include/footer.php"; 
 ?>

@@ -3,6 +3,7 @@
  class exam{
     private $conn;
     private $table_name = "exam";
+    private $table_registration = "registration";
     public function __construct($db){
         $this->conn = $db;
     }
@@ -25,6 +26,33 @@
         $stmt->execute();
         return $stmt;
     }
+
+     public function read_payment_varify_details(){
+       $query="Select  reg.id,reg.full_name,reg.registration_no,dob,mobile,reg.exam_name,amount,reg.status,
+        reg.created_on, reg.created_by from " .$this->table_registration . " as reg left join "
+         . $this->table_name . " as exam on reg.exam_name=exam.exam_name 
+        where reg.registration_no=:registration_no and reg.mobile=:mobile and reg.dob=:dob";
+        $stmt = $this->conn->prepare($query); 
+        $stmt->bindParam(":registration_no", $this->registration_no);
+        $stmt->bindParam(":mobile", $this->mobile);
+        $stmt->bindParam(":dob", $this->dob);
+        $stmt->execute();
+        return $stmt;
+    }
+
+    //  public function read_payment_varify_details(){
+    //     $query="Select  reg.id,reg.full_name,dob,mobile,reg.exam_name,reg.status,
+    //     reg.created_on, reg.created_by from " .$this->table_registration ." as reg
+    //     where reg.registration_no=:registration_no and reg.mobile=:mobile and reg.dob=:dob";
+    //     $stmt = $this->conn->prepare($query); 
+    //     $stmt->bindParam(":registration_no", $this->registration_no);
+    //     $stmt->bindParam(":mobile", $this->mobile);
+    //     $stmt->bindParam(":dob", $this->dob);
+    //     $stmt->execute();
+    //     return $stmt;
+    // }
+
+
 
     public function read_exam_list(){
         $query="Select  id,exam_name,type,age,total_post,eligibility,

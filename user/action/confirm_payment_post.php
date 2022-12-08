@@ -2,7 +2,7 @@
 include '../../constant.php';
 
 if(isset($_POST["transaction_id"])){
- $id=$_POST["id"];
+$id=$_POST["id"];
 $registration_no =$_POST["registration_no"];
 $exam_name=$_POST["exam_name"];
 $transaction_id=$_POST["transaction_id"];
