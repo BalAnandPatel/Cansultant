@@ -4,6 +4,7 @@
     private $conn;
     private $table_name = "exam";
     private $table_registration = "registration";
+    private $table_payment = "payment";
     public function __construct($db){
         $this->conn = $db;
     }
@@ -52,7 +53,16 @@
     //     return $stmt;
     // }
 
-
+    public function read_print_varify_details(){
+       $query="Select  pay.user_id as id,reg.full_name,reg.registration_no,dob,mobile,reg.exam_name,transaction_id,amount, pay.status,pay.created_on, pay.created_by from " .$this->table_registration . " as reg left join "
+         . $this->table_payment . " as pay on reg.id=pay.user_id 
+         where reg.registration_no=:registration_no and pay.transaction_id=:transaction_id";
+        $stmt = $this->conn->prepare($query); 
+        $stmt->bindParam(":registration_no", $this->registration_no);
+        $stmt->bindParam(":transaction_id", $this->transaction_id);
+        $stmt->execute();
+        return $stmt;
+    }
 
     public function read_exam_list(){
         $query="Select  id,exam_name,type,age,total_post,eligibility,

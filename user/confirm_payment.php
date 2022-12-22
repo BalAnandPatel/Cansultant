@@ -1,4 +1,37 @@
+<?php
+session_start();
+include '../../constant.php';
 
+$id=$_SESSION['user_id'];
+$registration_no =$_SESSION['$registration_no'];
+$exam_name=$_SESSION['$exam_name'];
+$transaction_id=$_POST["transaction_id"];
+$amount=$_SESSION['amount'];
+
+
+$url = $URL . "payment/confirm_payment.php";
+
+$data = array( "user_id"=>$id,"amount"=>$amount,"transaction_id"=>$transaction_id);
+
+    //  print_r($data);
+     $postdata = json_encode($data);
+
+$result_payment=url_encode_Decode($url,$postdata);
+print_r($result_payment);
+   
+
+function url_encode_Decode($url,$postdata){
+    $client = curl_init($url);
+curl_setopt($client, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
+$response = curl_exec($client);
+// print_r($response);
+return $result = json_decode($response);
+
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,8 +76,8 @@
             
       <div class="container-fluid">
    
-      <p> Dear <b><?php //echo $full_name  ?></b>, Thank you for the registration for examination : <b><?php //echo $exam_name ?></b>. Your Registration Number is :<b> <?php// echo $registration_no; ?></b></p>
-<p>Your Registration Amount for examination :<b> <?php //echo $exam_name ?></b> is<b> &#8377;<?php //echo $results->records[0]->amount ?></b> only.  </p>
+      <p> Dear <b><?php //echo $full_name  ?></b>, Thank you for the payment for examination : <b><?php //echo $exam_name ?></b>. Your Registration Number is :<b> <?php// echo $registration_no; ?></b></p>
+<p>Your payment Amount for examination :<b> <?php //echo $exam_name ?></b> is<b> &#8377;<?php //echo $results->records[0]->amount ?></b> only.  </p>
 
                       
 

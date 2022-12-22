@@ -1,4 +1,5 @@
 <?php
+session_start();
 include '../../constant.php';
 
 if(isset($_POST["transaction_id"])){
@@ -17,20 +18,7 @@ $data = array( "user_id"=>$id,"amount"=>$amount,"transaction_id"=>$transaction_i
 
 $result_payment=url_encode_Decode($url,$postdata);
 print_r($result_payment);
-if($result_payment->records[0]->status==1){
-  
 
-  //$_SESSION["registration"] = "Sorry, there was an error uploading your file.";
- header('Location:../registration_print.php?id='.$id);
-     }
-      else {
-
-       // echo "not updated";
-     //  $_SESSION["registration"] = "Sorry, there was an error uploading your file.";
-       header('Location:../registration_view.php?id='.$id);
-      }
-    }
-    
 
 function url_encode_Decode($url,$postdata){
     $client = curl_init($url);

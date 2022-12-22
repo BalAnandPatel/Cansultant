@@ -1,4 +1,5 @@
 <?php
+session_start();
 //This page is used by admin to view the login details of created agents.
 include '../constant.php';
 
@@ -16,6 +17,13 @@ $data=array("exam_name"=>$exam_name);
 $postdata1 = json_encode($data);
 $results=giplCurl($url,$postdata1);
 //print_r($results);
+
+$_SESSION['$exam_name'] = $_POST["exam_name"];
+$_SESSION['$registration_no'] = $_POST["registration_no"];
+$_SESSION['user_id'] = $_POST["id"];
+$_SESSION['full_name'] = $_POST["full_name"]; 
+$_SESSION['amount'] = $results->records[0]->amount;
+
 
 
 function giplCurl($api,$postdata){
@@ -115,11 +123,15 @@ After successful payment, the student can download the registration receipt.
           </div>
           <div class="col-sm-4">
 
-          <form action="action/confirm_payment_post.php" method="post" enctype="multipart/form-data">
+          <form action="action/pay.php" method="post" enctype="">
+   
+              
           <input type="hidden" name="id" value="<?php echo $id ?>" >
-           <input type="text" class="form-control" name="transaction_id"  placeholder="Transaction Id" autocomplete="off"  required>
+           <!--<input type="text" class="form-control" name="transaction_id"  placeholder="Transaction Id" autocomplete="off"  required>-->
            <input type="hidden"  name="amount" value="<?php echo $results->records[0]->amount ?>" autocomplete="off"  required>
 
+  <input type="hidden" name="name" value="<?php echo $full_name ?>" readonly>
+    <input type="hidden" name="email" value="giplanand@gmail.com" readonly>
                 <input type="hidden" name="exam_name" value="<?php echo $exam_name ?>" readonly>
             
           </div>
@@ -132,6 +144,7 @@ After successful payment, the student can download the registration receipt.
 
                 <input type="hidden" name="exam_name" value="<?php echo $exam_name ?>" readonly>
             <button type="submit"  class="btn btn-success btn-block">Confirm & Pay</button>
+            
           
           </div>
           <!-- /.col -->
