@@ -22,10 +22,10 @@ $exam = new exam($db);
 $data = json_decode(file_get_contents("php://input"));
 //print_r($data);
 
-$exam->registration_no=$data->registration_no;
+$exam->full_name=$data->full_name;
 $exam->mobile=$data->mobile;
 
-$stmt = $exam->read_payment_varify_details();
+$stmt = $exam->get_reg_number();
 $num = $stmt->rowCount();
   
 // check if more than 0 record found
@@ -44,14 +44,10 @@ if($num>0){
 
             "id" => $id,
             "full_name"=>$full_name,
+            "mobile"=>$mobile,
             "registration_no"=>$registration_no,
             "exam_name"=>$exam_name,
-            "amount"=>$amount,
-            "mobile"=>$mobile,
-            "dob"=>$dob,
-            "status"=>$status,
-            "created_on"=>$created_on,
-            "created_by"=>$created_by
+            "status"=>$status
         );
   
         array_push($exams_arr["records"], $exam_item);
@@ -72,7 +68,7 @@ else{
   
     // tell the user no products found
     echo json_encode(
-        array("message" => "No user found.")
+        array("message" => "No record found for get reg.")
     );
 }
 ?>

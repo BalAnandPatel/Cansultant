@@ -48,7 +48,7 @@ include "include/header.php";
                             <p class="error-page__text"><b>SHAILJA SANEER EDUCATION AND GREEN REVOLUTIO (OPC) PVT.LTD.</b></p>
                             <p class="error-page__text" style="font-size:15px;">* RECRUITED 53900 VARIOUS POST IN EDUCATION, AGRICUTURE AND HOME INDUSTRY / SMALL SCALE INDUSTRY SECTOR.</p>
                             <div class="error-page__btn-box mt-2">
-                                <a href="index.php" class="thm-btn error-page__btn">For more details check the notification<i
+                                <a href="index.php" class="thm-btn error-page__btn">For More Details Check The Notification<i
                                         class="icon-right-arrow"></i> </a>
                             </div>
                           <!--    <h3 class="error-page__tagline mt-5">If your paymet is faild</h3>
@@ -60,20 +60,30 @@ include "include/header.php";
                     </div>
                 </div>
                       <div class="row mt-3">
-                    <div class="col-xl-6">
+                    <div class="col-xl-4">
                         <div class="error-page__inner bg-light p-2">
                              <!-- <h3 class="error-page__tagline mt-5">If your paymet is faild</h3> -->
-                                   <span class="section-title__tagline">If your paymet is faild</span>
+                                   <span class="section-title__tagline">If Your Paymet Is Faild</span>
                              <div class="error-page__btn-box">
                                 <a href="#" class="thm-btn error-page__btn" data-toggle="modal" data-target="#exampleModal" data-whatever="">Payment Now<i
                                         class="icon-right-arrow"></i> </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-xl-4">
                       <div class="error-page__inner bg-light p-2">
                              <!-- <h3 class="error-page__tagline mt-5">Get final print after payment</h3> -->
-                              <span class="section-title__tagline">Get final print after payment</span>
+                              <span class="section-title__tagline">Know Your Registration No.</span>
+                             <div class="error-page__btn-box">
+                                <a href="#" class="thm-btn error-page__btn" data-toggle="modal" data-target="#findRegModal" data-whatever="">Get Registration No.<i
+                                        class="icon-right-arrow"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                      <div class="error-page__inner bg-light p-2">
+                             <!-- <h3 class="error-page__tagline mt-5">Get final print after payment</h3> -->
+                              <span class="section-title__tagline">Get Final Print After Payment</span>
                              <div class="error-page__btn-box">
                                 <a href="#" class="thm-btn error-page__btn" data-toggle="modal" data-target="#printModal" data-whatever="">Get Final Print<i
                                         class="icon-right-arrow"></i> </a>
@@ -101,11 +111,7 @@ include "include/header.php";
           </div>
            <div class="form-group">
             <label for="recipient-name" class="col-form-label">Mobile No.</label>
-            <input type="text" class="form-control" name="number" placeholder="Mobile No." id="recipient-name" autocomplete="off" required>
-          </div>
-           <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Date Of Birth</label>
-            <input type="date" class="form-control" name="dob" placeholder="Registration No." id="recipient-name" autocomplete="off" required>
+            <input type="number" class="form-control" name="mobile" placeholder="Mobile No." id="recipient-name" autocomplete="off" required>
           </div>
          
       </div>
@@ -120,14 +126,47 @@ include "include/header.php";
 
         <!--  modal box end -->
 
-        <!-- modal box start for get final print -->
+        <!-- modal box start for know registration number -->
+
+      <div class="modal fade" id="findRegModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <form action="../user/find_reg_number.php" method="post">
+         <div class="modal-header">
+          <p class="h3 m-auto">Search Your Registration No.</p>
+        </div>
+        <div class="modal-body">
+    
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Name</label>
+            <input type="text" class="form-control" name="full_name" placeholder="Enter Your Name" autocomplete="off" id="recipient-name" required>
+          </div>
+           <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Mobile No.</label>
+            <input type="number" class="form-control" name="mobile" placeholder="Mobile No." id="recipient-name" autocomplete="off" required>
+          </div>
+         
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="submit" name="submit" class="btn btn-success">Search</button>
+      </div>
+     </form>
+    </div>
+  </div>
+</div>
+
+        <!--  modal box end for know registration number-->
+
+
+                <!-- modal box start for get final print -->
 
       <div class="modal fade" id="printModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
        <div class="modal-dialog" role="document">
         <div class="modal-content">
         <form action="../user/print_verify_post.php" method="post">
          <div class="modal-header">
-          <p class="h3 m-auto">Print Verification</p>
+          <p class="h3 m-auto">Get Your Final Print</p>
         </div>
         <div class="modal-body">
     
@@ -136,14 +175,14 @@ include "include/header.php";
             <input type="number" class="form-control" name="registration_no" placeholder="Registration No." autocomplete="off" id="recipient-name" required>
           </div>
            <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Transaction Id.</label>
-            <input type="text" class="form-control" name="transaction_id" placeholder="Transaction Id." id="recipient-name" autocomplete="off" required>
+            <label for="recipient-name" class="col-form-label">Mobile No.</label>
+            <input type="number" class="form-control" name="mobile" placeholder="Mobile No." id="recipient-name" autocomplete="off" required>
           </div>
          
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        <button type="submit" name="submit" class="btn btn-success">Verify</button>
+        <button type="submit" name="submit" class="btn btn-success">Submit</button>
       </div>
      </form>
     </div>

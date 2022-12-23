@@ -3,12 +3,11 @@ session_start();
 //error_reporting(0);
 
 include "../constant.php";
-//$id=$_GET["id"];
 $url = $URL ."registration/read_profile_by_id.php";
-//$transaction_id=$_SESSION['transaction_id'];
-$transaction_id='13165465464';
-//$id=$_SESSION['user_id'];
-$id='50';
+$transaction_id=$_POST['transaction_id'];
+$t_date=$_POST['transaction_date'];
+$id=$_POST['id'];
+//$id='50';
 $data=array("id"=>$id);
 $postdata1 = json_encode($data);
 $result=giplCurl($url,$postdata1);
@@ -329,8 +328,7 @@ else{
             <td><?php echo $transaction_id; ?></td>
             <td>
               <?php 
-                $date=date('d-m-Y');
-                echo $date;
+                echo $t_date;
               ?>
              </td>
             <td><?php echo $amount; ?></td>

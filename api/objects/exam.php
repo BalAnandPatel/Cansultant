@@ -9,7 +9,7 @@
         $this->conn = $db;
     }
 
-    public $id,$exam_name,$type,$age,$total_post,$amount,$eligibility,$status,$exam_date_start,$exam_date_end,$result_date,$admit_card_date,$created_by,$created_on;
+    public $id,$full_name,$registration_no,$dob,$mobile,$exam_name,$type,$age,$total_post,$amount,$eligibility,$status,$exam_date_start,$exam_date_end,$result_date,$admit_card_date,$created_by,$created_on;
 
     public function read_exam(){
         $query="Select  id,exam_name,type,age, amount,status,exam_date_start, result_date,admit_card_date,created_by,created_on
@@ -32,11 +32,10 @@
        $query="Select  reg.id,reg.full_name,reg.registration_no,dob,mobile,reg.exam_name,amount,reg.status,
         reg.created_on, reg.created_by from " .$this->table_registration . " as reg left join "
          . $this->table_name . " as exam on reg.exam_name=exam.exam_name 
-        where reg.registration_no=:registration_no and reg.mobile=:mobile and reg.dob=:dob";
+        where reg.registration_no=:registration_no and reg.mobile=:mobile";
         $stmt = $this->conn->prepare($query); 
         $stmt->bindParam(":registration_no", $this->registration_no);
         $stmt->bindParam(":mobile", $this->mobile);
-        $stmt->bindParam(":dob", $this->dob);
         $stmt->execute();
         return $stmt;
     }
@@ -56,10 +55,20 @@
     public function read_print_varify_details(){
        $query="Select  pay.user_id as id,reg.full_name,reg.registration_no,dob,mobile,reg.exam_name,transaction_id,amount, pay.status,pay.created_on, pay.created_by from " .$this->table_registration . " as reg left join "
          . $this->table_payment . " as pay on reg.id=pay.user_id 
-         where reg.registration_no=:registration_no and pay.transaction_id=:transaction_id";
+         where reg.registration_no=:registration_no and reg.mobile=:mobile and pay.status=1";
         $stmt = $this->conn->prepare($query); 
         $stmt->bindParam(":registration_no", $this->registration_no);
-        $stmt->bindParam(":transaction_id", $this->transaction_id);
+        $stmt->bindParam(":mobile", $this->mobile);
+        $stmt->execute();
+        return $stmt;
+    }
+
+        public function get_reg_number(){
+        $query="Select  id,full_name,exam_name,mobile,registration_no,status
+          from " .$this->table_registration .  " where full_name=:full_name and mobile=:mobile";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(":full_name", $this->full_name);
+        $stmt->bindParam(":mobile", $this->mobile); 
         $stmt->execute();
         return $stmt;
     }

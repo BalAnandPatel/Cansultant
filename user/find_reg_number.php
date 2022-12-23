@@ -2,12 +2,12 @@
 //This page is used by admin to view the login details of created agents.
 include '../constant.php';
 
-$registration_no=$_POST["registration_no"];
+$full_name=strtoupper($_POST["full_name"]);
 $mobile=$_POST["mobile"];
 
-$url = $URL ."exam/read_print_verify_details.php";
+$url = $URL ."exam/read_get_reg_number.php";
 
-$data=array("registration_no"=>$registration_no,"mobile"=>$mobile);
+$data=array("full_name"=>$full_name,"mobile"=>$mobile);
 //print_r($data);
 $postdata1 = json_encode($data);
 $results=giplCurl($url,$postdata1);
@@ -55,46 +55,53 @@ function giplCurl($api,$postdata){
     <div class="card-body register-card-body">
       <!-- <p class="login-box-msg"><a href="index.php"><b class="login-box-msg">Alreadr Register? Please Login.</b></a></p> -->
       
-      <h2 class="login-box-msg"><b><u>Payment Details</u></b></h2>
+      <h2 class="login-box-msg"><b><u>Get Your Registration Number</u></b></h2>
+      <a href="../website/recruitment.php">
+      <button class="btn btn-primary btn-sm" id="button"><i class="fa fa-arrow-left mr-2"></i>Back</button></a>
       <button class="btn btn-primary btn-sm" id="printpagebutton" onclick="printpage()"><i class="fa fa-print mr-2"></i>Print</button>
-      <?php 
-                                     
-                     foreach($results as $key => $value){
-                     foreach($value as $key1 => $value1)
-                     {
-                     
-                  ?> 
-      <div class="btn-group" id="options">
-      <form action="get_final_print.php" method="post">
-      <input type="hidden" name="id" value="<?php echo $value1->id; ?>">
-      <input type="hidden" name="transaction_id" value="<?php echo $value1->transaction_id; ?>">
-      <input type="hidden" name="transaction_date" value="
-      <?php $date=$value1->created_on; echo date('d-m-Y',strtotime($date)); ?>">   
-      <a href="#"><button type="submit" class="btn btn-success btn-sm" id="finalbutton"><i class="fa fa-arrow-right mr-2"></i>Get Final Print</button></a>
-      </form>
-     </div>
-     <?php } } ?>
+   
       <hr>
   
     
-                <div class="card-body">
+       <div class="card-body">
 
-             <?php 
-                                     
+      <div class="container-fluid">
+   
+   <p> Dear <b>Candidate</b>, Thank you for the registration</b> Your registration details are given below.</p>
+<div class="table-responsive">
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">S.R</th>
+      <th scope="col">Reg ID</th>
+      <th scope="col">Post Name</th>
+      <th scope="col">Candidate's Name</th>
+      <th scope="col">Mobile No.</th>
+      <th scope="col">Registration No.</th>
+    </tr>
+  </thead>
+  <tbody>
+               <?php 
+                     $counter=0;                
                      foreach($results as $key => $value){
                      foreach($value as $key1 => $value1)
                      {
                      
                   ?> 
-      <div class="container-fluid">
-   
-      <p> Dear <b><?php echo $value1->full_name;  ?></b>, Thank you for the payment for examination : <b><?php echo $value1->exam_name;  ?></b>. Your Registration Number is :<b> <?php echo $value1->registration_no;  ?></b></p>
-<p>Your payment Amount for examination :<b><?php echo $value1->exam_name;  ?></b> is<b> &#8377;<?php echo $value1->amount;  ?></b>and your transaction id <b><?php echo $value1->transaction_id;  ?></b></p>
+    <tr>
+      <th scope="row"><?php echo ++$counter; ?></th>
+      <td><?php echo $value1->id; ?></td>
+      <td><?php echo $value1->exam_name; ?></td>
+      <td><?php echo $value1->full_name; ?></td>
+      <td><?php echo $value1->mobile; ?></td>
+      <td><?php echo $value1->registration_no; ?></td>
+    </tr>
+    <?php } } ?>    
+  </tbody>
+</table>
+ </div>                   
 
-                      
-
-                </div>
-            <?php } } ?>               
+                </div>           
       </div>
      
 
@@ -109,11 +116,11 @@ function giplCurl($api,$postdata){
         var printButton = document.getElementById("printpagebutton");
         //Set the print button visibility to 'hidden' 
         printButton.style.visibility = 'hidden';
-        finalbutton.style.visibility = 'hidden';
+        button.style.visibility = 'hidden';
         //Print the page content
         window.print()
         printButton.style.visibility = 'visible';
-        finalbutton.style.visibility = 'visible';
+        button.style.visibility = 'visible';
     }
 </script>
 

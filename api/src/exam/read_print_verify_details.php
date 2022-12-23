@@ -23,7 +23,7 @@ $data = json_decode(file_get_contents("php://input"));
 //print_r($data);
 
 $exam->registration_no=$data->registration_no;
-$exam->transaction_id=$data->transaction_id;
+$exam->mobile=$data->mobile;
 
 $stmt = $exam->read_print_varify_details();
 $num = $stmt->rowCount();

@@ -5,12 +5,11 @@ include '../constant.php';
 
 $mobile=$_POST["mobile"];
 $registration_no=$_POST["registration_no"];
-$dob=$_POST["dob"];
 
 
 $url = $URL ."exam/read_payment_varify_details.php";
 
-$data=array("registration_no"=>$registration_no,"mobile"=>$mobile,"dob"=>$dob);
+$data=array("registration_no"=>$registration_no,"mobile"=>$mobile);
 //print_r($data);
 $postdata1 = json_encode($data);
 $results=giplCurl($url,$postdata1);
