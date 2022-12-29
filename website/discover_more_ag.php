@@ -40,14 +40,14 @@
                                 <h3 class="project-details__title-1">Agriculture</h3>
                                 <p class="project-details__text-1">
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                To improve the condition of agriculture and farmers in utter pradesh through the Shailja Sameer Education and green revolution (OPC) PVT. LTD.
+                                To improve the condition of agriculture and farmers in Uttar Pradesh through the Shailja Sameer Education and Green Revolution (OPC) PVT. LTD.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                 Along with this, in today's modern agricultural environment, efforts have been made to control all kinds of diseases and enviromental pollution due to use of harmful chemicals keeping all these thing in mind the emphasis is on organic forming.
                 
                                 <h3 class="project-details__title-1">Parts of organic farming</h3>
                                 <strong>[A] Compost :-</strong>
                                 <ul style="list-style-type:square;">
-                                    <li>The use of compost manure helps in increasing the fertility of the soil. It is made from house hold waste and organic matter. Also decreased pollution of enviroment.</li>
+                                    <li>The use of compost manure helps in increasing the fertility of the soil. It is made from house hold waste and organic matter, also decreased pollution of enviroment.</li>
                                     <li>Nitrogen is found in large quantities in dung manure and compost, which is beneficial in the growth of plants and chops.</li>
                                     <li> Compost are made by the plants harvest the vegetable, fruit and pet waste.</li>
                                     <li>Compost controls the pollution along the increasing the fertility of the soil. It also helps in reducing the pollution of organic matter.</li>
@@ -59,14 +59,14 @@
                                 </ul>
                                 <strong>[C] Vermi Compost :-</strong>
                                  <ul style="list-style-type:square;">
-                                    <li>Vemmi compost is more beneficial for plants and chops in the required form Yard manure. On average 1.60% nitrogen, 5.04% P20 and 0.80% K2O are found in vermi compost. It is produced by a type of earth warm found in the soil.</li>
+                                    <li>Vermi compost is more beneficial for plants and chops in the required form Yard manure. On average 1.60% nitrogen, 5.04% P20 and 0.80% K2O are found in vermi compost. It is produced by a type of earth warm found in the soil.</li>
                                 </ul>
                                 <strong>[D] Farm Yard Manure :-</strong>
                                  <ul style="list-style-type:square;">
-                                    <li>It is produced by the feces and urine of pets. Due to the abundance of Nitrogen, it is useful for plants and crops.</li>
+                                    <li>It is produced by the feces and urine of pets. Due to the abundance of nitrogen, it is useful for plants and crops.</li>
                                 </ul>
                                 <p>
-                                <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>keeping these all things in mind the Shailja Sameer education and green revolution (OPC) PVT. LTD. has decided to setup Agaviculture remidies Centre in all over Utter Pradesh.</p>
+                                <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>keeping these all things in mind the Shailja Sameer Education and Green Revolution (OPC) PVT. LTD. has decided to setup Agaviculture remidies Centre in all over Uttar Pradesh.</p>
                             </div>
                         </div>
 

@@ -39,9 +39,9 @@
                                 <h3 class="blog-details__title">Agriculture</h3>
                                 <p class="blog-details__text-1">
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                Agriculture is one of the most important Aspect in everyone's life. It is some thing that is necessary for the survival of each every human being. Along with being a necessity, it also helps in the economy of Country.
+                                Agriculture is one of the most important aspect in everyone's life. It is some thing that is necessary for the survival of each every human being. Along with being a necessity, it also helps in the economy of Country.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                Agriculture has been defined from two word's 'ager' and 'culture' Where ager means field and culture means cultivation. So the meaning of agriculture is cultivation of fields. Agriculture is the process of practicing of forming.
+                                Agriculture has been defined from two word's 'ager' and 'culture' where ager means field and culture means cultivation. So the meaning of agriculture is cultivation of fields. Agriculture is the process of practicing of forming.
                                 <br>  <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                 There are many types of agriculture which are done in different region.<br>
                                 (1) Grain forming (2) Shifting cultivation (3) Gardening and fruit farming (4) Dairy (5) Fishing 
@@ -50,9 +50,9 @@
                                 <h3 class="blog-details__title">Importance of Agriculture</h3>
                                 <p class="blog-details__text-1">
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                Agriculture plays a vital role in living life. It is impossible for One to sustain his/her life without agriculture as it gives the most usable product of human life such as food, fruits etc. As we all knoe that food is the most important thing for survival, nothing comes before food. So We can say the agriculture is particularly important because it is our main source of food supply. It is also the backbone of our economic system. Agriculture not only provide food and raw materials but also employment opportunities to a large proportion of population.
+                                Agriculture plays a vital role in living life. It is impossible for one to sustain his/her life without agriculture as it gives the most usable product of human life such as food, fruits etc. As we all know that food is the most important thing for survival, nothing comes before food. So We can say the agriculture is particularly important because it is our main source of food supply. It is also the backbone of our economic system. Agriculture not only provide food and raw materials but also employment opportunities to a large proportion of population.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                Agriculture is most important aspect of each and everyone's life. It is impossible to feed human being without agriculture. There are some bad impact of agriculture in our environment such as manure fertilizer cause pollution. Over all, it is the backbone of economy of country.   
+                                Agriculture is most important aspect of each and everyone's life, It is impossible to feed human being without agriculture. There are some bad impact of agriculture in our environment such as manure fertilizer cause pollution, over all it is the backbone of economy of country.   
                                 </p>
                             </div>
                           

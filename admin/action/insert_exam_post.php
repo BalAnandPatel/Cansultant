@@ -9,16 +9,20 @@ if(isset($_POST["exam_name"])){
  $eligibility=ucfirst($_POST["eligibility"]);
  $total_post=$_POST["total_post"];
  $age=$_POST["age"];
- $exam_date_start=date("Y-m-d", strtotime($_POST["exam_date_start"]));
- $exam_date_end=date("Y-m-d", strtotime($_POST["exam_date_end"]));
- $admit_card_date=date("Y-m-d", strtotime($_POST["admit_card_date"]));
- $result_date=date("Y-m-d", strtotime($_POST["result_date"]));
+//  $date=$_POST["exam_date_start"];
+//  $exam_date_start=date('d/m/Y',strtotime($date));
+//  $enddate=$_POST["exam_date_end"];
+//  $exam_date_end=date('d/m/Y',strtotime($enddate));
+ $exam_date_start=date("d-m-Y", strtotime($_POST["exam_date_start"]));
+ $exam_date_end=date("d-m-Y", strtotime($_POST["exam_date_end"]));
+ $admit_card_date=date("d-m-Y", strtotime($_POST["admit_card_date"]));
+ $result_date=date("d-m-Y", strtotime($_POST["result_date"]));
 
  $url=$URL. "exam/insert_exam.php";
  $data = array("exam_name"=>$exam_name,"amount"=>$amount, "eligibility"=>$eligibility, 
  "total_post"=>$total_post, "type"=>$type, "age"=>$age, "exam_date_start"=>$exam_date_start,
  "admit_card_date"=>$admit_card_date, "result_date"=>$result_date, "status"=>"1", "created_by"=>"Admin",
- "exam_date_end"=>$exam_date_end, "created_on"=>date("Y-m-d"));
+ "exam_date_end"=>$exam_date_end, "created_on"=>date("d-m-Y"));
 
  //print_r($data);
  $postdata = json_encode($data);

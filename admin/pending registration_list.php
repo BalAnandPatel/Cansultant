@@ -11,12 +11,10 @@ include "include/header.php";
 	//curl_setopt($client, CURLOPT_POST, 5);
 	curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
 	$response = curl_exec($client);
-  //print_r($response);
+   //print_r($response);
   $result = json_decode($response);
   //print_r($result);
 
-  $image = $ADMIN_IMG_PATH.$result->records[0]->id."/profile/".$result->records[0]->id.".png";
-   
   ?>
 
   <div class="content-wrapper">
@@ -94,6 +92,7 @@ include "include/header.php";
                      foreach($value as $key1 => $value1)
                      {
                      
+                     $image = $ADMIN_IMG_PATH.$value1->id."/profile/".$value1->id.".png";
                   ?>  
                   <tr>
                     <td><?php echo $value1->id; ?></td>

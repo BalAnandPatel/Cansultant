@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Asia/Kolkata');
 
-$BASE_URL="http://localhost/cansultant";
+$BASE_URL="http://localhost/Cansultant";
 $URL=$BASE_URL."/api/src/";
 $EXAM_NAME="UPPCL EXAMINATION";
 

@@ -87,7 +87,7 @@ include "../constant.php";
                                         <i class="icon-email"></i>
                                     </div>
                                     <div class="text">
-                                        <p><a href="mailto:needhelp@company.com">sneh8756@gmail.com</a></p>
+                                        <p><a href="mailto:needhelp@company.com">info@ssegr.org.in</a></p>
                                     </div>
                                 </li>
                                 <li>
@@ -95,7 +95,7 @@ include "../constant.php";
                                         <i class="icon-pin"></i>
                                     </div>
                                     <div class="text">
-                                        <p>MOHD IBRAHIM, FAKEER BUX, SUNNSHA, PRATAPGARH PRATAPGARH Pratapgarh Uttar Pradesh-230306</p>
+                                        <p>Bandhva, Tahirpur (Khanupur) Jhunsi Prayagraj Uttar Pradesh 211019</p>
                                     </div>
                                 </li>
                             </ul>
@@ -211,5 +211,10 @@ include "../constant.php";
                         </div>
                     </div> -->
                 </div>
+                <marquee>
+                <a href="recruitment.php">
+                <p class="text-danger">SHAILJA SAMEER EDUCATION AND GREEN REVOLUTION (OPC) PVT.LTD. * RECRUITED 53900 VARIOUS POST IN EDUCATION, AGRICUTURE AND HOME INDUSTRY / SMALL SCALE INDUSTRY SECTOR.</p>
+                </a>
+               </marquee>
             </div>
         </header>

@@ -29,6 +29,8 @@
                                         <li><a href="service_agriculture.php">Services</a></li>
                                         <li><a href="blog_details_agriculture.php">Blogs</a></li>
                                         <li><a href="contact.php">Contact Us</a></li>
+                                        <li><a href="cancelreturn.php">Cancel Return</a></li>
+                                        <li><a href="shipping.php">Shipping</a></li>
                                         <li><a href="privacy_policy.php">Privacy Policy</a></li>
                                         <li><a href="terms.php">Terms & Conditions</a></li>
                                     </ul>
@@ -74,11 +76,18 @@
                                     </div>
                                     <ul class="footer-widget__Contact-list list-unstyled">
                                         <li>
+                                             <div class="text">
+                                                <p><a href="#">Helpline No.</a></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            
                                             <div class="icon">
                                                 <span class="fas fa-phone-square-alt"></span>
                                             </div>
+                                            
                                             <div class="text">
-                                                <p><a href="tel:9200886823">+92 (0088) 6823</a></p>
+                                                <p><a href="#">91+ 9919412317</a></p>
                                             </div>
                                         </li>
                                         <li>
@@ -86,7 +95,7 @@
                                                 <span class="fas fa-envelope"></span>
                                             </div>
                                             <div class="text">
-                                                <p><a href="mailto:needhelp@company.com">needhelp@company.com</a></p>
+                                                <p><a href="#">info@ssegr.org.in</a></p>
                                             </div>
                                         </li>
                                         <li>
@@ -94,7 +103,7 @@
                                                 <span class="icon-pin"></span>
                                             </div>
                                             <div class="text">
-                                                <p>Address</p>
+                                                <p>Bandhva, Tahirpur (Khanupur) Jhunsi Prayagraj Uttar Pradesh 211019</p>
                                             </div>
                                         </li>
                                     </ul>
@@ -116,7 +125,7 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="site-footer__bottom-inner">
-                                <p class="site-footer__bottom-text">© Copyright 2022 by <a href="http://ssegr.com/">SSEGR.COM</a></p>
+                                <p class="site-footer__bottom-text">© Copyright 2022 by <a href="http://ssegr.com/">SSEGR.ORG.IN</a></p>
                                 <div class="site-footer__social">
                                     <a href="#"><i class="fab fa-twitter"></i></a>
                                     <a href="#"><i class="fab fa-facebook"></i></a>
@@ -156,11 +165,11 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:needhelp@packageName__.com">info@ssegr.com</a>
+                    <a href="#">info@ssegr.org.in</a>
                 </li>
                 <li>
                     <i class="fa fa-phone-alt"></i>
-                    <a href="tel:666-888-0000">666 888 0000</a>
+                    <a href="#">91+ 9919412317</a>
                 </li>
             </ul><!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">

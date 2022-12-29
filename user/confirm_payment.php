@@ -1,31 +1,39 @@
 <?php
 session_start();
-include '../../constant.php';
+
+include '../constant.php';
 
 $id=$_SESSION['user_id'];
-$registration_no =$_SESSION['$registration_no'];
-$exam_name=$_SESSION['$exam_name'];
-$transaction_id=$_POST["transaction_id"];
+$full_name=$_SESSION['full_name'];
+// $full_name = "mrityunjay";
+// $id='69';
+$registration_no=$_SESSION['registration_no'];
+// $registration_no='4038938846';
+$exam_name=$_SESSION['exam_name'];
+// $exam_name="UPTET";
+$transaction_id=$_SESSION['transaction_id'];
+// $transaction_id = "pay_Kpl1kJznmjhMeb";
 $amount=$_SESSION['amount'];
-
+// $amount='1';
 
 $url = $URL . "payment/confirm_payment.php";
 
 $data = array( "user_id"=>$id,"amount"=>$amount,"transaction_id"=>$transaction_id);
 
-    //  print_r($data);
+    //print_r($data);
      $postdata = json_encode($data);
 
 $result_payment=url_encode_Decode($url,$postdata);
-print_r($result_payment);
-   
+//print_r($result_payment);
 
+$date = date('d-m-Y');
+ 
 function url_encode_Decode($url,$postdata){
     $client = curl_init($url);
 curl_setopt($client, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
 $response = curl_exec($client);
-// print_r($response);
+//print_r($response);
 return $result = json_decode($response);
 
 }
@@ -76,31 +84,14 @@ return $result = json_decode($response);
             
       <div class="container-fluid">
    
-      <p> Dear <b><?php //echo $full_name  ?></b>, Thank you for the payment for examination : <b><?php //echo $exam_name ?></b>. Your Registration Number is :<b> <?php// echo $registration_no; ?></b></p>
-<p>Your payment Amount for examination :<b> <?php //echo $exam_name ?></b> is<b> &#8377;<?php //echo $results->records[0]->amount ?></b> only.  </p>
+      <p> Dear <b><?php echo $full_name  ?></b>, Thank you for the payment for examination : <b><?php echo $exam_name ?></b>. Your Registration Number is :<b> <?php echo $registration_no; ?></b></p>
+<p>Your payment is successfull Amount for examination :<b> <?php echo $exam_name ?></b> is<b> &#8377;<?php echo $result_payment->records[0]->amount; ?></b>
+and your Transaction Id </b> is<b> &#8377;<?php echo $result_payment->records[0]->transaction_id; ?></b> </p>
 
-                      
+<p>Date:<strong class="ml-2"><?php echo $date; ?></strong></p>
 
 
-<h1>Instructions:</h1>
-<ul>
-    <li>
-    Verify your name, examination details etc.for which examination fee is to be paid.
-                    </li>
-                    <li>
-                    Select any one of the payment gateway and proceed for payment.
-                    </li>
-                    <li>
-For any payment related query, insurance company/candidate needs to contact the respective bank.</li><li>
-Please do not close the browser till you get an appropriate message (Payment Successful/Unsuccessful) and note down the Customer Reference number.</li><li>
-In case the message shows as payment is "Unsuccessful" and amount is debited from bank account then kindly contact your respective bank.</li><li>
-Exam fees once paid will not be refunded under any circumstances once scheduled, even if candidate chooses to remain absent for the examination.</li><li>
-In case of payment confirmation not received, transaction amount will be refunded back within 3 - 4 working days.</li><li>
-Our helpline number is 13454543543 ( timing 9:30 am to 5:30 pm ). You may also send an email to abc@gmail.com</li>
-<li>
-After successful payment, the student can download the registration receipt.
-</li>
-</ul>
+
 
 
                 </div>

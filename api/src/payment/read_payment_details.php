@@ -20,6 +20,7 @@ $db = $database->getConnection();
 $payment = new payment($db);
   
 $data = json_decode(file_get_contents("php://input"));
+//print_r($data);
 $payment->user_id=$data->user_id;
 $payment->amount=$data->amount;
 
@@ -47,7 +48,7 @@ if($num>0){
             "request_id "=>$request_id,
             "status"=>$status,
             "created_by "=>$created_by,
-            "created_on "=>$created_on, 
+            "created_on "=>$created_on
         );
   
         array_push($payments_arr["records"], $payment_item);

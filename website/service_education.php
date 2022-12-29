@@ -74,20 +74,20 @@ include "include/header.php";
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                 In our country, however civic duties have been included in the education theory.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                However not all students have their complete knowledge If today's students want to improve the level of education by keeping the spirit of knowledge acquisition and not using their power in strike Sabotage and political activities, if we invest in rewoving the short coming of the education field, then Surely the level of our education can improve.</p>
+                                However not all students have their complete knowledge If today's students want to improve the level of education by keeping the spirit of knowledge acquisition and not using their power in strike sabotage and political activities, if we invest in rewoving the short coming of the education field, then surely the level of our education can improve.</p>
 
                                 <h3 class="services-details__title">Current education level</h3>
                                 <p class="services-details__text-1">
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                The nature of the present education system in our country is based on blank bookish knowledge. Our education level has dropped Labor is achievable and expense is achievable.
+                                The nature of the present education system in our country is based on blank bookish knowledge. Our education level has dropped labor is achievable and expense is achievable.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                 Due to lack of vocational training and self employment and students are becoming victims of unemployment even after taking higher education.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                Along with the same time, here is atendency in them to stay away from physical labour and become white callar babu.
+                                Along with the same time, here is atendency in them to stay away from physical labour and become white collar babu.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                Even though the nature of education is multiracial today's students are not getting its full benefits and they becoming paradoxical. This situation is very worrying.</p>
+                                Even though the nature of education is multi racial today's students are not getting its full benefits and they becoming paradoxical, This situation is very worrying.</p>
 
-                                <h3 class="services-details__title">Measuries for improvement of students</h3>
+                                <h3 class="services-details__title">Measures for improvement of students</h3>
                                 <p class="services-details__text-1">
                                     <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                 	Fundamental changes should be made in the education system as per the need.

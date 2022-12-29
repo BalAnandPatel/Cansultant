@@ -73,19 +73,19 @@ include "include/header.php";
                                 <h3 class="services-details__title">Agriculture</h3>
                                 <p class="services-details__text-1">
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                	Organic forming by the company which is a method of agriculture. which is based on the non use of synthetic fertilizers and pesticides and which uses Crop rotation Green manure compost etc to mantian the fertility of land. 
+                                	Organic forming by the company which is a method of agriculture, which is based on the non use of synthetic fertilizers and pesticides and which uses crop rotation green manure compost etc to mantian the fertility of land. 
                                 	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                     Do not use of chemical, fertilizers, insecticides, weedicides and growth control manufactured in factories to obtion long term and stable yield in such farming organic fertilizers are used, which control the pollution of both soil and enviroment.
                                 	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                     Increasing population is a serious problem all over the world with the Increasing population, the use of various chemical fertilizere, toxic pesticides to obtian food production by human for the supply of food.
                                 	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                    The use of chemical fertilizer, toxic posticide affects the cycle of exchange between natural Organic and Inorganic Substances in the ecosystem.
+                                    The use of chemical fertilizer, toxic posticide affects the cycle of exchange between natural organic and inorganic substances in the ecosystem.
                                 	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                     Due to which the fertility of the land deteriorates as well as the enviroment is polluted and human health declines.
                                 	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                     In ancient times, forming was done friendly to human health and to the natural enviroment.
                                 	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                    Due to which the cycle of exochange between organic and Inorganic substances was going on Continuosly. As result of which water, air, land and enviroment were not polluted.
+                                    Due to which the cycle of exochange between organic and Inorganic substances was going on continuosly. As result of which water, air, land and enviroment were not polluted.
                                 	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                     Agriculture and animal husbandry combined was highly profitable.
                                 	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
@@ -99,13 +99,13 @@ include "include/header.php";
                                 	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                     To deal with all the above problems of this type, form the last years, the sceme of forming on the principle of sustainable forming has been made by Shailja Sameer education and green revolution (OPC) Pvt Ltd.
                                 	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                    In which organic farming will be operated by the company's agricultural experts and experienced employees engaged in Organic farming.
+                                    In which organic farming will be operated by the company's agricultural experts and experienced employees engaged in organic farming.
                                 	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                     The company will be encouraged to adopt organic forming, posters, tableaux, banners, literature, solo drama, puppet performances for the promotion of Organic forming at tahshil level in each district of the state.
                                 	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                     The work of public awareness among the formers will be done by the employees.
                                 	<br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                    Human health is closely rebted to organic forming by Cultivating this method, the body remains companratively more healthy and comes organic forming does not spoil and comes organic forming also gives more yield than chemical farming. 
+                                    Human health is closely related to organic forming by cultivating this method, the body remains companratively more healthy and comes organic forming does not spoil and comes organic forming also gives more yield than chemical farming. 
                                 </p>
                                 
                                  <h3 class="services-details__title">Benefits of Organic forming</h3>
@@ -117,7 +117,7 @@ include "include/header.php";
                                     <br>5. The increases in the demand of organic products in the market increases the income of the formers.
                                     <br>6. The use of organic manure improved the quality of the land.
                                     <br>7. The water holding capacity of the land increaser. There is less evaporation of water from land.
-                                    <br>8. There is an increase in the water level of the soil, food grains and a reduction in the population caused by The water in the ground. The use of waste to make manure reduces dispaces
+                                    <br>8. There is an increase in the water level of the soil, food grains and a reduction in the population caused by the water in the ground. The use of waste to make manure reduces dispaces
                                     <br>9. Decreasing the lost of crop production and increase in income decliving of
 
 organic fertilizes to complete with the international market.

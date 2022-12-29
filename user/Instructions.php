@@ -121,7 +121,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   The candidate should supply all details while filling the Online Form. Candidates are required to take a print out of the computer generated Confirmation Page with Registration Number after successful submission of data.
                 </p>
                 <p class="card-text"><i class="fa fa-hand-point-right mr-2"></i>
-                Candidates are not required to send hard copy of confirmation page to CTET Unit, CBSE. However, the candidates are advised to retain the hard copy of the application i.e. confirmation page, for future reference.</p>
+                Candidates are not required to send hard copy of confirmation page to Department,. However, the candidates are advised to retain the hard copy of the application i.e. confirmation page, for future reference.</p>
                 <p class="card-text"><i class="fa fa-hand-point-right mr-2"></i>
                 The fee can be remitted in the following ways:</p>
                 <ol type="1">
@@ -154,7 +154,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <!-- <div class="btn btn-success">Click hear to Proceed</div> -->
                 <a href="registration.php">
                 <button type="submit" class="btn btn-success btn-sm btn-block">
-                  Click hear to Proceed
+                  Click here to Proceed
                 </button>
               </a>
                </form>

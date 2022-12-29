@@ -1,19 +1,28 @@
 <?php
+session_start();
 //This page is used by admin to view the login details of created agents.
 include '../constant.php';
 
 
 $mobile=$_POST["mobile"];
 $registration_no=$_POST["registration_no"];
-
+//$date=$_POST["dob"];
+//$dob=date('d/m/Y',strtotime($date));
 
 $url = $URL ."exam/read_payment_varify_details.php";
 
-$data=array("registration_no"=>$registration_no,"mobile"=>$mobile);
+$data=array("registration_no"=>$registration_no,"mobile"=>$mobile,"dob"=>$dob);
 //print_r($data);
 $postdata1 = json_encode($data);
 $results=giplCurl($url,$postdata1);
 //print_r($results);
+
+
+$_SESSION['exam_name'] = $results->records[0]->exam_name;
+$_SESSION['registration_no'] = $results->records[0]->registration_no;
+$_SESSION['user_id'] = $results->records[0]->id;
+$_SESSION['full_name'] = $results->records[0]->full_name; 
+$_SESSION['amount'] = $results->records[0]->amount;
 
  $id = $results->records[0]->id;
 
@@ -26,7 +35,7 @@ function giplCurl($api,$postdata){
       curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
       curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
       $response = curl_exec($client);
-      //print_r($response);
+     // print_r($response);
       return  json_decode($response);
   }
 
@@ -117,11 +126,12 @@ After successful payment, the student can download the registration receipt.
           </div>
           <div class="col-sm-4">
 
-          <form action="action/confirm_payment_post.php" method="post" enctype="multipart/form-data">
+          <form action="action/pay.php" method="post" enctype="multipart/form-data">
           <input type="hidden" name="id" value="<?php echo $results->records[0]->id; ?>" >
            
            <input type="hidden"  name="amount" value="<?php echo $results->records[0]->amount; ?>" autocomplete="off"  required>
-
+           <input type="hidden" name="name" value="<?php echo $results->records[0]->full_name; ?>" readonly>
+           <input type="hidden" name="email" value="giplanand@gmail.com" readonly>
                 <input type="hidden" name="exam_name" value="<?php echo $results->records[0]->exam_name;?>" readonly>
             
           </div>

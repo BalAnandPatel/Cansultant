@@ -37,14 +37,14 @@
                     <div class="row">
                         <div class="col-xl-12 col-lg-8 mb-5">
                             <div class="project-details__content-left">
-                                <h3 class="project-details__title-1">Education Remidies Center</h3>
+                                <h3 class="project-details__title-1">Education Remedies Center</h3>
                                 <p class="project-details__text-1">
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                Shailja Sameer education and green revolution (OPC) Private Limited opened education Remidies centre at tehshil devel in all the districts of Uttar pradesh.
+                                Shailja Sameer education and green revolution (OPC) Private Limited opened education Remedies centre at tehshil level in all the districts of Uttar pradesh.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                In organization all the recruited posts will be Appointed.
+                                In organization all the recruited posts will be appointed.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                Along with the teaching work for the students, this organizations will work to make them physically and mentally strong. This organizations is such students whose financial condition is not good.
+                                Along with the teaching work for the students, this organization will work to make them physically and mentally strong. This organization is such students whose financial condition is not good.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                 Education will be provided to the students by the organization on minimum fee.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
@@ -52,7 +52,7 @@
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                 Admission in the institution will be done through a test so that the amount of time students have devote to education can be determined. After this the subject wise Study will be made to the students, study time will be increased gradually everyday.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                For the convenience of the students, there will be a library and digital Library as well as will fromiched room with pure water and excellent seating arrangement.</p>
+                                For the convenience of the students, there will be a library and digital Library as well as well furnished room with pure drinking water and excellent seating arrangement.</p>
                            
                             </div>
                         </div>

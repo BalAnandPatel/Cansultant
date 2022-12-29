@@ -40,13 +40,13 @@
                                 <h3 class="project-details__title-1">Small Scale Industry (Home Industry)</h3>
                                 <p class="project-details__text-1">
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                Home industry plays a major role in the economy of any Country. Establishment of home industry increases per capital income and control of pollution can be found.
+                                Home industry plays a major role in the economy of any country. Establishment of home industry increases per capital income and control of pollution can be found.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                Home industry is a great way to empower women economically and Socially. Today the home industry is fully developed in developed Countries.
+                                Home industry is a great way to empower women economically and Socially, today the home industry is fully developed in developed countries.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                 If the home industry can be established in India in better way, then unemploymet can be controlled.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                Keeping these things in mind, the Shailja Sameer Education and Green Revolution (OPC) Pvt. Ltd. has decided to set up home industries in all over Utter Pradesh.
+                                Keeping these things in mind, the Shailja Sameer Education and Green Revolution (OPC) Pvt. Ltd. has decided to set up home industries in all over Uttar Pradesh.
                                 </p>
                                
                             </div>

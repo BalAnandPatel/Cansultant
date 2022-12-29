@@ -10,17 +10,17 @@ if(isset($_POST["update_exam"])){
  $eligibility=ucfirst($_POST["eligibility"]);
  $total_post=$_POST["total_post"];
  $age=$_POST["age"];
- $exam_date_start=date("Y-m-d", strtotime($_POST["exam_date_start"]));
- $exam_date_end=date("Y-m-d", strtotime($_POST["exam_date_end"]));
- $admit_card_date=date("Y-m-d", strtotime($_POST["admit_card_date"]));
- $result_date=date("Y-m-d", strtotime($_POST["result_date"]));
+ $exam_date_start=date("d-m-Y", strtotime($_POST["exam_date_start"]));
+ $exam_date_end=date("d-m-Y", strtotime($_POST["exam_date_end"]));
+ $admit_card_date=date("d-m-Y", strtotime($_POST["admit_card_date"]));
+ $result_date=date("d-m-Y", strtotime($_POST["result_date"]));
 
  $url = $URL . "exam/update_exam.php";
 
  $data = array("exam_name"=>$exam_name,"amount"=>$amount, "eligibility"=>$eligibility, 
  "total_post"=>$total_post, "type"=>$type, "age"=>$age, "exam_date_start"=>$exam_date_start,
  "admit_card_date"=>$admit_card_date, "result_date"=>$result_date, "status"=>"1", "updated_by"=>"Admin",
- "exam_date_end"=>$exam_date_end, "updated_on"=>date("Y-m-d"));
+ "exam_date_end"=>$exam_date_end, "updated_on"=>date("d-m-Y"));
   //print_r($data);
 
  $postdata = json_encode($data);
@@ -37,7 +37,7 @@ if(isset($_POST["update_exam"])){
     curl_setopt($client, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
     $response = curl_exec($client);
-    //print_r($response);
+   // print_r($response);
     return $result = json_decode($response);
 
 }

@@ -4,6 +4,7 @@ session_start();
 include '../constant.php';
 
 $exam_name=$_POST["exam_name"];
+$mobile=$_POST["mobile"];
 $registration_no=$_POST["registration_no"];
 $full_name=$_POST["full_name"];
 $id=$_POST["id"];
@@ -18,11 +19,18 @@ $postdata1 = json_encode($data);
 $results=giplCurl($url,$postdata1);
 //print_r($results);
 
-$_SESSION['$exam_name'] = $_POST["exam_name"];
-$_SESSION['$registration_no'] = $_POST["registration_no"];
+$_SESSION['exam_name'] = $_POST["exam_name"];
+$_SESSION['registration_no'] = $_POST["registration_no"];
 $_SESSION['user_id'] = $_POST["id"];
 $_SESSION['full_name'] = $_POST["full_name"]; 
 $_SESSION['amount'] = $results->records[0]->amount;
+
+if(isset($_POST["id"]) && isset($_POST["registration_no"])){
+
+$qry_str = "http://37.59.76.46/api/mt/SendSMS?user=Glintel-Technologies&password=q12345&senderid=SSEGPL&channel=Trans&DCS=0&flashsms=0&number=91".$mobile."&text=Dear%20Candidate,%20this%20is%20Confirmation%20of%20your%20Form.%20your%20registration%20no%20".$registration_no."%20please%20pay%20the%20fee%20for%20complete%20the%20form%20More%20Detail%20visit%20https://ssegr.org.in&DLTtemplateid=1207167056127865373&route=06";
+$smsresult =file_get_contents($qry_str);
+
+}
 
 
 

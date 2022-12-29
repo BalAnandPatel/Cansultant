@@ -113,7 +113,7 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
               <div class="input-group-text">
                 <span class="fas fa-boxes"></span>
               </div>
-            <input type="date" class="form-control" placeholder="Date of Birth" name="dob" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Date of Birth">         
+            <input class="form-control" type="date-time" placeholder="dd-mm-yyyy" name="dob" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Date of Birth">         
 
             </div>
           </div>
@@ -430,6 +430,8 @@ document.getElementById('selectedFileThumb').innerHTML=name;//set name using cor
              <option class="form-control" value="Under Graduation">Under Graduation</option>
              <option class="form-control" value="Senior Secondar">Senior Secondary</option>
              <option class="form-control" value="Higher Secondary">Higher Secondary</option>
+             <option class="form-control" value="Higher Secondary">class 5th</option>
+             <option class="form-control" value="Higher Secondary">class 8th</option>
          </select>
       </div></div></div>
 

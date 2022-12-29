@@ -15,11 +15,13 @@ include_once '../../objects/payment.php';
 // instantiate database and product object
 $database = new Database();
 $db = $database->getConnection();
-  
+
 // initialize object
 $payment = new payment($db);
   
 $data = json_decode(file_get_contents("php://input"));
+//print_r($data);
+
 $payment->user_id=$data->user_id;
 $payment->amount=$data->amount;
 $payment->transaction_id=$data->transaction_id;
@@ -42,14 +44,13 @@ if($num>0){
         $payment_item=array(
 
             "pid" => $pid,
-       "user_id"=>$user_id,
-       "amount"=>$amount,
-    "transaction_id"=>$transaction_id,
-    "request_id "=>$request_id,
-    
-    "status"=>$status,
-    "created_by "=>$created_by,
-    "created_on "=>$created_on, 
+            "user_id"=>$user_id,
+            "amount"=>$amount,
+            "transaction_id"=>$transaction_id,
+            "request_id"=>$request_id,
+            "status"=>$status,
+            "created_by "=>$created_by,
+            "created_on "=>$created_on
         );
   
         array_push($payments_arr["records"], $payment_item);

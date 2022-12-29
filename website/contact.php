@@ -24,12 +24,12 @@
         <!--Google Map Start-->
         <section class="google-map">
             <div class="container">
-                <div class="google-map-box">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4562.753041141002!2d-118.80123790098536!3d34.152323469614075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e82469c2162619%3A0xba03efb7998eef6d!2sCostco+Wholesale!5e0!3m2!1sbn!2sbd!4v1562518641290!5m2!1sbn!2sbd"
-                        class="google-map__one" allowfullscreen>
-                    </iframe>
-                </div>
+                <!--<div class="google-map-box">-->
+                <!--     <iframe -->
+                <!--     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14439.953578766332!2d82.05923599437399!3d25.20361386797543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39855b05b95182ed%3A0x7bf789f5f027e22!2sBadhava%2C%20Uttar%20Pradesh%20212302!5e0!3m2!1sen!2sin!4v1670675274447!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">-->
+  
+                <!--     </iframe>-->
+                <!--</div>-->
                 <div class="contact-details">
                     <div class="row">
                         <div class="col-xl-3 col-lg-6 col-md-6">
@@ -39,7 +39,9 @@
                                 </div>
                                 <div class="contact-details__text">
                                     <p>Have Question?</p>
-                                    <h3><a href="#">+91 7068615924</a></h3>
+                                    <h3>Call Time-<a href="#"><br>Morning-10:00AM <br> Evning-04:00PM</a></h3>
+                                    <h3>Office Contact-<a href="#"><br>+91 9919312396</a></h3>
+                                    <h3>Helpline No-<a href="#"><br>+91 9919412317</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +52,7 @@
                                 </div>
                                 <div class="contact-details__text">
                                     <p>Write Email</p>
-                                    <h3><a href="#">sneh8756@gmail.com</a></h3>
+                                    <h3><a href="#">info@ssegr.org.in</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -61,7 +63,7 @@
                                 </div>
                                 <div class="contact-details__text">
                                     <p>Visit Office</p>
-                                    <h3>MOHD IBRAHIM, FAKEER BUX, SUNNSHA, PRATAPGARH PRATAPGARH Pratapgarh Uttar Pradesh - 230306 India</h3>
+                                    <h3>Bandhva, Tahirpur (Khanupur) Jhunsi Prayagraj Uttar Pradesh 211019</h3>
                                 </div>
                             </div>
                         </div>

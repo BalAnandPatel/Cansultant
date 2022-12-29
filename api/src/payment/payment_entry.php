@@ -19,7 +19,7 @@ $payment = new payment($db);
   
 // get posted data
 $data = json_decode(file_get_contents("php://input"));
-// print_r($data);  
+//print_r($data);  
 // make sure data is not empty
 if(
     !empty($data->user_id) &&
@@ -39,15 +39,16 @@ if(
     $payment->created_by = $data->created_by;
     $payment->created_on = $data->created_on;
        
-    //var_dump($exam);
+    var_dump($data);
     // create the reg
     if($payment->payment_entry()){
+        echo "done";
 
         http_response_code(201);
         echo json_encode(array("message"=>"Successfull"));
     }
     else{
-  
+   echo "fail";
         // set response code - 503 service unavailable
         http_response_code(503);
   

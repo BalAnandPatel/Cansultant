@@ -37,14 +37,14 @@
                     <div class="row">
                         <div class="col-xl-12 col-lg-8 mb-5">
                             <div class="project-details__content-left">
-                                <h3 class="project-details__title-1">Agriculture Remidies Center</h3>
+                                <h3 class="project-details__title-1">Agriculture Remedies Center</h3>
                                 <p class="project-details__text-1">
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                Through the Organisation Agricultural improvement Centre will be opened in all the districts of uttar pradesh in which agricultural improvement work will be done at tahshil level.
+                                Through the organisation agricultural improvement centre will be opened in all the districts of uttar pradesh in which agricultural improvement work will be done at tahshil level.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                Farmers will be made awore and trained about natural forming. Organic forming and technical forming by the qualified employees of the organization.
+                                Farmers will be made aware and trained about natural forming, organic forming and technical forming by the qualified employees of the organization.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                Minimum service fee will be charged from farmers and agricultural reforms works and Agricultural work.</p>
+                                Minimum service fee will be charged from farmers and agricultural reforms works and agricultural work.</p>
                                 <h3 class="project-details__title-1">Agriculture Work Associated With The Organization</h3>
                                 <p class="project-details__text-1">
                                 (1) Making Organic manure from cow dung.
@@ -63,7 +63,7 @@
                                 <br>
                                 (8) The produced crop can be sold to the former organization at a reasonable price.
                                 <br>
-                                (9) An organic standing center will be set up by the organization at the tahshil level of each district of uttar pradesh in order to save people from standing substances contioning toxic. Harmful chemicals.
+                                (9) An organic standing center will be set up by the organization at the tahshil level of each district of uttar pradesh in order to save people from standing substances containing toxic, harmful chemicals.
                                 </p>
                            
                             </div>

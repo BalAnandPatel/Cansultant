@@ -39,15 +39,15 @@
                                 <h3 class="blog-details__title">Education reform</h3>
                                 <p class="blog-details__text-2">
                                 <i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                If the time of independence. One importace deficiency in the education system was that education was hearly art and humanity based. with passage of time, this deficiency has been removed to some extent. Now India has the third number of science graduates in the world.
+                                In the time of independence, one importace deficiency in the education system was that education was hearly art and humanity based with passage of time, these deficiency has been removed to some extent. Now India has the third number of science graduates in the world.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                But one serious flow is still thes Indian scientific teaching is not basically search based. Thus the young scientist do get scientific knowledge but not many of them can do research, because research is castly affairs Because a haphazard churning of art students, doctors and engineer in Indian institute, there has been wide spread of unemployment in a large scale in these fields.
+                                But one serious flow is still thes Indian scientific teaching is not basically search based. Thus the young scientist do get scientific knowledge but not many of them can do research, because research is castly affairs because a haphazard churning of art students, doctors and engineer in Indian institute, there has been wide spread of unemployment in a large scale in these fields.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                The media has also brought about a revolution in the field of education. Teaching through, Satellite and open universities has opened new vistas for empolyed and for those who can not attend any educational institute.
+                                The media has also brought about a revolution in the field of education. Teaching through, satellite and open universities has opened new vistas for empolyed and for those who can not attend any educational institute.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
                                 Inspite of this, the typical institution particularly in rural areas and small town still lacks basic educational facility. The class rooms are over crowded and teachers are not well informed.
                                 <br><i class="fa fa-hand-point-right" style="margin-right:5px; color:grey;"></i>
-                                The examination system also needs some improvement. The poorest are still usable to learn. The primary education needs much more attention. These are some areas where we need to improove.</p>
+                                The examination system also needs some improvement. The poorest are still usable to learn, the primary education needs much more attention. These are some areas where we need to improve.</p>
                             </div>
                           
                         </div>

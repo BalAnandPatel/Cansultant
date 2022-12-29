@@ -136,7 +136,7 @@
               <div class="input-group-text">
                 <span class="fas fa-boxes"></span>
               </div>
-            <input type="date" class="form-control" name="exam_date_start" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Date of Birth">         
+            <input type="date" placeholder="dd-mm-yyyy" class="form-control" name="exam_date_start" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Date of Birth">         
 
             </div>
           </div>
@@ -150,7 +150,7 @@
               <div class="input-group-text">
                 <span class="fas fa-boxes"></span>
               </div>
-            <input type="date" class="form-control" name="exam_date_end" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Date of Birth">         
+            <input type="date" placeholder="dd-mm-yyyy" class="form-control" name="exam_date_end" autocomplete="off" required  data-toggle="tooltip" title="Please Enter Date of Birth">         
 
             </div>
           </div>
